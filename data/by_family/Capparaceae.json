@@ -1,0 +1,60 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Capparaceae",
+    "title_en": "Family Capparaceae",
+    "subset": "family:Capparaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Capparaceae"
+  },
+  "taxa": [
+    {
+      "id": "CAP-CAP-SPI",
+      "scientific_name": "Capparis spinosa L.",
+      "classification": {
+        "order": "Brassicales",
+        "family": "Capparaceae",
+        "genus": "Capparis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الكَبَر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الشَفَلَّح",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللَصَف",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Caper Bush"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً ضمن النباتات الشوكية في وصف صحراء العراق. براعمه الزهرية هي 'الكبر' التجاري. يعيش على الجدران والصخور والأنقاض"
+    }
+  ]
+}

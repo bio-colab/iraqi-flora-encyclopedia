@@ -1,0 +1,50 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Scrophulariaceae",
+    "title_en": "Family Scrophulariaceae",
+    "subset": "family:Scrophulariaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Scrophulariaceae"
+  },
+  "taxa": [
+    {
+      "id": "SCR-SCR-HYP",
+      "scientific_name": "Scrophularia hypericifolia Wydler",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Scrophulariaceae",
+        "genus": "Scrophularia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الحُمّيضة",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Figwort"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً في وصف صحراء العراق ضمن 'النباتات ذات الطبقة الشمعية أو السطوح الصوفية لتقليل النتح'"
+    }
+  ]
+}

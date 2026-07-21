@@ -1,0 +1,130 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Cannabaceae",
+    "title_en": "Family Cannabaceae",
+    "subset": "family:Cannabaceae",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Cannabaceae"
+  },
+  "taxa": [
+    {
+      "id": "CAN-CEL-AUS",
+      "scientific_name": "Celtis australis L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Celtis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المَيس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الطاق",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "European Nettle Tree",
+          "Hackberry"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "في الأردن صُنِّف وطنياً 'مهدد بالانقراض بشدة' مع Pistacia atlantica — مؤشر إقليمي على هشاشة النوع رغم انتشاره الجغرافي الواسع"
+    },
+    {
+      "id": "CAN-CEL-CAU",
+      "scientific_name": "Celtis caucasica Willd.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Celtis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الميس القوقازي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الميس",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Caucasian Hackberry"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. عنصر جبلي/إيراني–طوراني في غابات الشمال."
+    },
+    {
+      "id": "CAN-CEL-TOU",
+      "scientific_name": "Celtis tournefortii Lam.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Celtis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الميس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "طُرفاء الميس",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Oriental Hackberry",
+          "Tournefort's Hackberry"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq وفي قائمة مرافقي بلوط زاغروس. شجرة/شجرة صغيرة جافة المنحدرات. دراسات كردستان استخدمت ثماره ضمن نباتات تقليدية (Mazne subdistrict)."
+    }
+  ]
+}

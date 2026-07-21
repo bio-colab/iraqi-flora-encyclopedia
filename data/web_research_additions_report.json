@@ -1,0 +1,30 @@
+{
+  "date": "2026-07-21",
+  "task": "Search encyclopedic sources for taxa/categories missing from the encyclopedia and add them via FloraManager",
+  "sources_consulted": [
+    "https://en.wikipedia.org/wiki/Category:Flora_of_Iraq",
+    "https://en.wikipedia.org/wiki/Zagros_Mountains_forest_steppe",
+    "https://en.wikipedia.org/wiki/Mesopotamian_Marshes",
+    "https://en.wikipedia.org/wiki/Mesopotamian_shrub_desert",
+    "https://en.wikipedia.org/wiki/Quercus_brantii",
+    "https://www.treesandshrubsonline.org/ (Anagyris foetida)",
+    "https://powo.science.kew.org/ (Cotoneaster nummularius range)"
+  ],
+  "schema_changes": {
+    "new_habits": ["عشبة_معمّرة", "عشبة_حولية", "نجيلة_أو_عشب", "مائي"],
+    "new_category_files": [
+      "data/by_habit/perennial_herbs.json",
+      "data/by_habit/annual_herbs.json",
+      "data/by_habit/grasses.json",
+      "data/by_habit/aquatic.json",
+      "data/by_category/05_herbs.json",
+      "data/by_category/06_grasses.json",
+      "data/by_category/07_aquatic.json"
+    ]
+  },
+  "before_count": 116,
+  "added_count": 36,
+  "after_count": 152,
+  "batch_file": "tools/examples/batch_web_research_additions.json",
+  "tool": "python tools/manage_flora.py add-many --file ..."
+}

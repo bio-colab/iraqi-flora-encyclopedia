@@ -1,0 +1,59 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Arecaceae",
+    "title_en": "Family Arecaceae",
+    "subset": "family:Arecaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Arecaceae"
+  },
+  "taxa": [
+    {
+      "id": "ARE-PHO-DAC",
+      "scientific_name": "Phoenix dactylifera L.",
+      "classification": {
+        "order": "Arecales",
+        "family": "Arecaceae",
+        "genus": "Phoenix",
+        "class": "Liliopsida (أحادية الفلقة)"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "النخلة",
+            "confidence": "عالية"
+          },
+          {
+            "name": "نخيل التمر",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Date Palm"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "مستأنَس منذ آلاف السنين؛ السلف البري غير معروف يقيناً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع_واسعاً_ومتراجع",
+      "flag": "⚠️ حالة خاصة",
+      "flagship_case": true,
+      "notes": "🌴 **حالة منهجية خاصة تستحق التوضيح.** النخلة أشهر شجرة عراقية على الإطلاق (≈30 مليون نخلة تنتج أحد أهم صادرات العراق تاريخياً)، ومع ذلك **لا يمكن إدراجها بثقة ضمن الفلورا البرية الأصيلة**: النخيل مستأنَس منذ ≈6000 سنة في هذه المنطقة نفسها، وسلفه البري (Phoenix dactylifera var. sylvestris أو نوع منقرض) غير محسوم علمياً. أي أن العراق قد يكون **مركز استئناسها** لا موطنها البري الموثّق. هي شجرة ثقافية–زراعية عراقية بامتياز، وتصنيفها 'أصيلة برياً' ادّعاء لا تسنده الأدلة المتاحة. أُدرجت هنا لأن حذفها بلا تفسير يبدو خطأً، وإدراجها بلا تحفظ يكون تضليلاً. ملاحظة إضافية: هي أحادية فلقة (نخيل) لا شجرة خشبية حقيقية بالمعنى النباتي — لا تملك خشباً ثانوياً"
+    }
+  ]
+}

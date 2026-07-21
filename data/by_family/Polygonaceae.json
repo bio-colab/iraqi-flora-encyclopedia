@@ -1,0 +1,98 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Polygonaceae",
+    "title_en": "Family Polygonaceae",
+    "subset": "family:Polygonaceae",
+    "taxa_count": 2,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Polygonaceae"
+  },
+  "taxa": [
+    {
+      "id": "POL-CAL-COM",
+      "scientific_name": "Calligonum comosum L'Hér.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Polygonaceae",
+        "genus": "Calligonum"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأرطى",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العَبَل",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Arta"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "من مثبِّتات الكثبان الرئيسة. قوام مفتوح غصينيّ يخضرّ بسرعة بعد المطر. أثبت مرونة استرجاعية عالية بعد حرائق النفط في الكويت 1991"
+    },
+    {
+      "id": "POL-RHE-RIB",
+      "scientific_name": "Rheum ribes L.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Polygonaceae",
+        "genus": "Rheum"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "ريواس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "راوند جبلي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Syrian Rhubarb",
+          "Currant-fruited Rhubarb"
+        ],
+        "kurdish": [
+          {
+            "name": "ڕێواس",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مُدرج في Wikipedia Flora of Iraq. نبات جبلي غذائي/طبي تقليدي في كردستان؛ قاعدة خشبية جزئياً."
+    }
+  ]
+}

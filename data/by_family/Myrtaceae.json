@@ -1,0 +1,98 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Myrtaceae",
+    "title_en": "Family Myrtaceae",
+    "subset": "family:Myrtaceae",
+    "taxa_count": 2,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Myrtaceae"
+  },
+  "taxa": [
+    {
+      "id": "MYR-EUC-SPP",
+      "scientific_name": "Eucalyptus spp.",
+      "classification": {
+        "order": "Myrtales",
+        "family": "Myrtaceae",
+        "genus": "Eucalyptus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الكينا",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اليوكالبتوس",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Eucalyptus",
+          "Gum Tree"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "موجود",
+      "introduction_status": "مُدخَل — أسترالي الأصل",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع_واسعاً",
+      "flag": "🚫 غير أصيل — أُدرج للتمييز",
+      "notes": "🚫 **ليس أصيلاً.** أُدرج لأنه من أكثر ما يُزرع في العراق ويُخطئ كثيرون فيعدّونه محلياً. من أشتال مشتل سرچنار. جدل بيئي معروف حول استهلاكه المائي في الأراضي الجافة"
+    },
+    {
+      "id": "MYR-MYR-COM",
+      "scientific_name": "Myrtus communis L.",
+      "classification": {
+        "order": "Myrtales",
+        "family": "Myrtaceae",
+        "genus": "Myrtus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الآس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الياس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الريحان",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Common Myrtle"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "عنصر متوسطي هامشي في العراق. شجيرة دائمة الخضرة عطرية. تُزرع أيضاً؛ التجمعات الطبيعية العراقية محدودة"
+    }
+  ]
+}

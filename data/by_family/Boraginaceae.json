@@ -1,0 +1,57 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Boraginaceae",
+    "title_en": "Family Boraginaceae",
+    "subset": "family:Boraginaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Boraginaceae"
+  },
+  "taxa": [
+    {
+      "id": "BOR-COR-SIN",
+      "scientific_name": "Cordia sinensis Lam.",
+      "taxonomic_note": "العائلة في المصدر مُعلَّقة: Boraginaceae (Cordiaceae)",
+      "classification": {
+        "order": "Boraginales",
+        "family": "Boraginaceae",
+        "genus": "Cordia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغُبيش",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "المَرَخ",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Grey-leaved Saucer Berry"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق. نوع إفريقي–جنوب عربي، أصالته في العراق مشكوك فيها"
+    }
+  ]
+}

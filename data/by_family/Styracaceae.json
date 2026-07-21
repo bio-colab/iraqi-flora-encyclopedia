@@ -1,0 +1,59 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Styracaceae",
+    "title_en": "Family Styracaceae",
+    "subset": "family:Styracaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Styracaceae"
+  },
+  "taxa": [
+    {
+      "id": "ERI-STY-OFF",
+      "scientific_name": "Styrax officinalis L.",
+      "classification": {
+        "order": "Ericales",
+        "family": "Styracaceae",
+        "genus": "Styrax"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللُبنى",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الحَوز",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الميعة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Storax",
+          "Snowdrop Bush"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مصدر صمغ اللبنى/الميعة التاريخي (بخور وطيب). مُدرج في قائمة أشجار العراق لدى Restor"
+    }
+  ]
+}

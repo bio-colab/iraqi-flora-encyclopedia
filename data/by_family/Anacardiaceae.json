@@ -1,0 +1,233 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Anacardiaceae",
+    "title_en": "Family Anacardiaceae",
+    "subset": "family:Anacardiaceae",
+    "taxa_count": 5,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Anacardiaceae"
+  },
+  "taxa": [
+    {
+      "id": "ANA-PIS-ATL",
+      "scientific_name": "Pistacia atlantica Desf.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البطم الأطلسي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البطم",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Mt. Atlas Mastic Tree",
+          "Atlantic Pistachio"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "assessment_noted": true,
+        "note": "تقييم منشور لدى IUCN لكن الرتبة النهائية غير مثبتة في الجلسة. لدى IUCN تقييم منشور (e.117264678)؛ لم أتحقق من الرتبة النهائية بدقة كافية لأثبتها"
+      },
+      "iraq_local_status": "متراجع_بشدة",
+      "notes": "الاسم الواسع الذي تندرج تحته سلالات المنطقة. شجرة تصل 20 م بمرونة بيئية هائلة (من صحراء الساحل الإفريقي إلى الغابات شبه الجافة). في الأردن صُنِّف وطنياً 'مهدد بالانقراض بشدة' — مؤشر على أن التقييم الوطني قد يختلف جذرياً عن العالمي"
+    },
+    {
+      "id": "ANA-PIS-EUR",
+      "scientific_name": "Pistacia eurycarpa Yalt.",
+      "taxonomic_note": "يُعامل Pistacia atlantica subsp. kurdica كمرادف لهذا الاسم. الأدبيات العراقية غالباً تكتب P. atlantica",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البطم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الحبة الخضراء",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البطم الكردي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Kurdish Pistachio",
+          "Mt. Atlas Mastic (broad sense)"
+        ],
+        "kurdish": [
+          {
+            "name": "قەزوان (Qezwan)",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "دارِ بەن (Dar-e ben)",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "P. atlantica بالمعنى الواسع مُقيَّم لدى IUCN؛ لم يُتحقق من رتبة P. eurycarpa تحديداً"
+      },
+      "iraq_local_status": "متراجع_بشدة",
+      "notes": "ثاني أهم مكوّن حرجي بعد البلوط. من الـ10% غير البلوطية في غطاء كردستان الحرجي. شجرة نصف دائمة الخضرة تبلغ 20 م. مرونة بيئية استثنائية: من الصحراء إلى الغابات شبه الجافة. تُستخدم أصلاً لتطعيم الفستق الحلبي. ثمارها ('الحبة الخضراء') سلعة اقتصادية ريفية مهمة. أغلب تجمعاتها اليوم أشجار منفردة أو مجاميع 2–3 أشجار — وهذا مؤشر تفتّت لا مؤشر صحة"
+    },
+    {
+      "id": "ANA-PIS-KHI",
+      "scientific_name": "Pistacia khinjuk Stocks",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الخِنجُك",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البطم الخنجوكي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Khinjuk Pistachio"
+        ],
+        "kurdish": [
+          {
+            "name": "خنجک (Khinjik)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور صراحةً ضمن الـ10% غير البلوطية من الغطاء الحرجي في كردستان إلى جانب Crataegus azarolus. يشغل المنحدرات الصخرية الجافة"
+    },
+    {
+      "id": "ANA-RHU-COR",
+      "scientific_name": "Rhus coriaria L.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Rhus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السُمّاق",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Sicilian Sumac",
+          "Tanner's Sumac"
+        ],
+        "kurdish": [
+          {
+            "name": "سوماق (Sumaq)",
+            "confidence": "عالية"
+          }
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "🍋 من أهم الشجيرات الاقتصادية في كردستان العراق. ثماره المطحونة هي 'السماق' التوابلي، ركن أساس في المطبخ العراقي والكردي. مصدر تانين للدباغة أيضاً"
+    },
+    {
+      "id": "ANA-SEA-TRI",
+      "scientific_name": "Searsia tripartita (Ucria) Moffett",
+      "taxonomic_note": "سابقاً Rhus tripartita (Ucria) Grande",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Searsia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجِداري",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "السماق ثلاثي الوريقات",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Sumac"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في قائمة أشجار العراق لدى Restor. ثماره وأوراقه صالحة للاستعمال"
+    }
+  ]
+}

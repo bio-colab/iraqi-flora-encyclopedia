@@ -1,0 +1,64 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — المتسلقات الخشبية",
+    "title_en": "Iraqi Woody Flora — Woody Climbers",
+    "subset": "category_group:woody_climbers",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "category_group": "woody_climbers",
+    "included_habits": [
+      "متسلق_خشبي"
+    ]
+  },
+  "taxa": [
+    {
+      "id": "VIT-VIT-SYL",
+      "scientific_name": "Vitis vinifera subsp. sylvestris (C.C.Gmel.) Hegi",
+      "classification": {
+        "order": "Vitales",
+        "family": "Vitaceae",
+        "genus": "Vitis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العنب البري",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الكرم البري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Wild Grapevine"
+        ],
+        "kurdish": [
+          {
+            "name": "تری کێوی (Trî kêwî)",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "متسلق_خشبي",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "🍇 السلف البري للعنب المزروع. متسلق خشبي في غابات وأودية كردستان. قيمته الوراثية عالمية (مقاومة الأمراض)، وتعداده البري في تراجع عام في كل مداه. مهم جداً كمورد وراثي لا كمورد اقتصادي مباشر"
+    }
+  ]
+}

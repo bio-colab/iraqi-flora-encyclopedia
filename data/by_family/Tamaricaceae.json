@@ -1,0 +1,232 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Tamaricaceae",
+    "title_en": "Family Tamaricaceae",
+    "subset": "family:Tamaricaceae",
+    "taxa_count": 6,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Tamaricaceae"
+  },
+  "taxa": [
+    {
+      "id": "TAM-TAM-APH",
+      "scientific_name": "Tamarix aphylla (L.) H.Karst.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأثل",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الأثلة",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Athel Tamarisk",
+          "Athel Pine"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "DESERT",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "الوحيد في الجنس الذي يبلغ حجم شجرة حقيقية في العراق. يتحمل المياه المالحة والجوفية القلوية. يُستخدم مصدّات رياح وأحزمة خضراء. شجرة ثقافية عميقة الجذر في التراث العربي والعراقي"
+    },
+    {
+      "id": "TAM-TAM-MEY",
+      "scientific_name": "Tamarix meyeri Boiss.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفاء",
+            "confidence": "عالية"
+          },
+          {
+            "name": "أثل ماير",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Meyer's Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور في Wikipedia Mesopotamian Marshes ضمن غابات ضفافية (مع Tamarix pentandra/ramosissima وSalix acmophylla)."
+    },
+    {
+      "id": "TAM-TAM-NIL",
+      "scientific_name": "Tamarix nilotica (Ehrenb.) Bunge",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة النيلية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Nile Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "TAM-TAM-PAS",
+      "scientific_name": "Tamarix passerinoides Delile ex Desv.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "من أنواع الطرفاء المسجلة في السهل الرسوبي العراقي"
+    },
+    {
+      "id": "TAM-TAM-RAM",
+      "scientific_name": "Tamarix ramosissima Ledeb.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الطرفاء",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Saltcedar",
+          "Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MARSH_SALINE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "⚠️ جنس Tamarix في العراق حقل ألغام تصنيفي: الأنواع كثيرة ومتداخلة والهجن شائعة، والتحديد الحقلي يحتاج أزهاراً كاملة. ما يذكره الناس بـ'الطرفة' يشمل عدة أنواع"
+    },
+    {
+      "id": "TAM-TAM-TET",
+      "scientific_name": "Tamarix tetragyna Ehrenb.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة رباعية المدقة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Four-stamen Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "جذور تصل 21.9 م عمقاً — من أعمق الجذور المسجلة في المنطقة"
+    }
+  ]
+}

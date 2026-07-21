@@ -1,0 +1,52 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Malvaceae",
+    "title_en": "Family Malvaceae",
+    "subset": "family:Malvaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Malvaceae"
+  },
+  "taxa": [
+    {
+      "id": "MAL-GRE-VIL",
+      "scientific_name": "Grewia villosa Willd.",
+      "classification": {
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Grewia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغُرَيب",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Mallow Raisin"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق. نوع إفريقي–جنوب عربي؛ أصالته في العراق مشكوك فيها"
+    }
+  ]
+}

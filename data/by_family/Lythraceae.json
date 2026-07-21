@@ -1,0 +1,60 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Lythraceae",
+    "title_en": "Family Lythraceae",
+    "subset": "family:Lythraceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Lythraceae"
+  },
+  "taxa": [
+    {
+      "id": "LYT-PUN-GRA",
+      "scientific_name": "Punica granatum L.",
+      "classification": {
+        "order": "Myrtales",
+        "family": "Lythraceae",
+        "genus": "Punica"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الرُمّان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الرمان البري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Pomegranate"
+        ],
+        "kurdish": [
+          {
+            "name": "هەنار (Henar)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مركز نشوء الرمان هو حزام زاغروس–آسيا الوسطى، وتجمعات برية في أودية كردستان محتملة ومهمة وراثياً. لكن آلاف السنين من الزراعة تجعل الفصل بين البري والهارب صعباً. الرمان يُدرج ضمن 'الأنواع الرمزية' لأشجار العراق في بعض المصادر"
+    }
+  ]
+}

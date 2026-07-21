@@ -1,0 +1,250 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Rhamnaceae",
+    "title_en": "Family Rhamnaceae",
+    "subset": "family:Rhamnaceae",
+    "taxa_count": 6,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Rhamnaceae"
+  },
+  "taxa": [
+    {
+      "id": "RHA-PAL-SPI",
+      "scientific_name": "Paliurus spina-christi Mill.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Paliurus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "شوك المسيح",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القُطُب",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Jerusalem Thorn",
+          "Christ's Thorn"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شجيرة شوكية من شجيرات المناطق المتدهورة والحدود الزراعية"
+    },
+    {
+      "id": "RHA-RHA-PET",
+      "scientific_name": "Rhamnus petiolaris Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Rhamnus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "النبق معنق الأوراق",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "النبق",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Petiolate Buckthorn"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. يكمّل مجموعة Rhamnus spp. العامة بتاكسون محدد."
+    },
+    {
+      "id": "RHA-RHA-SPP",
+      "scientific_name": "Rhamnus spp.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Rhamnus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "النَبِق البري",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الرامنوس",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Buckthorn"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "RHA-ZIZ-LOT",
+      "scientific_name": "Ziziphus lotus (L.) Lam.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Ziziphus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السدر البري",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الدوم",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Lotus Jujube"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "وجوده في العراق مسجّل لكن أقل شيوعاً من Z. nummularia"
+    },
+    {
+      "id": "RHA-ZIZ-NUM",
+      "scientific_name": "Ziziphus nummularia (Burm.f.) Wight & Arn.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Ziziphus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الضال",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السدر البري",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "العُبيري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Wild Jujube",
+          "Jharber"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور صراحةً في وصف الغطاء الصحراوي العراقي: ينمو في المنخفضات الرملية. شجيرة شوكية مقاومة للجفاف الشديد. مصدر رعي طارئ"
+    },
+    {
+      "id": "RHA-ZIZ-SPI",
+      "scientific_name": "Ziziphus spina-christi (L.) Desf.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Ziziphus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السِدر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "النَبِق",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الكنار",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Christ's Thorn Jujube",
+          "Sidr"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "DESERT",
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "🌳 من أهم أشجار العراق ثقافياً ودينياً واقتصادياً. يشهد إقبالاً متزايداً على زراعته وسط الجفاف لقلة احتياجه المائي وعوائده الاقتصادية (النبق، عسل السدر، الأوراق للغسل). شجرة بركة في الوجدان العراقي"
+    }
+  ]
+}

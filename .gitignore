@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Local session / agent noise
+.grok/
+*.log
+
+# Optional: keep last backups in git? ignore rolling backups by default
+archive/woody_flora.backup_*.json

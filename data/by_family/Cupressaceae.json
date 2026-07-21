@@ -1,0 +1,207 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Cupressaceae",
+    "title_en": "Family Cupressaceae",
+    "subset": "family:Cupressaceae",
+    "taxa_count": 5,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Cupressaceae"
+  },
+  "taxa": [
+    {
+      "id": "CUP-CUP-SEM",
+      "scientific_name": "Cupressus sempervirens L.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Cupressus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السَرو",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Mediterranean Cypress",
+          "Italian Cypress"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "مزروع أساساً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع",
+      "flag": "⚠️ مزروع لا بري",
+      "notes": "⚠️ السرو من الأنواع الأربعين المنتَجة في مشتل سرچنار بالسليمانية لإعادة التحريج. مداه الطبيعي شرق المتوسط وإيران؛ تجمعاته العراقية البرية غير مؤكدة. أُدرج للتمييز"
+    },
+    {
+      "id": "CUP-JUN-EXC",
+      "scientific_name": "Juniperus excelsa M.Bieb.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta (معراة البذور)"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَرعر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العرعر الشاهق",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Greek Juniper",
+          "Grecian Juniper"
+        ],
+        "kurdish": [
+          {
+            "name": "هەورس (Hewrs)",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "🌲 أحد معراة البذور القليلة الأصيلة في العراق — وهذا يجعله مهماً بلا تناسب مع عدده. مذكور في Britannica ضمن أشجار السفوح الجبلية الدنيا في العراق. ينمو بطيئاً جداً، فالقطع يعني خسارة قروناً لا سنوات. أُدرج ضمن أشتال مشاتل السليمانية لإعادة التحريج"
+    },
+    {
+      "id": "CUP-JUN-FOE",
+      "scientific_name": "Juniperus foetidissima Willd.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العرعر النتن",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "العرعر",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Stinking Juniper",
+          "Foetid Juniper"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "من عراعر جبال كردستان العليا"
+    },
+    {
+      "id": "CUP-JUN-OXY",
+      "scientific_name": "Juniperus oxycedrus L.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العرعر الشوكي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "اللزاب",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Prickly Juniper",
+          "Cade Juniper"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مصدر زيت القطران (Cade oil)"
+    },
+    {
+      "id": "CUP-JUN-POL",
+      "scientific_name": "Juniperus polycarpos K.Koch",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العرعر متعدد الثمار",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Persian Juniper"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور في دراسات كيميائية عراقية (تحليل GC-MS لمستخلص ثماره ونشاطه المضاد للسرطان) — دليل حضور بحثي عراقي"
+    }
+  ]
+}

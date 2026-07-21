@@ -1,0 +1,63 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Acanthaceae",
+    "title_en": "Family Acanthaceae",
+    "subset": "family:Acanthaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Acanthaceae"
+  },
+  "taxa": [
+    {
+      "id": "AVI-AVI-MAR",
+      "scientific_name": "Avicennia marina (Forssk.) Vierh.",
+      "taxonomic_note": "العائلة في المصدر مُعلَّقة: Acanthaceae (سابقاً Avicenniaceae)",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Acanthaceae",
+        "genus": "Avicennia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المانغروف الرمادي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القُرم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الشورى",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Grey Mangrove",
+          "White Mangrove"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "COASTAL"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "موجود",
+      "introduction_status": "مُدخَل بالزراعة",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع_تجريبياً",
+      "flag": "🚫 غير أصيل — أُدرج للتمييز لا للإثبات",
+      "flagship_case": true,
+      "notes": "🚫 **ليس من الفلورا الأصيلة العراقية.** أُدرج صراحةً لأن السؤال شمل النطاق البحري، والجواب الأمين هو أن العراق **لا يملك شجرة ساحلية بحرية أصيلة**، وأن النظام الساحلي العراقي موصوف علمياً بأنه فقير نباتياً أصلاً. المانغروف الرمادي أدخله فريق مركز علوم البحار/جامعة البصرة بالتعاون مع مؤسسات إقليمية بدءاً من نيسان 2019 في المنطقة المدّية بميناء خور الزبير النفطي — وهي تجربة هي الأولى من نوعها في البلاد. النتائج: أقصى ارتفاع 173.3 سم خلال سنتين، ونمو قريب من الموائل الطبيعية. الشتلات جُلبت من تجمعات طبيعية في المنطقة (نمط مماثل لتجربة الكويت التي جلبت من البحرين والإمارات). المشروع توسّع لاحقاً بشراكة حكومية–أممية بهدف 4 ملايين شجرة في سُهول خور الزبير الطينية، بمشتل على 400 هكتار. الأهداف: كبح التعرية الساحلية، ترشيح الملوثات، حماية المجتمعات من العواصف، ودون استهلاك مياه عذبة عراقية شحيحة. المخاطر الموثقة: التلوث النفطي والصناعي المزمن في المنطقة"
+    }
+  ]
+}

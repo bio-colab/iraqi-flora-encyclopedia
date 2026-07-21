@@ -1,0 +1,131 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — نباتات الأهوار والمائية",
+    "title_en": "Iraqi Woody Flora — Marsh and aquatic plants",
+    "subset": "category_group:aquatic",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "category_group": "aquatic",
+    "included_habits": [
+      "مائي"
+    ]
+  },
+  "taxa": [
+    {
+      "id": "CYP-CYP-PAP",
+      "scientific_name": "Cyperus papyrus L.",
+      "classification": {
+        "order": "Poales",
+        "family": "Cyperaceae",
+        "genus": "Cyperus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البردي الورقي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "ورق البردي",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Papyrus Sedge"
+        ]
+      },
+      "habit": "مائي",
+      "zones": [
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور ضمن نباتات الأهوار في Wikipedia Mesopotamian Marshes. حضوره المعاصر أقل من القصب والبردي."
+    },
+    {
+      "id": "POA-PHR-AUS",
+      "scientific_name": "Phragmites australis (Cav.) Trin. ex Steud.",
+      "classification": {
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Phragmites"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القصب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "قصب الأهوار",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Reed"
+        ]
+      },
+      "habit": "مائي",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "النوع السائد في أهوار الرافدين (Wikipedia Mesopotamian Marshes). أساس بناء المضيف والثقافة المادية لعرب الأهوار. خارج النطاق الخشبي السابق — أُضيف ضمن فئة المائي."
+    },
+    {
+      "id": "TYP-TYP-DOM",
+      "scientific_name": "Typha domingensis Pers.",
+      "classification": {
+        "order": "Poales",
+        "family": "Typhaceae",
+        "genus": "Typha"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البردي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البوط",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Southern Cattail"
+        ]
+      },
+      "habit": "مائي",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مسيطر مع القصب في الأهوار الدائمة والموسمية (Wikipedia Mesopotamian Marshes)."
+    }
+  ]
+}

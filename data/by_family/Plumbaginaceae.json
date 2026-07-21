@@ -1,0 +1,50 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Plumbaginaceae",
+    "title_en": "Family Plumbaginaceae",
+    "subset": "family:Plumbaginaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Plumbaginaceae"
+  },
+  "taxa": [
+    {
+      "id": "PLU-ACA-SPP",
+      "scientific_name": "Acantholimon spp.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Plumbaginaceae",
+        "genus": "Acantholimon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الشوك الوسادي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Prickly Thrift"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً كأحد سائدات منطقة الشوك الوسادي، مع Acanthophyllum وCousinia. من عناصر الإقليم الإيراني–الطوراني"
+    }
+  ]
+}

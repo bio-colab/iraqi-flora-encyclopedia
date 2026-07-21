@@ -1,0 +1,129 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Apocynaceae",
+    "title_en": "Family Apocynaceae",
+    "subset": "family:Apocynaceae",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Apocynaceae"
+  },
+  "taxa": [
+    {
+      "id": "APO-CAL-PRO",
+      "scientific_name": "Calotropis procera (Aiton) W.T.Aiton",
+      "classification": {
+        "order": "Gentianales",
+        "family": "Apocynaceae",
+        "genus": "Calotropis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العُشَر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الأُشَر",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Sodom Apple",
+          "Giant Milkweed"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً ضمن النباتات الخشبية الكبيرة في الجزء الصحراوي (Saharan) من العراق. لبنه سام. يتوسع مع التدهور البيئي (نبات دليل على الاضطراب)"
+    },
+    {
+      "id": "APO-CIO-ERE",
+      "scientific_name": "Cionura erecta (L.) Griseb.",
+      "classification": {
+        "order": "Gentianales",
+        "family": "Apocynaceae",
+        "genus": "Cionura"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "سيونورة منتصبة",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "دفل بري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Erect Swallow-wort"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور ضمن شجيرات/أعشاب شائعة على مجاري الوديان في حزام غابة زاغروس."
+    },
+    {
+      "id": "APO-NER-OLE",
+      "scientific_name": "Nerium oleander L.",
+      "classification": {
+        "order": "Gentianales",
+        "family": "Apocynaceae",
+        "genus": "Nerium"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدِفلى",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الدفلة",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Oleander"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "⚠️ سام جداً (كل أجزائه). شجيرة الأودية الصخرية والمجاري الموسمية. تُزرع أيضاً على نطاق واسع للزينة في العراق، ما يُصعّب فصل الطبيعي عن المزروع"
+    }
+  ]
+}

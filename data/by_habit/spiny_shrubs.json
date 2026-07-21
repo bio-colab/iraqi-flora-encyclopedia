@@ -1,0 +1,605 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — شجيرات شوكية",
+    "title_en": "Iraqi Woody Flora — Spiny Shrubs",
+    "subset": "habit:شجيرة_شوكية",
+    "taxa_count": 15,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "habit": "شجيرة_شوكية",
+    "habit_label_ar": "شجيرات شوكية",
+    "habit_label_en": "Spiny Shrubs",
+    "category_group": "shrub"
+  },
+  "taxa": [
+    {
+      "id": "BER-BER-SPP",
+      "scientific_name": "Berberis spp.",
+      "classification": {
+        "order": "Ranunculales",
+        "family": "Berberidaceae",
+        "genus": "Berberis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البَرباريس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الزِرِشك",
+            "confidence": "عالية"
+          },
+          {
+            "name": "أمبرباريس",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Barberry"
+        ],
+        "kurdish": [
+          {
+            "name": "زرشک (Zirişk)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "ثماره الحمراء الحامضة (الزرشك) تُستعمل في المطبخ الكردي والإيراني"
+    },
+    {
+      "id": "CAP-CAP-SPI",
+      "scientific_name": "Capparis spinosa L.",
+      "classification": {
+        "order": "Brassicales",
+        "family": "Capparaceae",
+        "genus": "Capparis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الكَبَر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الشَفَلَّح",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللَصَف",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Caper Bush"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً ضمن النباتات الشوكية في وصف صحراء العراق. براعمه الزهرية هي 'الكبر' التجاري. يعيش على الجدران والصخور والأنقاض"
+    },
+    {
+      "id": "CAR-ACA-SPP",
+      "scientific_name": "Acanthophyllum spp.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Caryophyllaceae",
+        "genus": "Acanthophyllum"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الشوك الوسادي",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Acanthophyllum"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "من سائدات منطقة الشوك الوسادي فوق خط الشجر"
+    },
+    {
+      "id": "FAB-AST-BRA",
+      "scientific_name": "Astragalus brachycalyx Fisch.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Astragalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "قتاد قصير الكأس",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "القتاد الوسادي",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Short-calyx Milk-vetch"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Flora of Iraq. يمثّل القتاد الوسادي الشوكي فوق/حول خط الشجر — يُكمّل مدخل Astragalus spp. التجميعي."
+    },
+    {
+      "id": "FAB-AST-SPP",
+      "scientific_name": "Astragalus spp. (المجموعة الوسادية الشوكية)",
+      "taxonomic_note": "ليس نوعاً واحداً بل مجموعة تضم عشرات الأنواع في العراق، منها A. mossulensis وA. dactylocarpus وA. gummifer وA. spinosus",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Astragalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القَتاد",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الكثيراء",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Milkvetch",
+          "Tragacanth",
+          "Thorn-cushion Astragalus"
+        ],
+        "kurdish": [
+          {
+            "name": "گەون (Gewn/Gawan)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "STEPPE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "تقييمات متفرقة على مستوى النوع؛ أغلب الأنواع العراقية غير مُقيَّمة"
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "flagship_case": true,
+      "notes": "⛰️ الجنس السائد فوق خط الشجر. يشكل 'الوسائد الشوكية' التي تُعطي المنطقة اسمها. Astragalus وحده يمثل حصة لافتة من مستوطنات العراق البقولية. مفارقة بيئية مهمة: الرعي الجائر يُفيده — لأن الأغنام تلتهم المعمّرات المستساغة وتترك الشوكيات، فتتوسع الوسائد على حساب غيرها. أي أن انتشاره مؤشر تدهور لا مؤشر عافية. مصدر صمغ الكثيراء (Tragacanth) الذي يُستخرج من شجيرات البادية شبه الجافة — وهو مذكور صراحةً كمنتج عراقي تاريخي"
+    },
+    {
+      "id": "FAB-PRO-FAR",
+      "scientific_name": "Prosopis farcta (Banks & Sol.) J.F.Macbr.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Prosopis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اليَنبوت",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الشوك",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الخرنوب البري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Syrian Mesquite",
+          "Dwarf Mesquite"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "RIVERINE",
+        "STEPPE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "⚠️ مهم للتفريق: هذا النوع أصيل في العراق والشام، على خلاف Prosopis juliflora الأمريكي الغازي. شجيرة شوكية عنيدة، وتُعدّ عشبة ضارة في الأراضي الزراعية العراقية لصعوبة اقتلاع جذورها"
+    },
+    {
+      "id": "PLU-ACA-SPP",
+      "scientific_name": "Acantholimon spp.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Plumbaginaceae",
+        "genus": "Acantholimon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الشوك الوسادي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Prickly Thrift"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً كأحد سائدات منطقة الشوك الوسادي، مع Acanthophyllum وCousinia. من عناصر الإقليم الإيراني–الطوراني"
+    },
+    {
+      "id": "RHA-PAL-SPI",
+      "scientific_name": "Paliurus spina-christi Mill.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Paliurus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "شوك المسيح",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القُطُب",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Jerusalem Thorn",
+          "Christ's Thorn"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شجيرة شوكية من شجيرات المناطق المتدهورة والحدود الزراعية"
+    },
+    {
+      "id": "RHA-ZIZ-LOT",
+      "scientific_name": "Ziziphus lotus (L.) Lam.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Ziziphus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السدر البري",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الدوم",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Lotus Jujube"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "وجوده في العراق مسجّل لكن أقل شيوعاً من Z. nummularia"
+    },
+    {
+      "id": "RHA-ZIZ-NUM",
+      "scientific_name": "Ziziphus nummularia (Burm.f.) Wight & Arn.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Ziziphus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الضال",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السدر البري",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "العُبيري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Wild Jujube",
+          "Jharber"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور صراحةً في وصف الغطاء الصحراوي العراقي: ينمو في المنخفضات الرملية. شجيرة شوكية مقاومة للجفاف الشديد. مصدر رعي طارئ"
+    },
+    {
+      "id": "ROS-ROS-BOI",
+      "scientific_name": "Rosa boissieri Crép.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "ورد بواسيه",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الورد البري",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Boissier's Rose"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq ضمن نباتات العراق."
+    },
+    {
+      "id": "ROS-ROS-CAN",
+      "scientific_name": "Rosa canina L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الورد البري",
+            "confidence": "عالية"
+          },
+          {
+            "name": "النِسرين",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "ورد الكلب",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Dog Rose"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "ثماره (الورد الوردي/hips) غنية بفيتامين C وتُستعمل شعبياً"
+    },
+    {
+      "id": "ROS-ROS-PHO",
+      "scientific_name": "Rosa phoenicia Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "ورد فينيقي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الورد البري",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Phoenician Rose"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. يوسّع تغطية الورد البري بعد Rosa canina."
+    },
+    {
+      "id": "ROS-RUB-SAN",
+      "scientific_name": "Rubus sanctus Schreb.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rubus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العُلَّيق",
+            "confidence": "عالية"
+          },
+          {
+            "name": "التوت الشوكي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Holy Bramble"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شجيرة الأودية والمجاري المائية في كردستان. ثماره صالحة للأكل"
+    },
+    {
+      "id": "SOL-LYC-SHA",
+      "scientific_name": "Lycium shawii Roem. & Schult.",
+      "classification": {
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Lycium"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَوسج",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Arabian Boxthorn",
+          "Awsaj"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شجيرة شوكية صحراوية شهيرة. 'العوسج' اسم تراثي عميق. مذكور ضمن مجتمعات الجزيرة العربية الموازية للعراق. ثماره صالحة للأكل"
+    }
+  ]
+}

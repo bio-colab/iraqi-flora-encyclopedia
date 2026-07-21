@@ -1,0 +1,137 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Oleaceae",
+    "title_en": "Family Oleaceae",
+    "subset": "family:Oleaceae",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Oleaceae"
+  },
+  "taxa": [
+    {
+      "id": "OLE-FRA-ANG",
+      "scientific_name": "Fraxinus angustifolia Vahl",
+      "taxonomic_note": "يشمل في المنطقة subsp. syriaca. قريب من Fraxinus rotundifolia المُدرَج سابقاً؛ بعض المراجع تدمجهما.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Fraxinus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدردار ضيق الأوراق",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللّسان",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Narrow-leaved Ash",
+          "Syrian Ash"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور كشجرة ضفافية/جبلية في غابات زاغروس مع الصفصاف والدلب. يُفضّل الأودية الرطبة داخل حزام الغابة."
+    },
+    {
+      "id": "OLE-FRA-ROT",
+      "scientific_name": "Fraxinus rotundifolia Mill.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Fraxinus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدردار",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "المُرّان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللسان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Round-leaved Ash"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "⚠️ ملاحظة لغوية: 'الدردار' في العراق تُطلق على Fraxinus وUlmus كليهما بتداخل — والخلط شائع حتى في الأدبيات العربية"
+    },
+    {
+      "id": "OLE-OLE-EUR",
+      "scientific_name": "Olea europaea L.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Olea"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزيتون",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الزيتون البري / العتم",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Olive",
+          "Wild Olive (var. sylvestris)"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ الزيتون شجرة متوسطية أصيلة في الشام وتركيا. العراق — كما تنص المراجع صراحةً — لا يملك إقليماً متوسطياً حقيقياً، رغم أن فلوراه تضم نسبة عالية من نباتات متوسطية. وجود زيتون بري أصيل في العراق (سنجار مثلاً) موضع جدل. الزيتون المزروع واسع الانتشار (وهو من أشتال مشاتل السليمانية). أُدرج بتحفظ"
+    }
+  ]
+}

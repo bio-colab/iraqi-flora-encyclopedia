@@ -1,0 +1,131 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Zygophyllaceae",
+    "title_en": "Family Zygophyllaceae",
+    "subset": "family:Zygophyllaceae",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Zygophyllaceae"
+  },
+  "taxa": [
+    {
+      "id": "ZYG-BAL-AEG",
+      "scientific_name": "Balanites aegyptiaca (L.) Delile",
+      "classification": {
+        "order": "Zygophyllales",
+        "family": "Zygophyllaceae",
+        "genus": "Balanites"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الهِجليج",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللالوب",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Desert Date",
+          "Balanites"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق، لكنه شجرة الساحل الإفريقي وجنوب الجزيرة. أصالته في العراق مشكوك فيها. أُدرج بتحفظ"
+    },
+    {
+      "id": "ZYG-FAG-BRU",
+      "scientific_name": "Fagonia bruguieri DC.",
+      "classification": {
+        "order": "Zygophyllales",
+        "family": "Zygophyllaceae",
+        "genus": "Fagonia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الشَوكة المباركة",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الفاجونيا",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Fagonia"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً ضمن النباتات الشوكية في وصف صحراء العراق"
+    },
+    {
+      "id": "ZYG-ZYG-COC",
+      "scientific_name": "Tetraena coccinea (L.) Beier & Thulin",
+      "taxonomic_note": "سابقاً Zygophyllum coccineum L.",
+      "classification": {
+        "order": "Zygophyllales",
+        "family": "Zygophyllaceae",
+        "genus": "Tetraena"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الحَرم",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الرُطريط",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Bean Caper"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "DESERT",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً: ينمو على التربة الرملية فوق السطوح الملحية في صحراء العراق. أوراقه شمعية عصارية لتقليل النتح"
+    }
+  ]
+}

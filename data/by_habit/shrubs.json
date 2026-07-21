@@ -1,0 +1,1354 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — شجيرات",
+    "title_en": "Iraqi Woody Flora — Shrubs",
+    "subset": "habit:شجيرة",
+    "taxa_count": 36,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "habit": "شجيرة",
+    "habit_label_ar": "شجيرات",
+    "habit_label_en": "Shrubs",
+    "category_group": "shrub"
+  },
+  "taxa": [
+    {
+      "id": "AMA-HAL-AMM",
+      "scientific_name": "Haloxylon ammodendron (C.A.Mey.) Bunge",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Haloxylon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغضا الأسود",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Black Saxaul"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً في وصف الغطاء الصحراوي العراقي: ينمو في الصحراء الرملية وعلى الكثبان غير المثبَّتة، مصحوباً بـ Panicum turgidum وCalligonum comosum وCyperus conglomeratus"
+    },
+    {
+      "id": "AMA-HAL-PER",
+      "scientific_name": "Haloxylon persicum Bunge ex Boiss. & Buhse",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Haloxylon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغَضا",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الغضى",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "White Saxaul"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "assessment_noted": true,
+        "note": "تقييم منشور لدى IUCN لكن الرتبة النهائية غير مثبتة في الجلسة. له صحيفة تقييم منشورة لدى IUCN؛ لم أثبت الرتبة"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "شجيرة الكثبان الرملية. الغضا حطبه من أجود أنواع الحطب في التراث العربي، وهذا سبب رئيس في تراجعه"
+    },
+    {
+      "id": "ANA-RHU-COR",
+      "scientific_name": "Rhus coriaria L.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Rhus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السُمّاق",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Sicilian Sumac",
+          "Tanner's Sumac"
+        ],
+        "kurdish": [
+          {
+            "name": "سوماق (Sumaq)",
+            "confidence": "عالية"
+          }
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "🍋 من أهم الشجيرات الاقتصادية في كردستان العراق. ثماره المطحونة هي 'السماق' التوابلي، ركن أساس في المطبخ العراقي والكردي. مصدر تانين للدباغة أيضاً"
+    },
+    {
+      "id": "ANA-SEA-TRI",
+      "scientific_name": "Searsia tripartita (Ucria) Moffett",
+      "taxonomic_note": "سابقاً Rhus tripartita (Ucria) Grande",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Searsia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجِداري",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "السماق ثلاثي الوريقات",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Sumac"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في قائمة أشجار العراق لدى Restor. ثماره وأوراقه صالحة للاستعمال"
+    },
+    {
+      "id": "APO-CAL-PRO",
+      "scientific_name": "Calotropis procera (Aiton) W.T.Aiton",
+      "classification": {
+        "order": "Gentianales",
+        "family": "Apocynaceae",
+        "genus": "Calotropis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العُشَر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الأُشَر",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Sodom Apple",
+          "Giant Milkweed"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً ضمن النباتات الخشبية الكبيرة في الجزء الصحراوي (Saharan) من العراق. لبنه سام. يتوسع مع التدهور البيئي (نبات دليل على الاضطراب)"
+    },
+    {
+      "id": "APO-NER-OLE",
+      "scientific_name": "Nerium oleander L.",
+      "classification": {
+        "order": "Gentianales",
+        "family": "Apocynaceae",
+        "genus": "Nerium"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدِفلى",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الدفلة",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Oleander"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "⚠️ سام جداً (كل أجزائه). شجيرة الأودية الصخرية والمجاري الموسمية. تُزرع أيضاً على نطاق واسع للزينة في العراق، ما يُصعّب فصل الطبيعي عن المزروع"
+    },
+    {
+      "id": "CAP-LON-ACU",
+      "scientific_name": "Lonicera acuminata Wall.",
+      "classification": {
+        "order": "Dipsacales",
+        "family": "Caprifoliaceae",
+        "genus": "Lonicera"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "صريمة الجدي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Honeysuckle"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً في الحزام الانتقالي فوق خط الشجر"
+    },
+    {
+      "id": "CAP-LON-NUM",
+      "scientific_name": "Lonicera nummulariifolia Jaub. & Spach",
+      "classification": {
+        "order": "Dipsacales",
+        "family": "Caprifoliaceae",
+        "genus": "Lonicera"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "زهر العسل الجبلي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "عَسَلِيّة قرصية الأوراق",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Moneywort Honeysuckle"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرَج ضمن مرافقي غابة بلوط زاغروس. شجيرة 0.5–3 م على المنحدرات الجبلية."
+    },
+    {
+      "id": "EPH-EPH-SPP",
+      "scientific_name": "Ephedra spp.",
+      "classification": {
+        "order": "Ephedrales",
+        "family": "Ephedraceae",
+        "genus": "Ephedra",
+        "division": "Gnetophyta (معراة البذور)"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَلَندى",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "عنب الذئب",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الإفيدرا",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Joint Pine",
+          "Ephedra"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT",
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "🌿 مجموعة نباتية استثنائية: من معراة البذور (Gnetophyta) لا من مغطاة البذور — فهي أقرب نسباً للصنوبر منها للشجيرات المحيطة بها. مصدر الإفيدرين. سيقان مفصّلية خضراء بلا أوراق حقيقية"
+    },
+    {
+      "id": "FAB-ANA-FOE",
+      "scientific_name": "Anagyris foetida L.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Anagyris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "أنغيريس نتن",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "خروع الجبل",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "شجرة ستّ الحسن البرية",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Stinking Bean Trefoil",
+          "Bean Trefoil"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "Trees and Shrubs Online: يمتد إلى جبال زاغروس في شمال العراق. شجيرة متوسطية–إيرانوتورانية في الأجزاء السفلى من حزام الغابة."
+    },
+    {
+      "id": "FAB-COL-SPP",
+      "scientific_name": "Colutea spp.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Colutea"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المَثانة",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "سنا المثانة",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Bladder Senna"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "قرونه المنتفخة الشبيهة بالمثانة سمة تشخيصية"
+    },
+    {
+      "id": "FAB-RET-RAE",
+      "scientific_name": "Retama raetam (Forssk.) Webb & Berthel.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Retama"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الرَتَم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الغَضا الأبيض",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "White Broom",
+          "Retem"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجيرة شبه عديمة الأوراق تعتمد التمثيل الضوئي بالسيقان. تُثبّت الرمال وتُخصّب التربة (تثبيت نيتروجيني)"
+    },
+    {
+      "id": "LAM-VIT-AGN",
+      "scientific_name": "Vitex agnus-castus L.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Vitex"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "كف مريم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة العفة",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الأثلج",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Chaste Tree",
+          "Monk's Pepper"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شائع على مجاري الوديان في حزام الغابة الزاغروسية (Wikipedia Zagros). يُكمّل نوعي Vitex العراقيين المسجّلين سابقاً (V. iraquensis, V. pseudo-negundo)."
+    },
+    {
+      "id": "LAM-VIT-IRA",
+      "scientific_name": "Vitex iraquensis (Rech.f.) Ghazanfar",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Vitex"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "كف مريم العراقية",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "شجرة العفة العراقية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Iraqi Chaste Tree"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "endemic_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "أغلب مستوطنات العراق الـ174 لم تُقيَّم لدى IUCN — والفجوة التقييمية نفسها تهديد"
+      },
+      "iraq_local_status": "غير_معروف",
+      "flagship_case": true,
+      "notes": "🇮🇶 من أبرز الأنواع الخشبية المستوطنة في العراق حصراً. لافت أنها ليست وسادة ألبية عالية بل شجيرة خشبية لأرض دافئة منخفضة — ما يوسّع مدى الموائل التي تشغلها الفلورا المستوطنة العراقية. العراق يملك 174 تاكسوناً مستوطناً (153 نوعاً كاملاً) أي ≈5.3% من فلوراه، لكن الأغلبية الساحقة أعشاب وبصليات لا أشجار، وهذا النوع من الاستثناءات الخشبية القليلة"
+    },
+    {
+      "id": "LAM-VIT-PSE",
+      "scientific_name": "Vitex pseudo-negundo (Hausskn. ex Bornm.) Hand.-Mazz.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Vitex"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الفَنجَرة",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "كف مريم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة العفة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Chaste Tree"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجيرة مجاري المياه والأودية الحصوية"
+    },
+    {
+      "id": "MAL-GRE-VIL",
+      "scientific_name": "Grewia villosa Willd.",
+      "classification": {
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Grewia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغُرَيب",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Mallow Raisin"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق. نوع إفريقي–جنوب عربي؛ أصالته في العراق مشكوك فيها"
+    },
+    {
+      "id": "MYR-MYR-COM",
+      "scientific_name": "Myrtus communis L.",
+      "classification": {
+        "order": "Myrtales",
+        "family": "Myrtaceae",
+        "genus": "Myrtus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الآس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الياس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الريحان",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Common Myrtle"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "عنصر متوسطي هامشي في العراق. شجيرة دائمة الخضرة عطرية. تُزرع أيضاً؛ التجمعات الطبيعية العراقية محدودة"
+    },
+    {
+      "id": "POL-CAL-COM",
+      "scientific_name": "Calligonum comosum L'Hér.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Polygonaceae",
+        "genus": "Calligonum"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأرطى",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العَبَل",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Arta"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "من مثبِّتات الكثبان الرئيسة. قوام مفتوح غصينيّ يخضرّ بسرعة بعد المطر. أثبت مرونة استرجاعية عالية بعد حرائق النفط في الكويت 1991"
+    },
+    {
+      "id": "RHA-RHA-PET",
+      "scientific_name": "Rhamnus petiolaris Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Rhamnus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "النبق معنق الأوراق",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "النبق",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Petiolate Buckthorn"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. يكمّل مجموعة Rhamnus spp. العامة بتاكسون محدد."
+    },
+    {
+      "id": "RHA-RHA-SPP",
+      "scientific_name": "Rhamnus spp.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Rhamnus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "النَبِق البري",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الرامنوس",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Buckthorn"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "ROS-COT-NUM",
+      "scientific_name": "Cotoneaster nummularius Fisch. & C.A.Mey.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Cotoneaster"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القطلب القرصي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "قطلب جبلي",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Nummular Cotoneaster",
+          "Coinwort Cotoneaster"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مرافق غابات البلوط في زاغروس (Wikipedia). POWO يذكر العراق ضمن المدى الأصلي. شجيرة جبلية شتوية التساقط."
+    },
+    {
+      "id": "ROS-COT-RAC",
+      "scientific_name": "Cotoneaster racemiflorus (Desf.) Booth ex Bosse",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Cotoneaster"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الكوتونستر",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Racemeflower Cotoneaster"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً في الحزام الانتقالي فوق خط الشجر (1800–2000 م)"
+    },
+    {
+      "id": "ROS-PRU-ARA",
+      "scientific_name": "Prunus arabica (Olivier) Meikle",
+      "taxonomic_note": "سابقاً Amygdalus arabica Olivier",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus",
+        "subgenus": "Amygdalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللوز البري",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللوز العربي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Arabian Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "من شجيرات السفوح الجافة. جنس Amygdalus/Prunus من مكوّنات السهوب المفتوحة العراقية الأصلية"
+    },
+    {
+      "id": "ROS-PRU-ARG",
+      "scientific_name": "Prunus argentea (Lam.) Rehder",
+      "taxonomic_note": "Amygdalus argentea في بعض المراجع القديمة.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "لوز فضّي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "لوز بري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Silver Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq وفي مرافقي غابة البلوط الزاغروسية."
+    },
+    {
+      "id": "ROS-PRU-BCP",
+      "scientific_name": "Prunus brachypetala Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "لوز قصير البتلات",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "لوز بري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Short-petaled Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. عنصر من scrub اللوز–الفستق في السفوح."
+    },
+    {
+      "id": "ROS-PRU-CRD",
+      "scientific_name": "Prunus carduchorum (Bornm.) Meikle",
+      "taxonomic_note": "اسم يشير إلى المنطقة الكردية (Carduchi). مدرج في Flora of Iraq (Wikipedia category).",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "لوز كردي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Kurdish Almond"
+        ],
+        "kurdish": [
+          {
+            "name": "بادەمی کوردی",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "تاكسون مُدرَج في Wikipedia Flora of Iraq؛ انتشار جغرافي مرتبط بجبال كردستان."
+    },
+    {
+      "id": "ROS-PRU-MIC",
+      "scientific_name": "Prunus microcarpa C.A.Mey.",
+      "taxonomic_note": "يُكتب أيضاً Cerasus microcarpa. من لوزيات/كرز بري صغير الثمار في حزام زاغروس.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "كرز بري صغير الثمار",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "محلب جبلي",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Small-fruited Cherry",
+          "Wild Cherry"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مرافق لبلوط زاغروس (Wikipedia Zagros Mountains forest steppe) مع Prunus argentea وP. mahaleb."
+    },
+    {
+      "id": "ROS-PRU-ORI",
+      "scientific_name": "Prunus orientalis (Mill.) Koehne",
+      "taxonomic_note": "سابقاً Amygdalus orientalis Mill.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus",
+        "subgenus": "Amygdalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللوز الشرقي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Oriental Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "ROS-PRU-SCO",
+      "scientific_name": "Prunus scoparia (Spach) C.K.Schneid.",
+      "taxonomic_note": "مرادف شائع: Amygdalus scoparia. لوز قضيبي سائد في scrub زاغروس الجاف.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللوز البري القضيبي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "لوز السياج",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Mountain Almond",
+          "Wild Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مميّز لمجتمعات Pistacia–Amygdalus steppe scrub على سفوح زاغروس (مصادر إيران–العراق). مهم لإعادة التأهيل البيئي."
+    },
+    {
+      "id": "TAM-TAM-MEY",
+      "scientific_name": "Tamarix meyeri Boiss.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفاء",
+            "confidence": "عالية"
+          },
+          {
+            "name": "أثل ماير",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Meyer's Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور في Wikipedia Mesopotamian Marshes ضمن غابات ضفافية (مع Tamarix pentandra/ramosissima وSalix acmophylla)."
+    },
+    {
+      "id": "TAM-TAM-NIL",
+      "scientific_name": "Tamarix nilotica (Ehrenb.) Bunge",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة النيلية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Nile Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "TAM-TAM-PAS",
+      "scientific_name": "Tamarix passerinoides Delile ex Desv.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "من أنواع الطرفاء المسجلة في السهل الرسوبي العراقي"
+    },
+    {
+      "id": "TAM-TAM-RAM",
+      "scientific_name": "Tamarix ramosissima Ledeb.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الطرفاء",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Saltcedar",
+          "Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MARSH_SALINE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "⚠️ جنس Tamarix في العراق حقل ألغام تصنيفي: الأنواع كثيرة ومتداخلة والهجن شائعة، والتحديد الحقلي يحتاج أزهاراً كاملة. ما يذكره الناس بـ'الطرفة' يشمل عدة أنواع"
+    },
+    {
+      "id": "TAM-TAM-TET",
+      "scientific_name": "Tamarix tetragyna Ehrenb.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطرفة رباعية المدقة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Four-stamen Tamarisk"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "جذور تصل 21.9 م عمقاً — من أعمق الجذور المسجلة في المنطقة"
+    },
+    {
+      "id": "THY-DAP-ACU",
+      "scientific_name": "Daphne acuminata Boiss. & Hausskn.",
+      "classification": {
+        "order": "Malvales",
+        "family": "Thymelaeaceae",
+        "genus": "Daphne"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المازريون",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Daphne"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً كمرافق لشجيرات Astragalus الكبيرة في منطقة الشوك الوسادي"
+    },
+    {
+      "id": "THY-DAP-MUC",
+      "scientific_name": "Daphne mucronata Royle",
+      "classification": {
+        "order": "Malvales",
+        "family": "Thymelaeaceae",
+        "genus": "Daphne"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المازريون",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Spurge Laurel"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجيرة سامة من شجيرات السفوح الجبلية"
+    }
+  ]
+}

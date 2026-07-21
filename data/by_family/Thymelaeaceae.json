@@ -1,0 +1,83 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Thymelaeaceae",
+    "title_en": "Family Thymelaeaceae",
+    "subset": "family:Thymelaeaceae",
+    "taxa_count": 2,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Thymelaeaceae"
+  },
+  "taxa": [
+    {
+      "id": "THY-DAP-ACU",
+      "scientific_name": "Daphne acuminata Boiss. & Hausskn.",
+      "classification": {
+        "order": "Malvales",
+        "family": "Thymelaeaceae",
+        "genus": "Daphne"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المازريون",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Daphne"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً كمرافق لشجيرات Astragalus الكبيرة في منطقة الشوك الوسادي"
+    },
+    {
+      "id": "THY-DAP-MUC",
+      "scientific_name": "Daphne mucronata Royle",
+      "classification": {
+        "order": "Malvales",
+        "family": "Thymelaeaceae",
+        "genus": "Daphne"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المازريون",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Spurge Laurel"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجيرة سامة من شجيرات السفوح الجبلية"
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Amaranthaceae",
+    "title_en": "Family Amaranthaceae",
+    "subset": "family:Amaranthaceae",
+    "taxa_count": 12,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Amaranthaceae"
+  },
+  "taxa": [
+    {
+      "id": "AMA-ANA-ART",
+      "scientific_name": "Anabasis articulata (Forssk.) Moq.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Anabasis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَجرم",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Jointed Anabasis"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً ضمن مرافقات مجتمع Hammada في صحراء العراق"
+    },
+    {
+      "id": "AMA-HAM-SAL",
+      "scientific_name": "Anabasis setifera Moq.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Anabasis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَجرم",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الشُنان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Anabasis"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "DESERT",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "AMA-ATR-LEU",
+      "scientific_name": "Atriplex leucoclada Boiss.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Atriplex"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الرُغل",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القطف",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Saltbush",
+          "Orache"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "MARSH_SALINE",
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "من هالوفيتات السبخات ومراعي البادية. رعوي مهم في السنوات العجاف"
+    },
+    {
+      "id": "AMA-COR-MON",
+      "scientific_name": "Cornulaca monacantha Delile",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Cornulaca"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الحاد",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Cornulaca"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور ضمن عناصر الإقليم الصحراوي (Saharan) في جنوب غرب العراق"
+    },
+    {
+      "id": "AMA-HAL-STR",
+      "scientific_name": "Halocnemum strobilaceum (Pall.) M.Bieb.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Halocnemum"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الهَرم",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الثِليث",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Glasswort"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "MARSH_SALINE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "المجتمع الأكثر تميزاً في السبخات المالحة جنوب غرب العراق، ويسود الطينيات المالحة. يُرافق أحياناً Aeluropus lagopoides وCressa cretica"
+    },
+    {
+      "id": "AMA-HAL-AMM",
+      "scientific_name": "Haloxylon ammodendron (C.A.Mey.) Bunge",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Haloxylon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغضا الأسود",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Black Saxaul"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً في وصف الغطاء الصحراوي العراقي: ينمو في الصحراء الرملية وعلى الكثبان غير المثبَّتة، مصحوباً بـ Panicum turgidum وCalligonum comosum وCyperus conglomeratus"
+    },
+    {
+      "id": "AMA-HAL-PER",
+      "scientific_name": "Haloxylon persicum Bunge ex Boiss. & Buhse",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Haloxylon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغَضا",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الغضى",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "White Saxaul"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "assessment_noted": true,
+        "note": "تقييم منشور لدى IUCN لكن الرتبة النهائية غير مثبتة في الجلسة. له صحيفة تقييم منشورة لدى IUCN؛ لم أثبت الرتبة"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "شجيرة الكثبان الرملية. الغضا حطبه من أجود أنواع الحطب في التراث العربي، وهذا سبب رئيس في تراجعه"
+    },
+    {
+      "id": "AMA-HAL-SAL",
+      "scientific_name": "Haloxylon salicornicum (Moq.) Bunge ex Boiss.",
+      "taxonomic_note": "يُكتب أيضاً Hammada salicornica (Moq.) Iljin — الاسمان شائعان في أدبيات العراق والجزيرة | العائلة في المصدر مُعلَّقة: Amaranthaceae (سابقاً Chenopodiaceae)",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Haloxylon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الرِمث",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Rimth",
+          "Saltwort"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "flagship_case": true,
+      "notes": "🏜️ سيّد الصحراء العراقية بلا منازع. مجتمع Hammada salicornica هو أهم وأكثر المجتمعات النباتية تميزاً في المنطقة الصحراوية العراقية، ومنتشر في كل صحاري الجزيرة العربية. شجيرة شبه عديمة الأوراق لا تتجاوز 60 سم، بجذور عميقة تثبّت الكثبان. مصدر رعي طارئ ووقود. عديمة الأوراق الحقيقية، بحراشف مثلثة دقيقة بدلاً منها"
+    },
+    {
+      "id": "AMA-HAL-SCO",
+      "scientific_name": "Haloxylon scoparium Pomel",
+      "taxonomic_note": "يُعامل أحياناً ضمن مجمع Hammada/Haloxylon. مدرج في Wikipedia Flora of Iraq.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Haloxylon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغضا المكنسي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الرمث",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "White Saxaul (allied)",
+          "Broom Saxaul"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "يكمّل أنواع Haloxylon المسجّلة (H. salicornicum, H. persicum, H. ammodendron) في الصحراء والسهوب الشجيرية الرافدينية."
+    },
+    {
+      "id": "AMA-SAL-SPP",
+      "scientific_name": "Salsola spp. / Caroxylon spp.",
+      "taxonomic_note": "جنس Salsola خضع لتفكيك تصنيفي واسع؛ كثير من الأنواع نُقلت إلى Caroxylon وSoda وغيرهما",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Salsola / Caroxylon"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الشِنان",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الخريّز",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الملّاح",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Saltwort",
+          "Russian Thistle"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "DESERT",
+        "MARSH_SALINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً ضمن الغطاء الملحي–الجبسي (halogypsophilous) في جنوب غرب العراق مع Suaeda وTetraena. مجموعة كثيرة الأنواع وصعبة التحديد"
+    },
+    {
+      "id": "AMA-SEI-ROS",
+      "scientific_name": "Seidlitzia rosmarinus (Ehrenb.) Bunge ex Boiss.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Seidlitzia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الشِنان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الأُشنان",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Shinan"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "DESERT",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً: ينمو على الأراضي المرتفعة عند حواف السهول الطينية المالحة. مصدر تاريخي للقلي (potash) في صناعة الصابون والزجاج"
+    },
+    {
+      "id": "AMA-SUA-SPP",
+      "scientific_name": "Suaeda spp.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Suaeda"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السُويد",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "السويداء",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "المِلّيح",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Seablite",
+          "Suaeda"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "MARSH_SALINE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً كأحد سائدات الهالوفيتات في السهل الرسوبي والسبخات العراقية مع Salicornia وHalocnemum"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "cleaned_on": "2026-07-21",
+  "source": "iraq_woody_flora.json",
+  "archive": "archive/iraq_woody_flora.raw.json",
+  "source_declared_count": 101,
+  "source_actual_count": 116,
+  "cleaned_count": 116,
+  "duplicates_removed": 0,
+  "issue_counts": {
+    "normalized_iucn_placeholder_مُقيَّم": 2,
+    "empty_notes": 5,
+    "family_annotation_normalized": 3,
+    "added_default_introduction_status": 6,
+    "meta_taxa_count_corrected": 1
+  },
+  "issues": [
+    {
+      "id": "ANA-PIS-ATL",
+      "issue": "normalized_iucn_placeholder_مُقيَّم"
+    },
+    {
+      "id": "TAM-TAM-NIL",
+      "issue": "empty_notes"
+    },
+    {
+      "id": "AMA-HAL-SAL",
+      "issue": "family_annotation_normalized",
+      "family": "Amaranthaceae",
+      "annotation": "سابقاً Chenopodiaceae"
+    },
+    {
+      "id": "AMA-HAL-PER",
+      "issue": "normalized_iucn_placeholder_مُقيَّم"
+    },
+    {
+      "id": "FAG-FAG-ORI",
+      "issue": "added_default_introduction_status"
+    },
+    {
+      "id": "ROS-PRU-ORI",
+      "issue": "empty_notes"
+    },
+    {
+      "id": "RHA-RHA-SPP",
+      "issue": "empty_notes"
+    },
+    {
+      "id": "OLE-OLE-EUR",
+      "issue": "added_default_introduction_status"
+    },
+    {
+      "id": "ULM-ULM-MIN",
+      "issue": "empty_notes"
+    },
+    {
+      "id": "MOR-FIC-SYC",
+      "issue": "added_default_introduction_status"
+    },
+    {
+      "id": "ZYG-BAL-AEG",
+      "issue": "added_default_introduction_status"
+    },
+    {
+      "id": "BOR-COR-SIN",
+      "issue": "family_annotation_normalized",
+      "family": "Boraginaceae",
+      "annotation": "Cordiaceae"
+    },
+    {
+      "id": "BOR-COR-SIN",
+      "issue": "added_default_introduction_status"
+    },
+    {
+      "id": "MAL-GRE-VIL",
+      "issue": "added_default_introduction_status"
+    },
+    {
+      "id": "AMA-HAM-SAL",
+      "issue": "empty_notes"
+    },
+    {
+      "id": "AVI-AVI-MAR",
+      "issue": "family_annotation_normalized",
+      "family": "Acanthaceae",
+      "annotation": "سابقاً Avicenniaceae"
+    },
+    {
+      "issue": "meta_taxa_count_corrected",
+      "from": 101,
+      "to": 116
+    }
+  ],
+  "habit_distribution": {
+    "شجرة_صغيرة": 21,
+    "شبه_شجيرة": 19,
+    "شجيرة_ملحية": 7,
+    "شجيرة": 25,
+    "شجرة": 31,
+    "شجيرة_شوكية": 12,
+    "متسلق_خشبي": 1
+  },
+  "outputs": {
+    "master": "data/master/woody_flora.json",
+    "index": "data/index.json",
+    "schema_dir": "schema/",
+    "by_habit": "data/by_habit/",
+    "by_category": "data/by_category/",
+    "by_nativity": "data/by_nativity/",
+    "by_family": "data/by_family/",
+    "reference": "data/reference/"
+  }
+}

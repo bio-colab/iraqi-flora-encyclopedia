@@ -1,0 +1,62 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Juglandaceae",
+    "title_en": "Family Juglandaceae",
+    "subset": "family:Juglandaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Juglandaceae"
+  },
+  "taxa": [
+    {
+      "id": "SAP-JUG-REG",
+      "scientific_name": "Juglans regia L.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Juglandaceae",
+        "genus": "Juglans"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجوز",
+            "confidence": "عالية"
+          },
+          {
+            "name": "عين الجمل",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Persian Walnut",
+          "English Walnut"
+        ],
+        "kurdish": [
+          {
+            "name": "گوێز (Gwêz)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "الأصالة إشكالية: مركز نشوئه هو حزام زاغروس–آسيا الوسطى، ووجوده في أودية كردستان طبيعي على الأرجح، لكن آلاف السنين من الزراعة تُصعّب فصل البري عن المستوطِن الهارب من الزراعة (feral). يُصنَّف هنا أصيلاً بثقة متوسطة"
+    }
+  ]
+}

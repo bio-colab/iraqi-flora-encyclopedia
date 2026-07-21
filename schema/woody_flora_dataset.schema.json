@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iraqi-flora.local/schema/woody_flora_dataset.schema.json",
+  "title": "Iraqi Flora — Woody Flora Dataset Bundle",
+  "type": "object",
+  "required": [
+    "$schema_version",
+    "meta",
+    "vegetation_zones",
+    "taxa"
+  ],
+  "properties": {
+    "$schema_version": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "object"
+    },
+    "vegetation_zones": {
+      "type": "array"
+    },
+    "taxa": {
+      "type": "array",
+      "items": {
+        "$ref": "plant_taxon.schema.json"
+      }
+    },
+    "analysis": {
+      "type": "object"
+    }
+  }
+}

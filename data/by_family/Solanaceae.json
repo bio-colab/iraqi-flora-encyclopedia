@@ -1,0 +1,53 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Solanaceae",
+    "title_en": "Family Solanaceae",
+    "subset": "family:Solanaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Solanaceae"
+  },
+  "taxa": [
+    {
+      "id": "SOL-LYC-SHA",
+      "scientific_name": "Lycium shawii Roem. & Schult.",
+      "classification": {
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Lycium"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَوسج",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Arabian Boxthorn",
+          "Awsaj"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "DESERT",
+        "STEPPE",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شجيرة شوكية صحراوية شهيرة. 'العوسج' اسم تراثي عميق. مذكور ضمن مجتمعات الجزيرة العربية الموازية للعراق. ثماره صالحة للأكل"
+    }
+  ]
+}

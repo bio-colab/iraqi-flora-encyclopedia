@@ -1,0 +1,119 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Caprifoliaceae",
+    "title_en": "Family Caprifoliaceae",
+    "subset": "family:Caprifoliaceae",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Caprifoliaceae"
+  },
+  "taxa": [
+    {
+      "id": "CAP-LON-ACU",
+      "scientific_name": "Lonicera acuminata Wall.",
+      "classification": {
+        "order": "Dipsacales",
+        "family": "Caprifoliaceae",
+        "genus": "Lonicera"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "صريمة الجدي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Honeysuckle"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً في الحزام الانتقالي فوق خط الشجر"
+    },
+    {
+      "id": "CAP-LON-ARB",
+      "scientific_name": "Lonicera arborea Boiss.",
+      "classification": {
+        "order": "Dipsacales",
+        "family": "Caprifoliaceae",
+        "genus": "Lonicera"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "صريمة الجدي الشجرية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Tree Honeysuckle"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً: يشكل مع Lonicera acuminata وCotoneaster racemiflora حزاماً انتقالياً ضيقاً فوق خط الشجر (1800–2000 م) بين منطقة الغابات ومنطقة الشوك الوسادي. مرتبط أيضاً بـ Daphne acuminata في الشجيرات المفتوحة"
+    },
+    {
+      "id": "CAP-LON-NUM",
+      "scientific_name": "Lonicera nummulariifolia Jaub. & Spach",
+      "classification": {
+        "order": "Dipsacales",
+        "family": "Caprifoliaceae",
+        "genus": "Lonicera"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "زهر العسل الجبلي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "عَسَلِيّة قرصية الأوراق",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Moneywort Honeysuckle"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرَج ضمن مرافقي غابة بلوط زاغروس. شجيرة 0.5–3 م على المنحدرات الجبلية."
+    }
+  ]
+}

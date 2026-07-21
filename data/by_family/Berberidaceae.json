@@ -1,0 +1,65 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Berberidaceae",
+    "title_en": "Family Berberidaceae",
+    "subset": "family:Berberidaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Berberidaceae"
+  },
+  "taxa": [
+    {
+      "id": "BER-BER-SPP",
+      "scientific_name": "Berberis spp.",
+      "classification": {
+        "order": "Ranunculales",
+        "family": "Berberidaceae",
+        "genus": "Berberis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البَرباريس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الزِرِشك",
+            "confidence": "عالية"
+          },
+          {
+            "name": "أمبرباريس",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Barberry"
+        ],
+        "kurdish": [
+          {
+            "name": "زرشک (Zirişk)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "ثماره الحمراء الحامضة (الزرشك) تُستعمل في المطبخ الكردي والإيراني"
+    }
+  ]
+}

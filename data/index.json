@@ -1,0 +1,459 @@
+{
+  "$schema_version": "1.1",
+  "project": "Iraqi Flora Encyclopedia",
+  "generated_on": "2026-07-21",
+  "master": "data/master/woody_flora.json",
+  "schema": {
+    "taxon": "schema/plant_taxon.schema.json",
+    "dataset": "schema/woody_flora_dataset.schema.json",
+    "field_catalog": "schema/field_catalog.json"
+  },
+  "manager": "tools/manage_flora.py",
+  "totals": {
+    "taxa": 152,
+    "native": 141,
+    "non_native": 11,
+    "families": 51,
+    "vegetation_zones": 7
+  },
+  "by_habit": [
+    {
+      "habit": "شجرة",
+      "file": "data/by_habit/trees.json",
+      "count": 36,
+      "label_ar": "أشجار",
+      "label_en": "Trees"
+    },
+    {
+      "habit": "شجرة_صغيرة",
+      "file": "data/by_habit/small_trees.json",
+      "count": 24,
+      "label_ar": "أشجار صغيرة",
+      "label_en": "Small Trees"
+    },
+    {
+      "habit": "شجيرة",
+      "file": "data/by_habit/shrubs.json",
+      "count": 36,
+      "label_ar": "شجيرات",
+      "label_en": "Shrubs"
+    },
+    {
+      "habit": "شجيرة_شوكية",
+      "file": "data/by_habit/spiny_shrubs.json",
+      "count": 15,
+      "label_ar": "شجيرات شوكية",
+      "label_en": "Spiny Shrubs"
+    },
+    {
+      "habit": "شجيرة_ملحية",
+      "file": "data/by_habit/saline_shrubs.json",
+      "count": 8,
+      "label_ar": "شجيرات ملحية",
+      "label_en": "Saline Shrubs"
+    },
+    {
+      "habit": "شبه_شجيرة",
+      "file": "data/by_habit/subshrubs.json",
+      "count": 25,
+      "label_ar": "شبه شجيرات",
+      "label_en": "Subshrubs"
+    },
+    {
+      "habit": "متسلق_خشبي",
+      "file": "data/by_habit/woody_climbers.json",
+      "count": 1,
+      "label_ar": "متسلقات خشبية",
+      "label_en": "Woody Climbers"
+    },
+    {
+      "habit": "عشبة_معمّرة",
+      "file": "data/by_habit/perennial_herbs.json",
+      "count": 2,
+      "label_ar": "أعشاب معمّرة",
+      "label_en": "Perennial Herbs"
+    },
+    {
+      "habit": "عشبة_حولية",
+      "file": "data/by_habit/annual_herbs.json",
+      "count": 1,
+      "label_ar": "أعشاب حولية",
+      "label_en": "Annual Herbs"
+    },
+    {
+      "habit": "نجيلة_أو_عشب",
+      "file": "data/by_habit/grasses.json",
+      "count": 1,
+      "label_ar": "نجيليات وأعشاب",
+      "label_en": "Grasses and Grass-like"
+    },
+    {
+      "habit": "مائي",
+      "file": "data/by_habit/aquatic.json",
+      "count": 3,
+      "label_ar": "نباتات مائية وأهوار",
+      "label_en": "Aquatic / Marsh Plants"
+    }
+  ],
+  "by_category": [
+    {
+      "category_group": "trees",
+      "file": "data/by_category/01_trees.json",
+      "count": 60,
+      "habits": [
+        "شجرة",
+        "شجرة_صغيرة"
+      ],
+      "label_ar": "الأشجار (بما فيها الصغيرة)",
+      "label_en": "Trees (including small trees)"
+    },
+    {
+      "category_group": "shrubs",
+      "file": "data/by_category/02_shrubs.json",
+      "count": 59,
+      "habits": [
+        "شجيرة",
+        "شجيرة_شوكية",
+        "شجيرة_ملحية"
+      ],
+      "label_ar": "الشجيرات (عادية / شوكية / ملحية)",
+      "label_en": "Shrubs (common / spiny / saline)"
+    },
+    {
+      "category_group": "subshrubs",
+      "file": "data/by_category/03_subshrubs.json",
+      "count": 25,
+      "habits": [
+        "شبه_شجيرة"
+      ],
+      "label_ar": "شبه الشجيرات",
+      "label_en": "Subshrubs"
+    },
+    {
+      "category_group": "woody_climbers",
+      "file": "data/by_category/04_woody_climbers.json",
+      "count": 1,
+      "habits": [
+        "متسلق_خشبي"
+      ],
+      "label_ar": "المتسلقات الخشبية",
+      "label_en": "Woody Climbers"
+    },
+    {
+      "category_group": "herbs",
+      "file": "data/by_category/05_herbs.json",
+      "count": 3,
+      "habits": [
+        "عشبة_معمّرة",
+        "عشبة_حولية"
+      ],
+      "label_ar": "الأعشاب (حولية ومعمّرة)",
+      "label_en": "Herbs (annual and perennial)"
+    },
+    {
+      "category_group": "grasses",
+      "file": "data/by_category/06_grasses.json",
+      "count": 1,
+      "habits": [
+        "نجيلة_أو_عشب"
+      ],
+      "label_ar": "النجيليات وما شابهها",
+      "label_en": "Grasses and grass-like plants"
+    },
+    {
+      "category_group": "aquatic",
+      "file": "data/by_category/07_aquatic.json",
+      "count": 3,
+      "habits": [
+        "مائي"
+      ],
+      "label_ar": "نباتات الأهوار والمائية",
+      "label_en": "Marsh and aquatic plants"
+    }
+  ],
+  "by_nativity": [
+    {
+      "file": "data/by_nativity/native.json",
+      "count": 141
+    },
+    {
+      "file": "data/by_nativity/non_native.json",
+      "count": 11
+    }
+  ],
+  "by_family": [
+    {
+      "family": "Acanthaceae",
+      "file": "data/by_family/Acanthaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Amaranthaceae",
+      "file": "data/by_family/Amaranthaceae.json",
+      "count": 12
+    },
+    {
+      "family": "Amaryllidaceae",
+      "file": "data/by_family/Amaryllidaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Anacardiaceae",
+      "file": "data/by_family/Anacardiaceae.json",
+      "count": 5
+    },
+    {
+      "family": "Apocynaceae",
+      "file": "data/by_family/Apocynaceae.json",
+      "count": 3
+    },
+    {
+      "family": "Arecaceae",
+      "file": "data/by_family/Arecaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Asteraceae",
+      "file": "data/by_family/Asteraceae.json",
+      "count": 8
+    },
+    {
+      "family": "Berberidaceae",
+      "file": "data/by_family/Berberidaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Betulaceae",
+      "file": "data/by_family/Betulaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Boraginaceae",
+      "file": "data/by_family/Boraginaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Brassicaceae",
+      "file": "data/by_family/Brassicaceae.json",
+      "count": 2
+    },
+    {
+      "family": "Cannabaceae",
+      "file": "data/by_family/Cannabaceae.json",
+      "count": 3
+    },
+    {
+      "family": "Capparaceae",
+      "file": "data/by_family/Capparaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Caprifoliaceae",
+      "file": "data/by_family/Caprifoliaceae.json",
+      "count": 3
+    },
+    {
+      "family": "Caryophyllaceae",
+      "file": "data/by_family/Caryophyllaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Cupressaceae",
+      "file": "data/by_family/Cupressaceae.json",
+      "count": 5
+    },
+    {
+      "family": "Cyperaceae",
+      "file": "data/by_family/Cyperaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Elaeagnaceae",
+      "file": "data/by_family/Elaeagnaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Ephedraceae",
+      "file": "data/by_family/Ephedraceae.json",
+      "count": 1
+    },
+    {
+      "family": "Ericaceae",
+      "file": "data/by_family/Ericaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Fabaceae",
+      "file": "data/by_family/Fabaceae.json",
+      "count": 12
+    },
+    {
+      "family": "Fagaceae",
+      "file": "data/by_family/Fagaceae.json",
+      "count": 7
+    },
+    {
+      "family": "Iridaceae",
+      "file": "data/by_family/Iridaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Juglandaceae",
+      "file": "data/by_family/Juglandaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Lamiaceae",
+      "file": "data/by_family/Lamiaceae.json",
+      "count": 7
+    },
+    {
+      "family": "Lythraceae",
+      "file": "data/by_family/Lythraceae.json",
+      "count": 1
+    },
+    {
+      "family": "Malvaceae",
+      "file": "data/by_family/Malvaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Moraceae",
+      "file": "data/by_family/Moraceae.json",
+      "count": 2
+    },
+    {
+      "family": "Myrtaceae",
+      "file": "data/by_family/Myrtaceae.json",
+      "count": 2
+    },
+    {
+      "family": "Nitrariaceae",
+      "file": "data/by_family/Nitrariaceae.json",
+      "count": 2
+    },
+    {
+      "family": "Oleaceae",
+      "file": "data/by_family/Oleaceae.json",
+      "count": 3
+    },
+    {
+      "family": "Papaveraceae",
+      "file": "data/by_family/Papaveraceae.json",
+      "count": 1
+    },
+    {
+      "family": "Pinaceae",
+      "file": "data/by_family/Pinaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Platanaceae",
+      "file": "data/by_family/Platanaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Plumbaginaceae",
+      "file": "data/by_family/Plumbaginaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Poaceae",
+      "file": "data/by_family/Poaceae.json",
+      "count": 2
+    },
+    {
+      "family": "Polygonaceae",
+      "file": "data/by_family/Polygonaceae.json",
+      "count": 2
+    },
+    {
+      "family": "Rhamnaceae",
+      "file": "data/by_family/Rhamnaceae.json",
+      "count": 6
+    },
+    {
+      "family": "Rosaceae",
+      "file": "data/by_family/Rosaceae.json",
+      "count": 21
+    },
+    {
+      "family": "Salicaceae",
+      "file": "data/by_family/Salicaceae.json",
+      "count": 4
+    },
+    {
+      "family": "Salvadoraceae",
+      "file": "data/by_family/Salvadoraceae.json",
+      "count": 1
+    },
+    {
+      "family": "Sapindaceae",
+      "file": "data/by_family/Sapindaceae.json",
+      "count": 3
+    },
+    {
+      "family": "Scrophulariaceae",
+      "file": "data/by_family/Scrophulariaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Solanaceae",
+      "file": "data/by_family/Solanaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Styracaceae",
+      "file": "data/by_family/Styracaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Tamaricaceae",
+      "file": "data/by_family/Tamaricaceae.json",
+      "count": 6
+    },
+    {
+      "family": "Thymelaeaceae",
+      "file": "data/by_family/Thymelaeaceae.json",
+      "count": 2
+    },
+    {
+      "family": "Typhaceae",
+      "file": "data/by_family/Typhaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Ulmaceae",
+      "file": "data/by_family/Ulmaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Vitaceae",
+      "file": "data/by_family/Vitaceae.json",
+      "count": 1
+    },
+    {
+      "family": "Zygophyllaceae",
+      "file": "data/by_family/Zygophyllaceae.json",
+      "count": 3
+    }
+  ],
+  "reference": [
+    "data/reference/vegetation_zones.json",
+    "data/reference/analysis.json",
+    "data/reference/meta.json"
+  ],
+  "habit_counts": {
+    "شجرة_صغيرة": 24,
+    "شبه_شجيرة": 25,
+    "شجيرة_ملحية": 8,
+    "شجيرة": 36,
+    "عشبة_معمّرة": 2,
+    "شجرة": 36,
+    "شجيرة_شوكية": 15,
+    "مائي": 3,
+    "عشبة_حولية": 1,
+    "نجيلة_أو_عشب": 1,
+    "متسلق_خشبي": 1
+  }
+}

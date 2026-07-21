@@ -1,0 +1,55 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Iridaceae",
+    "title_en": "Family Iridaceae",
+    "subset": "family:Iridaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Iridaceae"
+  },
+  "taxa": [
+    {
+      "id": "IRI-IRI-PER",
+      "scientific_name": "Iris persica L.",
+      "classification": {
+        "order": "Asparagales",
+        "family": "Iridaceae",
+        "genus": "Iris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "سوسن فارسي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "سوسن",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Persian Iris"
+        ]
+      },
+      "habit": "عشبة_معمّرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Flora of Iraq ضمن مجموعة واسعة من السوسن العراقي الجبلي."
+    }
+  ]
+}

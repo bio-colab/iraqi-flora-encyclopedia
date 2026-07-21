@@ -1,0 +1,34 @@
+{
+  "id": "FAM-GEN-SPP",
+  "scientific_name": "Genus species Author",
+  "taxonomic_note": "اختياري — مرادفات أو خلافات تسمية",
+  "classification": {
+    "order": "OrderName",
+    "family": "FamilyName",
+    "genus": "Genus"
+  },
+  "names": {
+    "arabic": [
+      { "name": "الاسم العربي", "confidence": "عالية" }
+    ],
+    "kurdish": [
+      { "name": "ناوی کوردی", "confidence": "متوسطة" }
+    ],
+    "english": ["English common name"]
+  },
+  "habit": "شجرة",
+  "zones": ["MOUNTAIN_FOREST"],
+  "native_to_iraq": true,
+  "endemic_to_iraq": false,
+  "presence_in_iraq": "موجود",
+  "introduction_status": "يُملأ فقط إذا native_to_iraq = false",
+  "iucn": {
+    "category": null,
+    "verified_in_session": false,
+    "note": "اختياري"
+  },
+  "iraq_local_status": "غير_معروف",
+  "flag": null,
+  "flagship_case": false,
+  "notes": "ملاحظات بيئية واقتصادية وحالة الحفظ"
+}

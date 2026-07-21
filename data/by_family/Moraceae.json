@@ -1,0 +1,96 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Moraceae",
+    "title_en": "Family Moraceae",
+    "subset": "family:Moraceae",
+    "taxa_count": 2,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Moraceae"
+  },
+  "taxa": [
+    {
+      "id": "MOR-FIC-CAR",
+      "scientific_name": "Ficus carica L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Moraceae",
+        "genus": "Ficus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "التين",
+            "confidence": "عالية"
+          },
+          {
+            "name": "التين البري",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Fig"
+        ],
+        "kurdish": [
+          {
+            "name": "هەنجیر (Hencîr)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "التين البري ينمو طبيعياً في شقوق صخور كردستان والأودية. الفصل بين البري والهارب من الزراعة (feral) صعب بعد آلاف السنين من الاستئناس"
+    },
+    {
+      "id": "MOR-FIC-SYC",
+      "scientific_name": "Ficus sycomorus L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Moraceae",
+        "genus": "Ficus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجُمّيز",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Sycamore Fig"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق، لكنه شجرة إفريقية–يمنية بامتياز. أصالته في العراق مشكوك فيها بشدة وقد يكون خطأ إسقاط مدى أو مزروعاً. أُدرج بتحفظ صريح"
+    }
+  ]
+}

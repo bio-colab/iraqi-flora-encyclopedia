@@ -1,0 +1,323 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Fagaceae",
+    "title_en": "Family Fagaceae",
+    "subset": "family:Fagaceae",
+    "taxa_count": 7,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Fagaceae"
+  },
+  "taxa": [
+    {
+      "id": "FAG-FAG-ORI",
+      "scientific_name": "Fagus orientalis Lipsky",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Fagus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزان الشرقي",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Oriental Beech"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ أُدرج في قائمة Restor لأشجار العراق، لكن الزان الشرقي شجرة الغابات الرطبة القوقازية–الهيركانية وشمال الأناضول، ووجوده الطبيعي في العراق مشكوك فيه جدياً وربما يكون خطأ إسقاط مدى. أُدرج هنا بوسم تحفّظ صريح لا إقراراً. يحتاج تحققاً من Flora of Iraq"
+    },
+    {
+      "id": "FAG-QUE-AEG",
+      "scientific_name": "Quercus aegilops L.",
+      "taxonomic_note": "أكثر أسماء البلوط العراقي إشكالاً. يُعامل في كثير من الأدبيات الحديثة كمرادف أو قريب من Quercus brantii Lindl. أو Q. ithaburensis subsp. macrolepis. الأدبيات العراقية والكردية تُبقي على اسم Q. aegilops عملياً. اعتُمد هنا بالاسم المتداول محلياً مع تسجيل الخلاف",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "subgenus": "Cerris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البلوط",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السنديان",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الملول",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Valonia Oak",
+          "Aleppo Oak",
+          "Brant's Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "بەڕوو (Berû)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true,
+        "note": "تحت اسم Q. ithaburensis وQ. brantii كلاهما LC"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "أوسع أنواع البلوط انتشاراً في العراق ويشكل وحده ≈70% من غابات البلوط. قشوره تُستخدم في دبغ الجلود تاريخياً. جُمع منه ضمن مشاريع الإكثار نحو 35,000 بلوطة لإنتاج 12,000 شتلة في جومان وسوران وهورامان"
+    },
+    {
+      "id": "FAG-QUE-BOI",
+      "scientific_name": "Quercus boissieri Reut.",
+      "taxonomic_note": "يُعامل في بعض المراجع كمرادف أو قريب من Q. infectoria subsp. boissieri. ذُكر صراحةً ضمن أشجار/شجيرات غابات كردستان (Ghazanfar & McDaniel 2016 عبر اقتباسات) وZagros forest steppe.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "بلوط بواسيه",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "السنديان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Boissier's Oak"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور في نطاق غابات البلوط الكردستانية (700–1700 م) مع Q. brantii. يحتاج تدقيق تسمية مقابل Q. infectoria في Flora of Iraq."
+    },
+    {
+      "id": "FAG-QUE-BRA",
+      "scientific_name": "Quercus brantii Lindl.",
+      "taxonomic_note": "البلوط الفارسي / بلوط برانت — النوع السائد في غابات زاغروس. كثيراً ما يُخلط أو يُرادف عملياً مع Quercus aegilops في الأدبيات العراقية؛ أُدرج كاسم علمي مستقل لأنه مُدرج صراحةً في Wikipedia Flora of Iraq وZagros ecoregion.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "subgenus": "Cerris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البلوط الفارسي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "بلوط برانت",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "السنديان",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Brant's Oak",
+          "Persian Oak"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": false,
+        "note": "غالباً LC عالمياً؛ التحقق الدقيق من IUCN لم يُنفَّذ في هذه الجلسة"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مصدر: Wikipedia Zagros Mountains forest steppe + Quercus brantii. يغطّي >50% من غابات زاغروس في إيران ويمتد إلى شمال العراق. مقاوم للجفاف؛ من 350–2200 م. عماد الغابات النفضية المفتوحة في كردستان مع Q. infectoria وQ. libani."
+    },
+    {
+      "id": "FAG-QUE-INF",
+      "scientific_name": "Quercus infectoria Oliv.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "بلوط العفص",
+            "confidence": "عالية"
+          },
+          {
+            "name": "المازو",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العفص",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Gall Oak",
+          "Aleppo Oak",
+          "Cyprus Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "مازوو (Mazû)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مصدر 'العفص' (Oak Gall) الطبي والصباغي، وهو تشوّه في قواعد الأوراق تُحدثه زنابير Andricus spp. نسبة الإصابة بالزنابير تصل 88%. غنيّ بحمض العفص والتانين (50–70%). مقاوم للظروف القاسية ويُخلِف بعد الحرائق والقطع"
+    },
+    {
+      "id": "FAG-QUE-LIB",
+      "scientific_name": "Quercus libani Oliv.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "subgenus": "Cerris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "بلوط لبنان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السنديان اللبناني",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Lebanon Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "دار قەند / Dar qend",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "لم يُتحقق من رتبته في هذه الجلسة"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "ثاني أو ثالث أنواع البلوط انتشاراً في الإقليم. متكيّف مع التضاريس الجبلية ويسهم في تثبيت التربة واحتباس الماء. أقل إصابة بزنابير العفص (45%) من النوعين السابقين. أُدرج ضمن الأنواع المستهدفة في مشاريع إعادة التحريج"
+    },
+    {
+      "id": "FAG-QUE-MAC",
+      "scientific_name": "Quercus macranthera Fisch. & C.A.Mey. ex Hohen.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "section": "Quercus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البلوط القوقازي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البلوط الفارسي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Caucasian Oak",
+          "Persian Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "شادار (Shaadar) — 'الشجرة الملك'",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true,
+        "note": "Gorener & Carrero 2020, e.T78968730A78968739"
+      },
+      "iraq_local_status": "مهدد_محلياً",
+      "flagship_case": true,
+      "notes": "⚠️ الحالة المثالية لمفارقة LC العالمية/الانهيار المحلي. مُصنّف عالمياً 'أقل اهتمام' لأن مداه يمتد إلى إيران وتركيا والقوقاز، لكنه داخل العراق يُوصف بأنه مهدد بالانقراض ولم يبقَ منه إلا عدد محدود محصور في جبل حسن بيك (Hassan Bag) في قضاء سوران بأربيل. بعض المصادر تعدّه غير أصيل تماماً في العراق (Nasser 1984)، ودقّقت مشاريع التصنيف الحديثة وجوده. يوجد أيضاً هجين infectoria × macranthera يُعدّ 'النوع الخامس' في تصنيف الإقليم"
+    }
+  ]
+}

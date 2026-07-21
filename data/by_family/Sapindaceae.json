@@ -1,0 +1,123 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Sapindaceae",
+    "title_en": "Family Sapindaceae",
+    "subset": "family:Sapindaceae",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Sapindaceae"
+  },
+  "taxa": [
+    {
+      "id": "SAP-ACE-CAP",
+      "scientific_name": "Acer cappadocicum Gled.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Sapindaceae",
+        "genus": "Acer"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القيقب الكبادوكي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "القيقب القوقازي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Caucasian Maple",
+          "Cappadocian Maple"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "يبلغ 30 م. مُدرج في قائمة أشجار العراق لدى Restor"
+    },
+    {
+      "id": "SAP-ACE-CIN",
+      "scientific_name": "Acer cinerascens Boiss.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Sapindaceae",
+        "genus": "Acer"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القيقب الرمادي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Grey Maple"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "من قيقب زاغروس الجاف"
+    },
+    {
+      "id": "SAP-ACE-MON",
+      "scientific_name": "Acer monspessulanum L.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Sapindaceae",
+        "genus": "Acer"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القيقب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القيقب المونبلييهي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Montpellier Maple"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور في تقرير FAO عن العراق ضمن الأشجار الباقية بعد تدهور غابات البلوط إلى أحراش ('maple, hawthorn, and pistachio... remain')"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Platanaceae",
+    "title_en": "Family Platanaceae",
+    "subset": "family:Platanaceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Platanaceae"
+  },
+  "taxa": [
+    {
+      "id": "PLA-PLA-ORI",
+      "scientific_name": "Platanus orientalis L.",
+      "classification": {
+        "order": "Proteales",
+        "family": "Platanaceae",
+        "genus": "Platanus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدُّلب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الچنار",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Oriental Plane"
+        ],
+        "kurdish": [
+          {
+            "name": "چنار (Çinar)",
+            "confidence": "عالية"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "شجرة ضفافية كبيرة في أودية كردستان. تُزرع أيضاً على نطاق واسع، ما يُصعّب فصل التجمعات الطبيعية"
+    }
+  ]
+}

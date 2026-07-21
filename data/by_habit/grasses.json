@@ -1,0 +1,59 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — نجيليات وأعشاب",
+    "title_en": "Iraqi Woody Flora — Grasses and Grass-like",
+    "subset": "habit:نجيلة_أو_عشب",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "habit": "نجيلة_أو_عشب",
+    "habit_label_ar": "نجيليات وأعشاب",
+    "habit_label_en": "Grasses and Grass-like",
+    "category_group": "grass"
+  },
+  "taxa": [
+    {
+      "id": "POA-STI-PLU",
+      "scientific_name": "Stipagrostis plumosa (L.) Munro ex T.Anderson",
+      "classification": {
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Stipagrostis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الثمام الريشي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "صبخ",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Feather Grass",
+          "Desert Needlegrass"
+        ]
+      },
+      "habit": "نجيلة_أو_عشب",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "نجيلة مميزة للصحراء الشجيرية الرافدينية (Wikipedia Mesopotamian shrub desert) مع Artemisia وAnabasis وHaloxylon."
+    }
+  ]
+}

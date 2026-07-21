@@ -1,0 +1,265 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iraqi-flora.local/schema/plant_taxon.schema.json",
+  "title": "Iraqi Flora — Plant Taxon Entry",
+  "description": "Unified schema for woody (and future non-woody) plant entries in the Iraqi Flora Encyclopedia.",
+  "type": "object",
+  "required": [
+    "id",
+    "scientific_name",
+    "classification",
+    "names",
+    "habit",
+    "zones",
+    "native_to_iraq",
+    "presence_in_iraq",
+    "iucn",
+    "iraq_local_status",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}-[A-Z]{3}-[A-Z0-9]{2,4}$",
+      "description": "Stable ID: FAM-GEN-SPP code (3+3+2–4 uppercase)"
+    },
+    "scientific_name": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Latin binomial (or hybrid/aggregate) with authority when known"
+    },
+    "taxonomic_note": {
+      "type": "string",
+      "description": "Synonymy, name disputes, aggregate treatment"
+    },
+    "classification": {
+      "type": "object",
+      "required": [
+        "order",
+        "family",
+        "genus"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "division": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "order": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "family": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "genus": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "subgenus": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        }
+      }
+    },
+    "names": {
+      "type": "object",
+      "required": [
+        "arabic",
+        "english"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "arabic": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/named_with_confidence"
+          }
+        },
+        "kurdish": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/named_with_confidence"
+          }
+        },
+        "english": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "habit": {
+      "type": "string",
+      "enum": [
+        "شجرة",
+        "شجرة_صغيرة",
+        "شجيرة",
+        "شجيرة_شوكية",
+        "شجيرة_ملحية",
+        "شبه_شجيرة",
+        "متسلق_خشبي",
+        "عشبة_معمّرة",
+        "عشبة_حولية",
+        "نجيلة_أو_عشب",
+        "مائي"
+      ],
+      "description": "Growth form: woody and non-woody habits"
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "DESERT",
+          "STEPPE",
+          "MOUNTAIN_FOREST",
+          "THORN_CUSHION_ALPINE",
+          "RIVERINE",
+          "MARSH_SALINE",
+          "COASTAL"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "native_to_iraq": {
+      "type": "boolean"
+    },
+    "endemic_to_iraq": {
+      "type": "boolean"
+    },
+    "presence_in_iraq": {
+      "type": "string",
+      "enum": [
+        "موجود",
+        "موجود_نادر_محلياً",
+        "مشكوك_في_أصالته",
+        "غير_مؤكد_الوجود"
+      ]
+    },
+    "introduction_status": {
+      "type": "string",
+      "description": "Required when native_to_iraq is false"
+    },
+    "iucn": {
+      "type": "object",
+      "required": [
+        "category",
+        "verified_in_session"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "LC",
+            "NT",
+            "VU",
+            "EN",
+            "CR",
+            "EW",
+            "EX",
+            "DD",
+            "NE",
+            null
+          ]
+        },
+        "verified_in_session": {
+          "type": "boolean"
+        },
+        "assessment_noted": {
+          "type": "boolean",
+          "description": "True if an IUCN assessment exists but rank was not recorded"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "iraq_local_status": {
+      "type": "string",
+      "enum": [
+        "مستقر_نسبياً",
+        "متراجع",
+        "متراجع_بشدة",
+        "نادر_محلياً",
+        "مهدد_محلياً",
+        "غير_معروف",
+        "مزروع",
+        "مزروع_تجريبياً",
+        "مزروع_واسعاً",
+        "مزروع_واسعاً_ومتراجع",
+        "غازٍ_متوسع"
+      ]
+    },
+    "flag": {
+      "type": "string",
+      "description": "Editorial caution / non-native warning banner"
+    },
+    "flagship_case": {
+      "type": "boolean",
+      "description": "Highlight species for conservation narrative"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text ecological, economic, and status notes"
+    }
+  },
+  "definitions": {
+    "named_with_confidence": {
+      "type": "object",
+      "required": [
+        "name",
+        "confidence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "عالية",
+            "متوسطة",
+            "منخفضة"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "native_to_iraq": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "introduction_status"
+        ]
+      }
+    }
+  ]
+}

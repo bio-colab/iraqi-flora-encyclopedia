@@ -1,0 +1,93 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Poaceae",
+    "title_en": "Family Poaceae",
+    "subset": "family:Poaceae",
+    "taxa_count": 2,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Poaceae"
+  },
+  "taxa": [
+    {
+      "id": "POA-PHR-AUS",
+      "scientific_name": "Phragmites australis (Cav.) Trin. ex Steud.",
+      "classification": {
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Phragmites"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القصب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "قصب الأهوار",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Reed"
+        ]
+      },
+      "habit": "مائي",
+      "zones": [
+        "MARSH_SALINE",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "النوع السائد في أهوار الرافدين (Wikipedia Mesopotamian Marshes). أساس بناء المضيف والثقافة المادية لعرب الأهوار. خارج النطاق الخشبي السابق — أُضيف ضمن فئة المائي."
+    },
+    {
+      "id": "POA-STI-PLU",
+      "scientific_name": "Stipagrostis plumosa (L.) Munro ex T.Anderson",
+      "classification": {
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Stipagrostis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الثمام الريشي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "صبخ",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Feather Grass",
+          "Desert Needlegrass"
+        ]
+      },
+      "habit": "نجيلة_أو_عشب",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "نجيلة مميزة للصحراء الشجيرية الرافدينية (Wikipedia Mesopotamian shrub desert) مع Artemisia وAnabasis وHaloxylon."
+    }
+  ]
+}

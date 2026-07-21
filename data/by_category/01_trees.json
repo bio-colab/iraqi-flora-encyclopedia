@@ -1,0 +1,2391 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — الأشجار (بما فيها الصغيرة)",
+    "title_en": "Iraqi Woody Flora — Trees (including small trees)",
+    "subset": "category_group:trees",
+    "taxa_count": 60,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "category_group": "trees",
+    "included_habits": [
+      "شجرة",
+      "شجرة_صغيرة"
+    ]
+  },
+  "taxa": [
+    {
+      "id": "AVI-AVI-MAR",
+      "scientific_name": "Avicennia marina (Forssk.) Vierh.",
+      "taxonomic_note": "العائلة في المصدر مُعلَّقة: Acanthaceae (سابقاً Avicenniaceae)",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Acanthaceae",
+        "genus": "Avicennia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المانغروف الرمادي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القُرم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الشورى",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Grey Mangrove",
+          "White Mangrove"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "COASTAL"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "موجود",
+      "introduction_status": "مُدخَل بالزراعة",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع_تجريبياً",
+      "flag": "🚫 غير أصيل — أُدرج للتمييز لا للإثبات",
+      "flagship_case": true,
+      "notes": "🚫 **ليس من الفلورا الأصيلة العراقية.** أُدرج صراحةً لأن السؤال شمل النطاق البحري، والجواب الأمين هو أن العراق **لا يملك شجرة ساحلية بحرية أصيلة**، وأن النظام الساحلي العراقي موصوف علمياً بأنه فقير نباتياً أصلاً. المانغروف الرمادي أدخله فريق مركز علوم البحار/جامعة البصرة بالتعاون مع مؤسسات إقليمية بدءاً من نيسان 2019 في المنطقة المدّية بميناء خور الزبير النفطي — وهي تجربة هي الأولى من نوعها في البلاد. النتائج: أقصى ارتفاع 173.3 سم خلال سنتين، ونمو قريب من الموائل الطبيعية. الشتلات جُلبت من تجمعات طبيعية في المنطقة (نمط مماثل لتجربة الكويت التي جلبت من البحرين والإمارات). المشروع توسّع لاحقاً بشراكة حكومية–أممية بهدف 4 ملايين شجرة في سُهول خور الزبير الطينية، بمشتل على 400 هكتار. الأهداف: كبح التعرية الساحلية، ترشيح الملوثات، حماية المجتمعات من العواصف، ودون استهلاك مياه عذبة عراقية شحيحة. المخاطر الموثقة: التلوث النفطي والصناعي المزمن في المنطقة"
+    },
+    {
+      "id": "ANA-PIS-ATL",
+      "scientific_name": "Pistacia atlantica Desf.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البطم الأطلسي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البطم",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Mt. Atlas Mastic Tree",
+          "Atlantic Pistachio"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "assessment_noted": true,
+        "note": "تقييم منشور لدى IUCN لكن الرتبة النهائية غير مثبتة في الجلسة. لدى IUCN تقييم منشور (e.117264678)؛ لم أتحقق من الرتبة النهائية بدقة كافية لأثبتها"
+      },
+      "iraq_local_status": "متراجع_بشدة",
+      "notes": "الاسم الواسع الذي تندرج تحته سلالات المنطقة. شجرة تصل 20 م بمرونة بيئية هائلة (من صحراء الساحل الإفريقي إلى الغابات شبه الجافة). في الأردن صُنِّف وطنياً 'مهدد بالانقراض بشدة' — مؤشر على أن التقييم الوطني قد يختلف جذرياً عن العالمي"
+    },
+    {
+      "id": "ANA-PIS-EUR",
+      "scientific_name": "Pistacia eurycarpa Yalt.",
+      "taxonomic_note": "يُعامل Pistacia atlantica subsp. kurdica كمرادف لهذا الاسم. الأدبيات العراقية غالباً تكتب P. atlantica",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البطم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الحبة الخضراء",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البطم الكردي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Kurdish Pistachio",
+          "Mt. Atlas Mastic (broad sense)"
+        ],
+        "kurdish": [
+          {
+            "name": "قەزوان (Qezwan)",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "دارِ بەن (Dar-e ben)",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "P. atlantica بالمعنى الواسع مُقيَّم لدى IUCN؛ لم يُتحقق من رتبة P. eurycarpa تحديداً"
+      },
+      "iraq_local_status": "متراجع_بشدة",
+      "notes": "ثاني أهم مكوّن حرجي بعد البلوط. من الـ10% غير البلوطية في غطاء كردستان الحرجي. شجرة نصف دائمة الخضرة تبلغ 20 م. مرونة بيئية استثنائية: من الصحراء إلى الغابات شبه الجافة. تُستخدم أصلاً لتطعيم الفستق الحلبي. ثمارها ('الحبة الخضراء') سلعة اقتصادية ريفية مهمة. أغلب تجمعاتها اليوم أشجار منفردة أو مجاميع 2–3 أشجار — وهذا مؤشر تفتّت لا مؤشر صحة"
+    },
+    {
+      "id": "ANA-PIS-KHI",
+      "scientific_name": "Pistacia khinjuk Stocks",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الخِنجُك",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البطم الخنجوكي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Khinjuk Pistachio"
+        ],
+        "kurdish": [
+          {
+            "name": "خنجک (Khinjik)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور صراحةً ضمن الـ10% غير البلوطية من الغطاء الحرجي في كردستان إلى جانب Crataegus azarolus. يشغل المنحدرات الصخرية الجافة"
+    },
+    {
+      "id": "ARE-PHO-DAC",
+      "scientific_name": "Phoenix dactylifera L.",
+      "classification": {
+        "order": "Arecales",
+        "family": "Arecaceae",
+        "genus": "Phoenix",
+        "class": "Liliopsida (أحادية الفلقة)"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "النخلة",
+            "confidence": "عالية"
+          },
+          {
+            "name": "نخيل التمر",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Date Palm"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "مستأنَس منذ آلاف السنين؛ السلف البري غير معروف يقيناً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع_واسعاً_ومتراجع",
+      "flag": "⚠️ حالة خاصة",
+      "flagship_case": true,
+      "notes": "🌴 **حالة منهجية خاصة تستحق التوضيح.** النخلة أشهر شجرة عراقية على الإطلاق (≈30 مليون نخلة تنتج أحد أهم صادرات العراق تاريخياً)، ومع ذلك **لا يمكن إدراجها بثقة ضمن الفلورا البرية الأصيلة**: النخيل مستأنَس منذ ≈6000 سنة في هذه المنطقة نفسها، وسلفه البري (Phoenix dactylifera var. sylvestris أو نوع منقرض) غير محسوم علمياً. أي أن العراق قد يكون **مركز استئناسها** لا موطنها البري الموثّق. هي شجرة ثقافية–زراعية عراقية بامتياز، وتصنيفها 'أصيلة برياً' ادّعاء لا تسنده الأدلة المتاحة. أُدرجت هنا لأن حذفها بلا تفسير يبدو خطأً، وإدراجها بلا تحفظ يكون تضليلاً. ملاحظة إضافية: هي أحادية فلقة (نخيل) لا شجرة خشبية حقيقية بالمعنى النباتي — لا تملك خشباً ثانوياً"
+    },
+    {
+      "id": "BET-CAR-ORI",
+      "scientific_name": "Carpinus orientalis Mill.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Betulaceae",
+        "genus": "Carpinus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجَرجَر الشرقي",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "زان القرن الشرقي",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Oriental Hornbeam"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في قائمة أشجار العراق لدى Restor. الاسم العربي غير مستقر — 'الجرجر' و'القرقر' تُستخدمان محلياً بتباين"
+    },
+    {
+      "id": "BOR-COR-SIN",
+      "scientific_name": "Cordia sinensis Lam.",
+      "taxonomic_note": "العائلة في المصدر مُعلَّقة: Boraginaceae (Cordiaceae)",
+      "classification": {
+        "order": "Boraginales",
+        "family": "Boraginaceae",
+        "genus": "Cordia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغُبيش",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "المَرَخ",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Grey-leaved Saucer Berry"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق. نوع إفريقي–جنوب عربي، أصالته في العراق مشكوك فيها"
+    },
+    {
+      "id": "CAN-CEL-AUS",
+      "scientific_name": "Celtis australis L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Celtis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المَيس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الطاق",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "European Nettle Tree",
+          "Hackberry"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "في الأردن صُنِّف وطنياً 'مهدد بالانقراض بشدة' مع Pistacia atlantica — مؤشر إقليمي على هشاشة النوع رغم انتشاره الجغرافي الواسع"
+    },
+    {
+      "id": "CAN-CEL-CAU",
+      "scientific_name": "Celtis caucasica Willd.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Celtis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الميس القوقازي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الميس",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Caucasian Hackberry"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. عنصر جبلي/إيراني–طوراني في غابات الشمال."
+    },
+    {
+      "id": "CAN-CEL-TOU",
+      "scientific_name": "Celtis tournefortii Lam.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Celtis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الميس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "طُرفاء الميس",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Oriental Hackberry",
+          "Tournefort's Hackberry"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq وفي قائمة مرافقي بلوط زاغروس. شجرة/شجرة صغيرة جافة المنحدرات. دراسات كردستان استخدمت ثماره ضمن نباتات تقليدية (Mazne subdistrict)."
+    },
+    {
+      "id": "CAP-LON-ARB",
+      "scientific_name": "Lonicera arborea Boiss.",
+      "classification": {
+        "order": "Dipsacales",
+        "family": "Caprifoliaceae",
+        "genus": "Lonicera"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "صريمة الجدي الشجرية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Tree Honeysuckle"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً: يشكل مع Lonicera acuminata وCotoneaster racemiflora حزاماً انتقالياً ضيقاً فوق خط الشجر (1800–2000 م) بين منطقة الغابات ومنطقة الشوك الوسادي. مرتبط أيضاً بـ Daphne acuminata في الشجيرات المفتوحة"
+    },
+    {
+      "id": "CUP-CUP-SEM",
+      "scientific_name": "Cupressus sempervirens L.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Cupressus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السَرو",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Mediterranean Cypress",
+          "Italian Cypress"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "مزروع أساساً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع",
+      "flag": "⚠️ مزروع لا بري",
+      "notes": "⚠️ السرو من الأنواع الأربعين المنتَجة في مشتل سرچنار بالسليمانية لإعادة التحريج. مداه الطبيعي شرق المتوسط وإيران؛ تجمعاته العراقية البرية غير مؤكدة. أُدرج للتمييز"
+    },
+    {
+      "id": "CUP-JUN-EXC",
+      "scientific_name": "Juniperus excelsa M.Bieb.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta (معراة البذور)"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَرعر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العرعر الشاهق",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Greek Juniper",
+          "Grecian Juniper"
+        ],
+        "kurdish": [
+          {
+            "name": "هەورس (Hewrs)",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "🌲 أحد معراة البذور القليلة الأصيلة في العراق — وهذا يجعله مهماً بلا تناسب مع عدده. مذكور في Britannica ضمن أشجار السفوح الجبلية الدنيا في العراق. ينمو بطيئاً جداً، فالقطع يعني خسارة قروناً لا سنوات. أُدرج ضمن أشتال مشاتل السليمانية لإعادة التحريج"
+    },
+    {
+      "id": "CUP-JUN-FOE",
+      "scientific_name": "Juniperus foetidissima Willd.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العرعر النتن",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "العرعر",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Stinking Juniper",
+          "Foetid Juniper"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "من عراعر جبال كردستان العليا"
+    },
+    {
+      "id": "CUP-JUN-OXY",
+      "scientific_name": "Juniperus oxycedrus L.",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العرعر الشوكي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "اللزاب",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Prickly Juniper",
+          "Cade Juniper"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مصدر زيت القطران (Cade oil)"
+    },
+    {
+      "id": "CUP-JUN-POL",
+      "scientific_name": "Juniperus polycarpos K.Koch",
+      "classification": {
+        "order": "Cupressales",
+        "family": "Cupressaceae",
+        "genus": "Juniperus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العرعر متعدد الثمار",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Persian Juniper"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور في دراسات كيميائية عراقية (تحليل GC-MS لمستخلص ثماره ونشاطه المضاد للسرطان) — دليل حضور بحثي عراقي"
+    },
+    {
+      "id": "HIP-ELA-ANG",
+      "scientific_name": "Elaeagnus angustifolia L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Elaeagnaceae",
+        "genus": "Elaeagnus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزَيزَفون",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الغُبيراء",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الزنزلخت البري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Russian Olive",
+          "Oleaster"
+        ],
+        "kurdish": [
+          {
+            "name": "سنجد (Sinjid)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "⚠️ الاسم العربي مضطرب جداً؛ 'الزيزفون' تُطلق أيضاً على Tilia وهو نوع مختلف تماماً. شجرة مثبِّتة للنيتروجين، وثمارها (السنجد) صالحة للأكل. أصالتها في العراق مرجحة لكن الزراعة الواسعة تُشوّش الصورة"
+    },
+    {
+      "id": "ERI-ARB-AND",
+      "scientific_name": "Arbutus andrachne L.",
+      "classification": {
+        "order": "Ericales",
+        "family": "Ericaceae",
+        "genus": "Arbutus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القَطلَب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الشمشير",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Greek Strawberry Tree",
+          "Eastern Strawberry Tree"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "شجرة دائمة الخضرة بلحاء أحمر مميز يتقشر. عنصر متوسطي عند حدّه الشرقي في العراق"
+    },
+    {
+      "id": "FAB-CER-SIL",
+      "scientific_name": "Cercis siliquastrum L.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Cercis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأرجوان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة يهوذا",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Judas Tree",
+          "Redbud"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجرة الربيع الأرجوانية المميزة في سفوح زاغروس. تُزرع أيضاً للزينة"
+    },
+    {
+      "id": "FAB-PRO-JUL",
+      "scientific_name": "Prosopis juliflora (Sw.) DC.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Prosopis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المسكيت",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الغويف",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "السيسبان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Mesquite",
+          "Algaroba"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT",
+        "RIVERINE"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "موجود",
+      "introduction_status": "مُدخَل غازٍ",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غازٍ_متوسع",
+      "flag": "🚫 نوع غازٍ — أُدرج للتحذير",
+      "notes": "🚫 **ليس أصيلاً — نوع غازٍ من أمريكا اللاتينية.** أُدرج للتحذير من الخلط مع Prosopis farcta الأصيل. أُدخل إقليمياً للتشجير في الأراضي الجافة وتحوّل إلى غازٍ يُقصي الغطاء الأصلي ويستنزف المياه الجوفية. أي جهد إعادة تحريج في العراق يجب أن يميّز بين النوعين"
+    },
+    {
+      "id": "FAB-VAC-GER",
+      "scientific_name": "Vachellia gerrardii (Benth.) P.J.H.Hurter",
+      "taxonomic_note": "سابقاً Acacia gerrardii Benth.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vachellia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطلح",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السَلَم",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Grey-haired Acacia",
+          "Talh"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "من سائدات مجتمع Haloxylon–Rhanterium في بادية الجزيرة العربية المتاخمة. وجوده في العراق عند حدّه الشمالي"
+    },
+    {
+      "id": "FAB-VAC-NIL",
+      "scientific_name": "Vachellia nilotica (L.) P.J.H.Hurter & Mabb.",
+      "taxonomic_note": "الاسم القديم Acacia nilotica (L.) Delile — أُعيد تصنيف أكاسيا العالم القديم إلى Vachellia وSenegalia",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vachellia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السَنط",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القَرَظ",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الطلح",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Gum Arabic Tree",
+          "Babul"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "DESERT",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً كأحد النباتات الخشبية الكبيرة في القسم الصحراوي العراقي. الأصالة الكاملة موضع نقاش لطول تاريخ زراعته"
+    },
+    {
+      "id": "FAG-FAG-ORI",
+      "scientific_name": "Fagus orientalis Lipsky",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Fagus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزان الشرقي",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Oriental Beech"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ أُدرج في قائمة Restor لأشجار العراق، لكن الزان الشرقي شجرة الغابات الرطبة القوقازية–الهيركانية وشمال الأناضول، ووجوده الطبيعي في العراق مشكوك فيه جدياً وربما يكون خطأ إسقاط مدى. أُدرج هنا بوسم تحفّظ صريح لا إقراراً. يحتاج تحققاً من Flora of Iraq"
+    },
+    {
+      "id": "FAG-QUE-AEG",
+      "scientific_name": "Quercus aegilops L.",
+      "taxonomic_note": "أكثر أسماء البلوط العراقي إشكالاً. يُعامل في كثير من الأدبيات الحديثة كمرادف أو قريب من Quercus brantii Lindl. أو Q. ithaburensis subsp. macrolepis. الأدبيات العراقية والكردية تُبقي على اسم Q. aegilops عملياً. اعتُمد هنا بالاسم المتداول محلياً مع تسجيل الخلاف",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "subgenus": "Cerris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البلوط",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السنديان",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الملول",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Valonia Oak",
+          "Aleppo Oak",
+          "Brant's Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "بەڕوو (Berû)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true,
+        "note": "تحت اسم Q. ithaburensis وQ. brantii كلاهما LC"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "أوسع أنواع البلوط انتشاراً في العراق ويشكل وحده ≈70% من غابات البلوط. قشوره تُستخدم في دبغ الجلود تاريخياً. جُمع منه ضمن مشاريع الإكثار نحو 35,000 بلوطة لإنتاج 12,000 شتلة في جومان وسوران وهورامان"
+    },
+    {
+      "id": "FAG-QUE-BOI",
+      "scientific_name": "Quercus boissieri Reut.",
+      "taxonomic_note": "يُعامل في بعض المراجع كمرادف أو قريب من Q. infectoria subsp. boissieri. ذُكر صراحةً ضمن أشجار/شجيرات غابات كردستان (Ghazanfar & McDaniel 2016 عبر اقتباسات) وZagros forest steppe.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "بلوط بواسيه",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "السنديان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Boissier's Oak"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور في نطاق غابات البلوط الكردستانية (700–1700 م) مع Q. brantii. يحتاج تدقيق تسمية مقابل Q. infectoria في Flora of Iraq."
+    },
+    {
+      "id": "FAG-QUE-BRA",
+      "scientific_name": "Quercus brantii Lindl.",
+      "taxonomic_note": "البلوط الفارسي / بلوط برانت — النوع السائد في غابات زاغروس. كثيراً ما يُخلط أو يُرادف عملياً مع Quercus aegilops في الأدبيات العراقية؛ أُدرج كاسم علمي مستقل لأنه مُدرج صراحةً في Wikipedia Flora of Iraq وZagros ecoregion.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "subgenus": "Cerris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البلوط الفارسي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "بلوط برانت",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "السنديان",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Brant's Oak",
+          "Persian Oak"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": false,
+        "note": "غالباً LC عالمياً؛ التحقق الدقيق من IUCN لم يُنفَّذ في هذه الجلسة"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مصدر: Wikipedia Zagros Mountains forest steppe + Quercus brantii. يغطّي >50% من غابات زاغروس في إيران ويمتد إلى شمال العراق. مقاوم للجفاف؛ من 350–2200 م. عماد الغابات النفضية المفتوحة في كردستان مع Q. infectoria وQ. libani."
+    },
+    {
+      "id": "FAG-QUE-INF",
+      "scientific_name": "Quercus infectoria Oliv.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "بلوط العفص",
+            "confidence": "عالية"
+          },
+          {
+            "name": "المازو",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العفص",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Gall Oak",
+          "Aleppo Oak",
+          "Cyprus Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "مازوو (Mazû)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مصدر 'العفص' (Oak Gall) الطبي والصباغي، وهو تشوّه في قواعد الأوراق تُحدثه زنابير Andricus spp. نسبة الإصابة بالزنابير تصل 88%. غنيّ بحمض العفص والتانين (50–70%). مقاوم للظروف القاسية ويُخلِف بعد الحرائق والقطع"
+    },
+    {
+      "id": "FAG-QUE-LIB",
+      "scientific_name": "Quercus libani Oliv.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "subgenus": "Cerris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "بلوط لبنان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السنديان اللبناني",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Lebanon Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "دار قەند / Dar qend",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "لم يُتحقق من رتبته في هذه الجلسة"
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "ثاني أو ثالث أنواع البلوط انتشاراً في الإقليم. متكيّف مع التضاريس الجبلية ويسهم في تثبيت التربة واحتباس الماء. أقل إصابة بزنابير العفص (45%) من النوعين السابقين. أُدرج ضمن الأنواع المستهدفة في مشاريع إعادة التحريج"
+    },
+    {
+      "id": "FAG-QUE-MAC",
+      "scientific_name": "Quercus macranthera Fisch. & C.A.Mey. ex Hohen.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus",
+        "section": "Quercus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "البلوط القوقازي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البلوط الفارسي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Caucasian Oak",
+          "Persian Oak"
+        ],
+        "kurdish": [
+          {
+            "name": "شادار (Shaadar) — 'الشجرة الملك'",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true,
+        "note": "Gorener & Carrero 2020, e.T78968730A78968739"
+      },
+      "iraq_local_status": "مهدد_محلياً",
+      "flagship_case": true,
+      "notes": "⚠️ الحالة المثالية لمفارقة LC العالمية/الانهيار المحلي. مُصنّف عالمياً 'أقل اهتمام' لأن مداه يمتد إلى إيران وتركيا والقوقاز، لكنه داخل العراق يُوصف بأنه مهدد بالانقراض ولم يبقَ منه إلا عدد محدود محصور في جبل حسن بيك (Hassan Bag) في قضاء سوران بأربيل. بعض المصادر تعدّه غير أصيل تماماً في العراق (Nasser 1984)، ودقّقت مشاريع التصنيف الحديثة وجوده. يوجد أيضاً هجين infectoria × macranthera يُعدّ 'النوع الخامس' في تصنيف الإقليم"
+    },
+    {
+      "id": "SAP-JUG-REG",
+      "scientific_name": "Juglans regia L.",
+      "classification": {
+        "order": "Fagales",
+        "family": "Juglandaceae",
+        "genus": "Juglans"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجوز",
+            "confidence": "عالية"
+          },
+          {
+            "name": "عين الجمل",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Persian Walnut",
+          "English Walnut"
+        ],
+        "kurdish": [
+          {
+            "name": "گوێز (Gwêz)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "الأصالة إشكالية: مركز نشوئه هو حزام زاغروس–آسيا الوسطى، ووجوده في أودية كردستان طبيعي على الأرجح، لكن آلاف السنين من الزراعة تُصعّب فصل البري عن المستوطِن الهارب من الزراعة (feral). يُصنَّف هنا أصيلاً بثقة متوسطة"
+    },
+    {
+      "id": "LYT-PUN-GRA",
+      "scientific_name": "Punica granatum L.",
+      "classification": {
+        "order": "Myrtales",
+        "family": "Lythraceae",
+        "genus": "Punica"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الرُمّان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الرمان البري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Pomegranate"
+        ],
+        "kurdish": [
+          {
+            "name": "هەنار (Henar)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مركز نشوء الرمان هو حزام زاغروس–آسيا الوسطى، وتجمعات برية في أودية كردستان محتملة ومهمة وراثياً. لكن آلاف السنين من الزراعة تجعل الفصل بين البري والهارب صعباً. الرمان يُدرج ضمن 'الأنواع الرمزية' لأشجار العراق في بعض المصادر"
+    },
+    {
+      "id": "MOR-FIC-CAR",
+      "scientific_name": "Ficus carica L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Moraceae",
+        "genus": "Ficus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "التين",
+            "confidence": "عالية"
+          },
+          {
+            "name": "التين البري",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Fig"
+        ],
+        "kurdish": [
+          {
+            "name": "هەنجیر (Hencîr)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "التين البري ينمو طبيعياً في شقوق صخور كردستان والأودية. الفصل بين البري والهارب من الزراعة (feral) صعب بعد آلاف السنين من الاستئناس"
+    },
+    {
+      "id": "MOR-FIC-SYC",
+      "scientific_name": "Ficus sycomorus L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Moraceae",
+        "genus": "Ficus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجُمّيز",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Sycamore Fig"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق، لكنه شجرة إفريقية–يمنية بامتياز. أصالته في العراق مشكوك فيها بشدة وقد يكون خطأ إسقاط مدى أو مزروعاً. أُدرج بتحفظ صريح"
+    },
+    {
+      "id": "MYR-EUC-SPP",
+      "scientific_name": "Eucalyptus spp.",
+      "classification": {
+        "order": "Myrtales",
+        "family": "Myrtaceae",
+        "genus": "Eucalyptus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الكينا",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اليوكالبتوس",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Eucalyptus",
+          "Gum Tree"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "موجود",
+      "introduction_status": "مُدخَل — أسترالي الأصل",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مزروع_واسعاً",
+      "flag": "🚫 غير أصيل — أُدرج للتمييز",
+      "notes": "🚫 **ليس أصيلاً.** أُدرج لأنه من أكثر ما يُزرع في العراق ويُخطئ كثيرون فيعدّونه محلياً. من أشتال مشتل سرچنار. جدل بيئي معروف حول استهلاكه المائي في الأراضي الجافة"
+    },
+    {
+      "id": "OLE-FRA-ANG",
+      "scientific_name": "Fraxinus angustifolia Vahl",
+      "taxonomic_note": "يشمل في المنطقة subsp. syriaca. قريب من Fraxinus rotundifolia المُدرَج سابقاً؛ بعض المراجع تدمجهما.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Fraxinus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدردار ضيق الأوراق",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللّسان",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Narrow-leaved Ash",
+          "Syrian Ash"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور كشجرة ضفافية/جبلية في غابات زاغروس مع الصفصاف والدلب. يُفضّل الأودية الرطبة داخل حزام الغابة."
+    },
+    {
+      "id": "OLE-FRA-ROT",
+      "scientific_name": "Fraxinus rotundifolia Mill.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Fraxinus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدردار",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "المُرّان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللسان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Round-leaved Ash"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "⚠️ ملاحظة لغوية: 'الدردار' في العراق تُطلق على Fraxinus وUlmus كليهما بتداخل — والخلط شائع حتى في الأدبيات العربية"
+    },
+    {
+      "id": "OLE-OLE-EUR",
+      "scientific_name": "Olea europaea L.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Olea"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزيتون",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الزيتون البري / العتم",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Olive",
+          "Wild Olive (var. sylvestris)"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ الزيتون شجرة متوسطية أصيلة في الشام وتركيا. العراق — كما تنص المراجع صراحةً — لا يملك إقليماً متوسطياً حقيقياً، رغم أن فلوراه تضم نسبة عالية من نباتات متوسطية. وجود زيتون بري أصيل في العراق (سنجار مثلاً) موضع جدل. الزيتون المزروع واسع الانتشار (وهو من أشتال مشاتل السليمانية). أُدرج بتحفظ"
+    },
+    {
+      "id": "PIN-PIN-BRU",
+      "scientific_name": "Pinus brutia Ten.",
+      "classification": {
+        "order": "Pinales",
+        "family": "Pinaceae",
+        "genus": "Pinus",
+        "division": "Pinophyta"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الصنوبر البروتي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الصنوبر التركي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Calabrian Pine",
+          "Turkish Pine"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "flag": "⚠️ تحفّظ على نطاق الطبيعية",
+      "notes": "⚠️ إشكال منهجي: 'غابات الصنوبر' مذكورة ضمن الـ10% غير البلوطية من غطاء كردستان، لكن الأدبيات تُدرجها تحت 'المزروعات وغابات الصنوبر' معاً. التمييز بين تجمعات طبيعية أصيلة نادرة وبين مزروعات واسعة غير حاسم في المصادر المتاحة لي. الصنوبر من أكثر ما يُنتَج في مشتل سرچنار بالسليمانية"
+    },
+    {
+      "id": "PLA-PLA-ORI",
+      "scientific_name": "Platanus orientalis L.",
+      "classification": {
+        "order": "Proteales",
+        "family": "Platanaceae",
+        "genus": "Platanus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدُّلب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الچنار",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Oriental Plane"
+        ],
+        "kurdish": [
+          {
+            "name": "چنار (Çinar)",
+            "confidence": "عالية"
+          }
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "شجرة ضفافية كبيرة في أودية كردستان. تُزرع أيضاً على نطاق واسع، ما يُصعّب فصل التجمعات الطبيعية"
+    },
+    {
+      "id": "RHA-ZIZ-SPI",
+      "scientific_name": "Ziziphus spina-christi (L.) Desf.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rhamnaceae",
+        "genus": "Ziziphus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السِدر",
+            "confidence": "عالية"
+          },
+          {
+            "name": "النَبِق",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الكنار",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Christ's Thorn Jujube",
+          "Sidr"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "DESERT",
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "🌳 من أهم أشجار العراق ثقافياً ودينياً واقتصادياً. يشهد إقبالاً متزايداً على زراعته وسط الجفاف لقلة احتياجه المائي وعوائده الاقتصادية (النبق، عسل السدر، الأوراق للغسل). شجرة بركة في الوجدان العراقي"
+    },
+    {
+      "id": "ROS-CRA-AZA",
+      "scientific_name": "Crataegus azarolus L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Crataegus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزعرور",
+            "confidence": "عالية"
+          },
+          {
+            "name": "زعرور مشرقي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Mediterranean Hawthorn",
+          "Azarole"
+        ],
+        "kurdish": [
+          {
+            "name": "گوێژ (Gwêj)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور صراحةً ضمن الـ10% غير البلوطية من غطاء كردستان الحرجي. ثماره وبراعمه وأوراقه صالحة للأكل. طبّي شعبي مشهور (القلب). ينمو على السفوح الجبلية الدنيا"
+    },
+    {
+      "id": "ROS-CRA-MEY",
+      "scientific_name": "Crataegus meyeri Pojark.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Crataegus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "زعرور ماير",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الزعرور",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Meyer's Hawthorn"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور أحياناً إلى جانب C. azarolus وC. monogyna في غابات زاغروس."
+    },
+    {
+      "id": "ROS-CRA-MON",
+      "scientific_name": "Crataegus monogyna Jacq.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Crataegus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزعرور أحادي المدقة",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Hawthorn"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "الزعرور جنس متعدد الأنواع في زاغروس؛ الحدود بين الأنواع دقيقة والتحديد الحقلي يحتاج ثماراً"
+    },
+    {
+      "id": "ROS-PRU-COC",
+      "scientific_name": "Prunus cocomilia Ten.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الخوخ الإيطالي البري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Italian Plum"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في قائمة أشجار العراق لدى Restor"
+    },
+    {
+      "id": "ROS-PRU-MAH",
+      "scientific_name": "Prunus mahaleb L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المَحلب",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Mahaleb Cherry",
+          "St. Lucie Cherry"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "بذوره هي 'المحلب' التوابلي المشهور في المطبخ العراقي والشامي"
+    },
+    {
+      "id": "ROS-PYR-GLA",
+      "scientific_name": "Pyrus glabra Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Pyrus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "إجاص أملس",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "كمثرى برية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Smooth Pear",
+          "Wild Pear"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور في الطرف الجنوبي لزاغروس مع Pyrus syriaca ضمن غابات/سبوب مفتوحة حتى ارتفاعات عالية."
+    },
+    {
+      "id": "ROS-PYR-SYR",
+      "scientific_name": "Pyrus syriaca Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Pyrus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الإجاص البري",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الكمثرى السورية",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العنجاص البري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Syrian Pear",
+          "Wild Pear"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور في Britannica ضمن أشجار السفوح الجبلية الدنيا في العراق ('wild pears'). أصل وراثي مهم لأصناف الإجاص المزروع"
+    },
+    {
+      "id": "ROS-SOR-GRA",
+      "scientific_name": "Sorbus graeca (Spach) Lodd. ex Schauer",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Sorbus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغُبَيراء",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "السوربوس اليوناني",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Greek Whitebeam"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "ثماره صالحة للأكل. مُدرج في قائمة أشجار العراق لدى Restor"
+    },
+    {
+      "id": "SAL-POP-EUP",
+      "scientific_name": "Populus euphratica Oliv.",
+      "classification": {
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغَرَب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الحور الفراتي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البَهان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Euphrates Poplar",
+          "Desert Poplar"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع_بشدة",
+      "flagship_case": true,
+      "notes": "🌳 الشجرة الأيقونية للعراق النهري، وتحمل اسم الفرات في اسمها العلمي. تكوّن غابات شريطية (gallery forests) على جزر وضفاف دجلة والفرات. تحمّل ملحي وجفافي استثنائي (جذور تصل 22 م عمقاً). أحافير مشابهة تعود لـ60 مليون سنة. متراجعة بحدة في العراق بسبب شح المياه وسدود المنبع والقطع للحطب — وهو نمط موثق أيضاً على نهر تاريم في الصين. LC عالمياً لأن مداها يمتد من إسبانيا إلى الصين، لا لأنها بخير في العراق"
+    },
+    {
+      "id": "SAL-POP-NIG",
+      "scientific_name": "Populus nigra L.",
+      "classification": {
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الحور الأسود",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الحور",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Black Poplar"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "يُكمّل Populus euphratica في الغابات الشريطية. شائع في أحواض الرافدين والزراعة الضفافية؛ الحالة البرية الأصيلة مقابل الزراعة تحتاج تمييزاً ميدانياً."
+    },
+    {
+      "id": "SAL-SAL-ACM",
+      "scientific_name": "Salix acmophylla Boiss.",
+      "classification": {
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Salix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الصفصاف",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الصفصاف الحاد الأوراق",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Willow"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "أكثر أنواع الصفصاف انتشاراً في العراق، ويوجد في معظم مناطق البلاد. تذكر الأدبيات العراقية ثلاثة أنواع رئيسة: S. acmophylla (الأوسع)، S. alba، وS. babylonica (وهذا الأخير يُعدّ دخيلاً رغم اسمه البابلي — مفارقة تسموية شهيرة). الفلورا العراقية تضم ثمانية أنواع من Salix"
+    },
+    {
+      "id": "SAL-SAL-ALB",
+      "scientific_name": "Salix alba L.",
+      "classification": {
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Salix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الصفصاف الأبيض",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "White Willow"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "أقل انتشاراً من S. acmophylla. لحاؤه مصدر الساليسين التاريخي (سلف الأسبرين)"
+    },
+    {
+      "id": "SAL-SAL-PER",
+      "scientific_name": "Salvadora persica L.",
+      "classification": {
+        "order": "Brassicales",
+        "family": "Salvadoraceae",
+        "genus": "Salvadora"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأراك",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة السواك",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Toothbrush Tree",
+          "Miswak"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "مذكور صراحةً ضمن النباتات الخشبية الكبيرة في القسم الصحراوي (Saharan) من جنوب غرب العراق، إلى جانب Acacia nilotica وCalotropis procera. مصدر السواك. وجوده في العراق هامشي عند الحد الشمالي لمداه"
+    },
+    {
+      "id": "SAP-ACE-CAP",
+      "scientific_name": "Acer cappadocicum Gled.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Sapindaceae",
+        "genus": "Acer"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القيقب الكبادوكي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "القيقب القوقازي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Caucasian Maple",
+          "Cappadocian Maple"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "يبلغ 30 م. مُدرج في قائمة أشجار العراق لدى Restor"
+    },
+    {
+      "id": "SAP-ACE-CIN",
+      "scientific_name": "Acer cinerascens Boiss.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Sapindaceae",
+        "genus": "Acer"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القيقب الرمادي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Grey Maple"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "من قيقب زاغروس الجاف"
+    },
+    {
+      "id": "SAP-ACE-MON",
+      "scientific_name": "Acer monspessulanum L.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Sapindaceae",
+        "genus": "Acer"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القيقب",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القيقب المونبلييهي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Montpellier Maple"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور في تقرير FAO عن العراق ضمن الأشجار الباقية بعد تدهور غابات البلوط إلى أحراش ('maple, hawthorn, and pistachio... remain')"
+    },
+    {
+      "id": "ERI-STY-OFF",
+      "scientific_name": "Styrax officinalis L.",
+      "classification": {
+        "order": "Ericales",
+        "family": "Styracaceae",
+        "genus": "Styrax"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللُبنى",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الحَوز",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الميعة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Storax",
+          "Snowdrop Bush"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مصدر صمغ اللبنى/الميعة التاريخي (بخور وطيب). مُدرج في قائمة أشجار العراق لدى Restor"
+    },
+    {
+      "id": "TAM-TAM-APH",
+      "scientific_name": "Tamarix aphylla (L.) H.Karst.",
+      "classification": {
+        "order": "Caryophyllales",
+        "family": "Tamaricaceae",
+        "genus": "Tamarix"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأثل",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الأثلة",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Athel Tamarisk",
+          "Athel Pine"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "RIVERINE",
+        "DESERT",
+        "MARSH_SALINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "الوحيد في الجنس الذي يبلغ حجم شجرة حقيقية في العراق. يتحمل المياه المالحة والجوفية القلوية. يُستخدم مصدّات رياح وأحزمة خضراء. شجرة ثقافية عميقة الجذر في التراث العربي والعراقي"
+    },
+    {
+      "id": "ULM-ULM-MIN",
+      "scientific_name": "Ulmus minor Mill.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Ulmaceae",
+        "genus": "Ulmus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الدردار",
+            "confidence": "عالية"
+          },
+          {
+            "name": "البُقّ",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Field Elm"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "ZYG-BAL-AEG",
+      "scientific_name": "Balanites aegyptiaca (L.) Delile",
+      "classification": {
+        "order": "Zygophyllales",
+        "family": "Zygophyllaceae",
+        "genus": "Balanites"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الهِجليج",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللالوب",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Desert Date",
+          "Balanites"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "مشكوك_في_أصالته",
+      "introduction_status": "غير أصيل / حالة غير مفصّلة في المصدر",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "flag": "⚠️ تحفّظ",
+      "notes": "⚠️ مُدرج في قائمة Restor لأشجار العراق، لكنه شجرة الساحل الإفريقي وجنوب الجزيرة. أصالته في العراق مشكوك فيها. أُدرج بتحفظ"
+    }
+  ]
+}

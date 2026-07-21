@@ -1,0 +1,506 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Fabaceae",
+    "title_en": "Family Fabaceae",
+    "subset": "family:Fabaceae",
+    "taxa_count": 12,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Fabaceae"
+  },
+  "taxa": [
+    {
+      "id": "FAB-ALH-MAU",
+      "scientific_name": "Alhagi maurorum Medik.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Alhagi"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العاقول",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الحاج",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "شوك الجمل",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Camelthorn"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "STEPPE",
+        "RIVERINE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شبه شجيرة شوكية واسعة الانتشار. مصدر 'المن' (ترنجبين) تاريخياً"
+    },
+    {
+      "id": "FAB-ANA-FOE",
+      "scientific_name": "Anagyris foetida L.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Anagyris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "أنغيريس نتن",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "خروع الجبل",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "شجرة ستّ الحسن البرية",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Stinking Bean Trefoil",
+          "Bean Trefoil"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "Trees and Shrubs Online: يمتد إلى جبال زاغروس في شمال العراق. شجيرة متوسطية–إيرانوتورانية في الأجزاء السفلى من حزام الغابة."
+    },
+    {
+      "id": "FAB-AST-BRA",
+      "scientific_name": "Astragalus brachycalyx Fisch.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Astragalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "قتاد قصير الكأس",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "القتاد الوسادي",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Short-calyx Milk-vetch"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Flora of Iraq. يمثّل القتاد الوسادي الشوكي فوق/حول خط الشجر — يُكمّل مدخل Astragalus spp. التجميعي."
+    },
+    {
+      "id": "FAB-AST-SPP",
+      "scientific_name": "Astragalus spp. (المجموعة الوسادية الشوكية)",
+      "taxonomic_note": "ليس نوعاً واحداً بل مجموعة تضم عشرات الأنواع في العراق، منها A. mossulensis وA. dactylocarpus وA. gummifer وA. spinosus",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Astragalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القَتاد",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الكثيراء",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Milkvetch",
+          "Tragacanth",
+          "Thorn-cushion Astragalus"
+        ],
+        "kurdish": [
+          {
+            "name": "گەون (Gewn/Gawan)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "STEPPE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "تقييمات متفرقة على مستوى النوع؛ أغلب الأنواع العراقية غير مُقيَّمة"
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "flagship_case": true,
+      "notes": "⛰️ الجنس السائد فوق خط الشجر. يشكل 'الوسائد الشوكية' التي تُعطي المنطقة اسمها. Astragalus وحده يمثل حصة لافتة من مستوطنات العراق البقولية. مفارقة بيئية مهمة: الرعي الجائر يُفيده — لأن الأغنام تلتهم المعمّرات المستساغة وتترك الشوكيات، فتتوسع الوسائد على حساب غيرها. أي أن انتشاره مؤشر تدهور لا مؤشر عافية. مصدر صمغ الكثيراء (Tragacanth) الذي يُستخرج من شجيرات البادية شبه الجافة — وهو مذكور صراحةً كمنتج عراقي تاريخي"
+    },
+    {
+      "id": "FAB-CER-SIL",
+      "scientific_name": "Cercis siliquastrum L.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Cercis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأرجوان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة يهوذا",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Judas Tree",
+          "Redbud"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجرة الربيع الأرجوانية المميزة في سفوح زاغروس. تُزرع أيضاً للزينة"
+    },
+    {
+      "id": "FAB-COL-SPP",
+      "scientific_name": "Colutea spp.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Colutea"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المَثانة",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "سنا المثانة",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Bladder Senna"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "قرونه المنتفخة الشبيهة بالمثانة سمة تشخيصية"
+    },
+    {
+      "id": "FAB-GLY-GLA",
+      "scientific_name": "Glycyrrhiza glabra L.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Glycyrrhiza"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "عِرق السوس",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السوس",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Liquorice",
+          "Licorice"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور صراحةً: ينمو على الفرات الأعلى والأوسط، وعصارته تُستخرج تجارياً. شجيرة معمّرة خشبية القاعدة أصيلة في الشرق الأدنى. مورد اقتصادي عراقي تاريخي (تصدير جذور السوس)، ومصدر انتفاع طبي قديم"
+    },
+    {
+      "id": "FAB-PRO-FAR",
+      "scientific_name": "Prosopis farcta (Banks & Sol.) J.F.Macbr.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Prosopis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اليَنبوت",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الشوك",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الخرنوب البري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Syrian Mesquite",
+          "Dwarf Mesquite"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "RIVERINE",
+        "STEPPE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "⚠️ مهم للتفريق: هذا النوع أصيل في العراق والشام، على خلاف Prosopis juliflora الأمريكي الغازي. شجيرة شوكية عنيدة، وتُعدّ عشبة ضارة في الأراضي الزراعية العراقية لصعوبة اقتلاع جذورها"
+    },
+    {
+      "id": "FAB-PRO-JUL",
+      "scientific_name": "Prosopis juliflora (Sw.) DC.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Prosopis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المسكيت",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الغويف",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "السيسبان",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Mesquite",
+          "Algaroba"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT",
+        "RIVERINE"
+      ],
+      "native_to_iraq": false,
+      "presence_in_iraq": "موجود",
+      "introduction_status": "مُدخَل غازٍ",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غازٍ_متوسع",
+      "flag": "🚫 نوع غازٍ — أُدرج للتحذير",
+      "notes": "🚫 **ليس أصيلاً — نوع غازٍ من أمريكا اللاتينية.** أُدرج للتحذير من الخلط مع Prosopis farcta الأصيل. أُدخل إقليمياً للتشجير في الأراضي الجافة وتحوّل إلى غازٍ يُقصي الغطاء الأصلي ويستنزف المياه الجوفية. أي جهد إعادة تحريج في العراق يجب أن يميّز بين النوعين"
+    },
+    {
+      "id": "FAB-RET-RAE",
+      "scientific_name": "Retama raetam (Forssk.) Webb & Berthel.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Retama"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الرَتَم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الغَضا الأبيض",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "White Broom",
+          "Retem"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجيرة شبه عديمة الأوراق تعتمد التمثيل الضوئي بالسيقان. تُثبّت الرمال وتُخصّب التربة (تثبيت نيتروجيني)"
+    },
+    {
+      "id": "FAB-VAC-GER",
+      "scientific_name": "Vachellia gerrardii (Benth.) P.J.H.Hurter",
+      "taxonomic_note": "سابقاً Acacia gerrardii Benth.",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vachellia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الطلح",
+            "confidence": "عالية"
+          },
+          {
+            "name": "السَلَم",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Grey-haired Acacia",
+          "Talh"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "من سائدات مجتمع Haloxylon–Rhanterium في بادية الجزيرة العربية المتاخمة. وجوده في العراق عند حدّه الشمالي"
+    },
+    {
+      "id": "FAB-VAC-NIL",
+      "scientific_name": "Vachellia nilotica (L.) P.J.H.Hurter & Mabb.",
+      "taxonomic_note": "الاسم القديم Acacia nilotica (L.) Delile — أُعيد تصنيف أكاسيا العالم القديم إلى Vachellia وSenegalia",
+      "classification": {
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vachellia"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "السَنط",
+            "confidence": "عالية"
+          },
+          {
+            "name": "القَرَظ",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الطلح",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Gum Arabic Tree",
+          "Babul"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "DESERT",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً كأحد النباتات الخشبية الكبيرة في القسم الصحراوي العراقي. الأصالة الكاملة موضع نقاش لطول تاريخ زراعته"
+    }
+  ]
+}

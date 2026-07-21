@@ -1,0 +1,163 @@
+{
+  "version": "1.1",
+  "description_ar": "كتالوج الحقول الموحد لمداخل موسوعة الفلورا العراقية",
+  "description_en": "Unified field catalog for Iraqi Flora Encyclopedia entries",
+  "core_fields": [
+    {
+      "key": "id",
+      "type": "string",
+      "required": true,
+      "notes": "FAM-GEN-SPP"
+    },
+    {
+      "key": "scientific_name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "key": "classification",
+      "type": "object",
+      "required": true
+    },
+    {
+      "key": "names",
+      "type": "object",
+      "required": true
+    },
+    {
+      "key": "habit",
+      "type": "enum",
+      "required": true,
+      "values": [
+        "شجرة",
+        "شجرة_صغيرة",
+        "شجيرة",
+        "شجيرة_شوكية",
+        "شجيرة_ملحية",
+        "شبه_شجيرة",
+        "متسلق_خشبي",
+        "عشبة_معمّرة",
+        "عشبة_حولية",
+        "نجيلة_أو_عشب",
+        "مائي"
+      ]
+    },
+    {
+      "key": "zones",
+      "type": "array<zone_code>",
+      "required": true
+    },
+    {
+      "key": "native_to_iraq",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "key": "presence_in_iraq",
+      "type": "enum",
+      "required": true,
+      "values": [
+        "موجود",
+        "موجود_نادر_محلياً",
+        "مشكوك_في_أصالته",
+        "غير_مؤكد_الوجود"
+      ]
+    },
+    {
+      "key": "iucn",
+      "type": "object",
+      "required": true
+    },
+    {
+      "key": "iraq_local_status",
+      "type": "enum",
+      "required": true,
+      "values": [
+        "مستقر_نسبياً",
+        "متراجع",
+        "متراجع_بشدة",
+        "نادر_محلياً",
+        "مهدد_محلياً",
+        "غير_معروف",
+        "مزروع",
+        "مزروع_تجريبياً",
+        "مزروع_واسعاً",
+        "مزروع_واسعاً_ومتراجع",
+        "غازٍ_متوسع"
+      ]
+    },
+    {
+      "key": "notes",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "optional_fields": [
+    {
+      "key": "taxonomic_note",
+      "type": "string"
+    },
+    {
+      "key": "endemic_to_iraq",
+      "type": "boolean"
+    },
+    {
+      "key": "introduction_status",
+      "type": "string",
+      "required_if": "native_to_iraq == false"
+    },
+    {
+      "key": "flag",
+      "type": "string"
+    },
+    {
+      "key": "flagship_case",
+      "type": "boolean"
+    }
+  ],
+  "enums": {
+    "habit": [
+      "شجرة",
+      "شجرة_صغيرة",
+      "شجيرة",
+      "شجيرة_شوكية",
+      "شجيرة_ملحية",
+      "شبه_شجيرة",
+      "متسلق_خشبي",
+      "عشبة_معمّرة",
+      "عشبة_حولية",
+      "نجيلة_أو_عشب",
+      "مائي"
+    ],
+    "presence_in_iraq": [
+      "موجود",
+      "موجود_نادر_محلياً",
+      "مشكوك_في_أصالته",
+      "غير_مؤكد_الوجود"
+    ],
+    "iraq_local_status": [
+      "مستقر_نسبياً",
+      "متراجع",
+      "متراجع_بشدة",
+      "نادر_محلياً",
+      "مهدد_محلياً",
+      "غير_معروف",
+      "مزروع",
+      "مزروع_تجريبياً",
+      "مزروع_واسعاً",
+      "مزروع_واسعاً_ومتراجع",
+      "غازٍ_متوسع"
+    ],
+    "confidence": [
+      "عالية",
+      "متوسطة",
+      "منخفضة"
+    ]
+  },
+  "future_habits_reserved": [
+    "نبات_طري_غير_خشبي",
+    "طفيلي",
+    "طحلبي_أو_لازهري"
+  ]
+}
+

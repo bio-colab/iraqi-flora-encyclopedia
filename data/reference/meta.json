@@ -1,0 +1,147 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "title_ar": "الأشجار والشجيرات الأصيلة في الفلورا العراقية",
+    "title_en": "Native Trees and Shrubs of the Iraqi Flora",
+    "compiled_on": "2026-07-17",
+    "compiled_by": "Claude (Anthropic) — جلسة واحدة، بلا عمليات خلفية ولا استمرارية عبر الجلسات",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "scope": {
+      "included": [
+        "الأنواع الخشبية (أشجار، شجيرات، شبه شجيرات خشبية القاعدة) التي يُعدّ العراق ضمن موطنها الطبيعي",
+        "أنواع مُدخَلة أو مزروعة أُدرجت صراحةً بوسم native_to_iraq = false لأغراض التمييز فقط"
+      ],
+      "excluded": [
+        "الأعشاب الحولية والمعمّرة غير الخشبية",
+        "النباتات المائية والقصبيات (Phragmites, Typha) — ليست خشبية",
+        "أصناف البساتين والزينة المُستوردة"
+      ],
+      "taxa_count": 152
+    },
+    "epistemic_disclosure": {
+      "governing_reference_not_consulted": "Flora of Iraq (Guest & Al-Rawi 1966 – Ghazanfar & Edmondson 2016) هي المرجع الحاكم لكنها لم تُقرأ نصياً في هذه الجلسة",
+      "completeness": "غير حاصر. الفلورا العراقية تضم مئات التاكسا الخشبية، خصوصاً في Astragalus وTamarix وSalsola وSalix. هذا الملف يمثل العمود الفقري لا الحصر التام",
+      "asymmetric_verification": "يمكن لهذا الملف أن يُثبت وجود نوع، ولا يمكنه أن ينفي وجود نوع غير مذكور فيه",
+      "iucn_policy": "لم تُخمَّن أي رتبة تهديد. الحقل iucn.verified_in_session يفصل ما تُحقق منه عما لم يُتحقق",
+      "local_names_policy": "الأسماء المحلية أضعف الحقول ثقةً؛ كل اسم موسوم بدرجة ثقة",
+      "no_national_red_list": "العراق لا يملك قائمة حمراء وطنية رسمية معتمدة للنباتات حتى تاريخ التجميع؛ لذا حقل iraq_local_status تقديري نوعي مبني على أدبيات التدهور لا على تقييم رسمي"
+    },
+    "key_findings": {
+      "no_confirmed_global_extinction": "لا يوجد نوع شجري أو شجيري عراقي مُوثَّق انقراضه عالمياً",
+      "the_real_pattern": "المفارقة الحاكمة: أغلب أشجار العراق مُصنّفة عالمياً 'أقل اهتمام (LC)' لأن مداها يمتد إلى إيران وتركيا، بينما تعدادها داخل العراق يتهاوى. التصنيف العالمي يُخفي الانهيار المحلي ولا يعكسه",
+      "forest_loss": "الغطاء الحرجي العراقي ≈ 825,000 هكتار (≈1.9% من مساحة البلاد) وفق FAO، و97% منه في إقليم كردستان؛ فقد الإقليم نحو 50% من غطائه النباتي خلال خمسة عقود",
+      "oak_dominance": "البلوط (Quercus) يشكل ≈90% من الغطاء الحرجي العراقي، و≈70% من غابات البلوط نوع واحد هو Q. aegilops",
+      "no_native_coastal_trees": "الساحل العراقي (خور الزبير/الفاو) لا يملك غابة ساحلية أصيلة. المانغروف Avicennia marina مُدخَل بالزراعة منذ 2019 وليس أصيلاً"
+    },
+    "field_definitions": {
+      "presence_in_iraq": [
+        "موجود",
+        "موجود_نادر_محلياً",
+        "مشكوك_في_أصالته",
+        "غير_مؤكد_الوجود"
+      ],
+      "iraq_local_status": [
+        "مستقر_نسبياً",
+        "متراجع",
+        "متراجع_بشدة",
+        "نادر_محلياً",
+        "مهدد_محلياً",
+        "غير_معروف",
+        "مزروع",
+        "مزروع_تجريبياً",
+        "مزروع_واسعاً",
+        "مزروع_واسعاً_ومتراجع",
+        "غازٍ_متوسع"
+      ],
+      "confidence": [
+        "عالية",
+        "متوسطة",
+        "منخفضة"
+      ],
+      "habit": [
+        "شجرة",
+        "شجرة_صغيرة",
+        "شجيرة",
+        "شجيرة_شوكية",
+        "شجيرة_ملحية",
+        "شبه_شجيرة",
+        "متسلق_خشبي",
+        "عشبة_معمّرة",
+        "عشبة_حولية",
+        "نجيلة_أو_عشب",
+        "مائي"
+      ],
+      "iucn_category": [
+        "LC",
+        "NT",
+        "VU",
+        "EN",
+        "CR",
+        "EW",
+        "EX",
+        "DD",
+        "NE",
+        null
+      ],
+      "category_groups": {
+        "tree": [
+          "شجرة",
+          "شجرة_صغيرة"
+        ],
+        "shrub": [
+          "شجيرة",
+          "شجيرة_شوكية",
+          "شجيرة_ملحية"
+        ],
+        "subshrub": [
+          "شبه_شجيرة"
+        ],
+        "climber": [
+          "متسلق_خشبي"
+        ],
+        "herb": [
+          "عشبة_معمّرة",
+          "عشبة_حولية"
+        ],
+        "grass": [
+          "نجيلة_أو_عشب"
+        ],
+        "aquatic": [
+          "مائي"
+        ]
+      }
+    },
+    "sources": [
+      "Ghazanfar & McDaniel (2016). Floras of the Middle East: a quantitative analysis and biogeography of the flora of Iraq. Edinburgh Journal of Botany 73(1)",
+      "Guest & Al-Rawi (1966). Flora of Iraq, Vol. 1: Introduction — نظام المناطق النباتية الأربع (عبر اقتباسات ثانوية)",
+      "Restor.eco — Iraq tree species biodiversity list (حالات IUCN المتحقق منها)",
+      "BGCI — Recovering the Wild: Iraq (مشروع إكثار البلوط في أربيل وحلبجة)",
+      "IUCN Red List — تقييمات فردية (Pistacia atlantica, Quercus macranthera, Q. brantii)",
+      "FAO / Shafaq News / AFP — إحصاءات الغطاء الحرجي وفقده",
+      "Mongabay / Reuters — مشروع المانغروف في خور الزبير",
+      "Kurdistan Chronicle / 964media — تصنيف أنواع البلوط الخمسة في الإقليم"
+    ],
+    "schema_version_dataset": "1.1",
+    "cleaned_on": "2026-07-21",
+    "cleaning_summary": {
+      "source_file": "archive/iraq_woody_flora.raw.json",
+      "source_taxa_count_declared": 101,
+      "source_taxa_count_actual": 116,
+      "cleaned_taxa_count": 116,
+      "duplicates_removed": 0,
+      "issues_logged": 16
+    },
+    "file_layout": {
+      "master": "data/master/woody_flora.json",
+      "by_habit": "data/by_habit/",
+      "by_category_group": "data/by_category/",
+      "by_nativity": "data/by_nativity/",
+      "by_family": "data/by_family/",
+      "reference": "data/reference/",
+      "schema": "schema/",
+      "manager": "tools/manage_flora.py"
+    },
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "updated_on": "2026-07-21"
+  }
+}

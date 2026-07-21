@@ -1,0 +1,134 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — الأعشاب (حولية ومعمّرة)",
+    "title_en": "Iraqi Woody Flora — Herbs (annual and perennial)",
+    "subset": "category_group:herbs",
+    "taxa_count": 3,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "category_group": "herbs",
+    "included_habits": [
+      "عشبة_معمّرة",
+      "عشبة_حولية"
+    ]
+  },
+  "taxa": [
+    {
+      "id": "ALL-ALL-IRA",
+      "scientific_name": "Allium iranicum (Wendelbo) Wendelbo",
+      "classification": {
+        "order": "Asparagales",
+        "family": "Amaryllidaceae",
+        "genus": "Allium"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "ثوم إيراني",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "بصل بري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Iranian Onion"
+        ]
+      },
+      "habit": "عشبة_معمّرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Flora of Iraq؛ من الأنواع الجبلية/الزاغروسية المذكورة أيضاً ضمن مستوطنات المنطقة."
+    },
+    {
+      "id": "IRI-IRI-PER",
+      "scientific_name": "Iris persica L.",
+      "classification": {
+        "order": "Asparagales",
+        "family": "Iridaceae",
+        "genus": "Iris"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "سوسن فارسي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "سوسن",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Persian Iris"
+        ]
+      },
+      "habit": "عشبة_معمّرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Flora of Iraq ضمن مجموعة واسعة من السوسن العراقي الجبلي."
+    },
+    {
+      "id": "PAP-PAP-RHO",
+      "scientific_name": "Papaver rhoeas L.",
+      "classification": {
+        "order": "Ranunculales",
+        "family": "Papaveraceae",
+        "genus": "Papaver"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "شقائق النعمان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الخشخاش الأحمر",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Poppy",
+          "Corn Poppy"
+        ]
+      },
+      "habit": "عشبة_حولية",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مُدرج في Wikipedia Flora of Iraq. عشبة حولية مميزة لفصل الربيع في الحقول والسهوب — فئة جديدة (أعشاب حولية)."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Salvadoraceae",
+    "title_en": "Family Salvadoraceae",
+    "subset": "family:Salvadoraceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Salvadoraceae"
+  },
+  "taxa": [
+    {
+      "id": "SAL-SAL-PER",
+      "scientific_name": "Salvadora persica L.",
+      "classification": {
+        "order": "Brassicales",
+        "family": "Salvadoraceae",
+        "genus": "Salvadora"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الأراك",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة السواك",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Toothbrush Tree",
+          "Miswak"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود_نادر_محلياً",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "مذكور صراحةً ضمن النباتات الخشبية الكبيرة في القسم الصحراوي (Saharan) من جنوب غرب العراق، إلى جانب Acacia nilotica وCalotropis procera. مصدر السواك. وجوده في العراق هامشي عند الحد الشمالي لمداه"
+    }
+  ]
+}

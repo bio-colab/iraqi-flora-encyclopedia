@@ -1,0 +1,62 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Ephedraceae",
+    "title_en": "Family Ephedraceae",
+    "subset": "family:Ephedraceae",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Ephedraceae"
+  },
+  "taxa": [
+    {
+      "id": "EPH-EPH-SPP",
+      "scientific_name": "Ephedra spp.",
+      "classification": {
+        "order": "Ephedrales",
+        "family": "Ephedraceae",
+        "genus": "Ephedra",
+        "division": "Gnetophyta (معراة البذور)"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العَلَندى",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "عنب الذئب",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الإفيدرا",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Joint Pine",
+          "Ephedra"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "DESERT",
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "🌿 مجموعة نباتية استثنائية: من معراة البذور (Gnetophyta) لا من مغطاة البذور — فهي أقرب نسباً للصنوبر منها للشجيرات المحيطة بها. مصدر الإفيدرين. سيقان مفصّلية خضراء بلا أوراق حقيقية"
+    }
+  ]
+}

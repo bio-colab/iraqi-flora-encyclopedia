@@ -1,0 +1,60 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "الفلورا الخشبية العراقية — أعشاب حولية",
+    "title_en": "Iraqi Woody Flora — Annual Herbs",
+    "subset": "habit:عشبة_حولية",
+    "taxa_count": 1,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "habit": "عشبة_حولية",
+    "habit_label_ar": "أعشاب حولية",
+    "habit_label_en": "Annual Herbs",
+    "category_group": "herb"
+  },
+  "taxa": [
+    {
+      "id": "PAP-PAP-RHO",
+      "scientific_name": "Papaver rhoeas L.",
+      "classification": {
+        "order": "Ranunculales",
+        "family": "Papaveraceae",
+        "genus": "Papaver"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "شقائق النعمان",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الخشخاش الأحمر",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Poppy",
+          "Corn Poppy"
+        ]
+      },
+      "habit": "عشبة_حولية",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مُدرج في Wikipedia Flora of Iraq. عشبة حولية مميزة لفصل الربيع في الحقول والسهوب — فئة جديدة (أعشاب حولية)."
+    }
+  ]
+}

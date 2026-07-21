@@ -1,0 +1,284 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Lamiaceae",
+    "title_en": "Family Lamiaceae",
+    "subset": "family:Lamiaceae",
+    "taxa_count": 7,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Lamiaceae"
+  },
+  "taxa": [
+    {
+      "id": "LAM-PHL-BRU",
+      "scientific_name": "Phlomis bruguieri Desf.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Phlomis"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزُهيرة",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Jerusalem Sage (broad sense)"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "STEPPE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً ضمن مجتمع Sub-desert scrub العراقي"
+    },
+    {
+      "id": "LAM-TEU-OLI",
+      "scientific_name": "Teucrium oliverianum Ging. ex Benth.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Teucrium"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجَعدة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Germander"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً ضمن مرافقات مجتمع Hammada في صحراء العراق"
+    },
+    {
+      "id": "LAM-TEU-POL",
+      "scientific_name": "Teucrium polium L.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Teucrium"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الجعدة",
+            "confidence": "عالية"
+          },
+          {
+            "name": "جعدة بيضاء",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Felty Germander",
+          "Cat Thyme"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شائع في السهوب والجبال الجافة؛ يكمّل T. oliverianum. استخدامات طبية شعبية واسعة في العراق والمنطقة."
+    },
+    {
+      "id": "LAM-THY-SPI",
+      "scientific_name": "Thymbra spicata L.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Thymbra"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزعتر الشائك",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "زعتر",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Spiked Thyme",
+          "Thymbra"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. عطري جبلي/سهبي."
+    },
+    {
+      "id": "LAM-VIT-AGN",
+      "scientific_name": "Vitex agnus-castus L.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Vitex"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "كف مريم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة العفة",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الأثلج",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Chaste Tree",
+          "Monk's Pepper"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شائع على مجاري الوديان في حزام الغابة الزاغروسية (Wikipedia Zagros). يُكمّل نوعي Vitex العراقيين المسجّلين سابقاً (V. iraquensis, V. pseudo-negundo)."
+    },
+    {
+      "id": "LAM-VIT-IRA",
+      "scientific_name": "Vitex iraquensis (Rech.f.) Ghazanfar",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Vitex"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "كف مريم العراقية",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "شجرة العفة العراقية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Iraqi Chaste Tree"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "endemic_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false,
+        "note": "أغلب مستوطنات العراق الـ174 لم تُقيَّم لدى IUCN — والفجوة التقييمية نفسها تهديد"
+      },
+      "iraq_local_status": "غير_معروف",
+      "flagship_case": true,
+      "notes": "🇮🇶 من أبرز الأنواع الخشبية المستوطنة في العراق حصراً. لافت أنها ليست وسادة ألبية عالية بل شجيرة خشبية لأرض دافئة منخفضة — ما يوسّع مدى الموائل التي تشغلها الفلورا المستوطنة العراقية. العراق يملك 174 تاكسوناً مستوطناً (153 نوعاً كاملاً) أي ≈5.3% من فلوراه، لكن الأغلبية الساحقة أعشاب وبصليات لا أشجار، وهذا النوع من الاستثناءات الخشبية القليلة"
+    },
+    {
+      "id": "LAM-VIT-PSE",
+      "scientific_name": "Vitex pseudo-negundo (Hausskn. ex Bornm.) Hand.-Mazz.",
+      "classification": {
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Vitex"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الفَنجَرة",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "كف مريم",
+            "confidence": "عالية"
+          },
+          {
+            "name": "شجرة العفة",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Chaste Tree"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "RIVERINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجيرة مجاري المياه والأودية الحصوية"
+    }
+  ]
+}

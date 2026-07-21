@@ -1,0 +1,86 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Nitrariaceae",
+    "title_en": "Family Nitrariaceae",
+    "subset": "family:Nitrariaceae",
+    "taxa_count": 2,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Nitrariaceae"
+  },
+  "taxa": [
+    {
+      "id": "ZYG-NIT-RET",
+      "scientific_name": "Nitraria retusa (Forssk.) Asch.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Nitrariaceae",
+        "genus": "Nitraria"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغَرقَد",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Salt Tree",
+          "Nitre Bush"
+        ]
+      },
+      "habit": "شجيرة_ملحية",
+      "zones": [
+        "MARSH_SALINE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "شجيرة السبخات والأراضي المالحة. 'الغرقد' اسم تراثي معروف"
+    },
+    {
+      "id": "ZYG-PEG-HAR",
+      "scientific_name": "Peganum harmala L.",
+      "classification": {
+        "order": "Sapindales",
+        "family": "Nitrariaceae",
+        "genus": "Peganum"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الحَرمل",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Syrian Rue",
+          "Harmal"
+        ]
+      },
+      "habit": "شبه_شجيرة",
+      "zones": [
+        "STEPPE",
+        "DESERT"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "مذكور صراحةً في مجتمع Sub-desert scrub العراقي مع تحديد دقيق: 'على الأرض المضطربة والمهملة' (on disturbed and waste ground). أي أنه نبات دليل على التدهور. سام، وله استعمال بخوري شعبي واسع في العراق"
+    }
+  ]
+}

@@ -1,0 +1,796 @@
+{
+  "$schema_version": "1.1",
+  "meta": {
+    "project": "Iraqi Flora Encyclopedia / موسوعة الفلورا العراقية",
+    "phase": "managed-dataset",
+    "title_ar": "العائلة Rosaceae",
+    "title_en": "Family Rosaceae",
+    "subset": "family:Rosaceae",
+    "taxa_count": 21,
+    "parent_dataset": "data/master/woody_flora.json",
+    "updated_on": "2026-07-21",
+    "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
+    "schema_ref": "schema/plant_taxon.schema.json",
+    "family": "Rosaceae"
+  },
+  "taxa": [
+    {
+      "id": "ROS-COT-NUM",
+      "scientific_name": "Cotoneaster nummularius Fisch. & C.A.Mey.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Cotoneaster"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "القطلب القرصي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "قطلب جبلي",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Nummular Cotoneaster",
+          "Coinwort Cotoneaster"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "THORN_CUSHION_ALPINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مرافق غابات البلوط في زاغروس (Wikipedia). POWO يذكر العراق ضمن المدى الأصلي. شجيرة جبلية شتوية التساقط."
+    },
+    {
+      "id": "ROS-COT-RAC",
+      "scientific_name": "Cotoneaster racemiflorus (Desf.) Booth ex Bosse",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Cotoneaster"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الكوتونستر",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Racemeflower Cotoneaster"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "THORN_CUSHION_ALPINE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور صراحةً في الحزام الانتقالي فوق خط الشجر (1800–2000 م)"
+    },
+    {
+      "id": "ROS-CRA-AZA",
+      "scientific_name": "Crataegus azarolus L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Crataegus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزعرور",
+            "confidence": "عالية"
+          },
+          {
+            "name": "زعرور مشرقي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Mediterranean Hawthorn",
+          "Azarole"
+        ],
+        "kurdish": [
+          {
+            "name": "گوێژ (Gwêj)",
+            "confidence": "متوسطة"
+          }
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور صراحةً ضمن الـ10% غير البلوطية من غطاء كردستان الحرجي. ثماره وبراعمه وأوراقه صالحة للأكل. طبّي شعبي مشهور (القلب). ينمو على السفوح الجبلية الدنيا"
+    },
+    {
+      "id": "ROS-CRA-MEY",
+      "scientific_name": "Crataegus meyeri Pojark.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Crataegus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "زعرور ماير",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "الزعرور",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Meyer's Hawthorn"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور أحياناً إلى جانب C. azarolus وC. monogyna في غابات زاغروس."
+    },
+    {
+      "id": "ROS-CRA-MON",
+      "scientific_name": "Crataegus monogyna Jacq.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Crataegus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الزعرور أحادي المدقة",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Common Hawthorn"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "الزعرور جنس متعدد الأنواع في زاغروس؛ الحدود بين الأنواع دقيقة والتحديد الحقلي يحتاج ثماراً"
+    },
+    {
+      "id": "ROS-PRU-ARA",
+      "scientific_name": "Prunus arabica (Olivier) Meikle",
+      "taxonomic_note": "سابقاً Amygdalus arabica Olivier",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus",
+        "subgenus": "Amygdalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللوز البري",
+            "confidence": "عالية"
+          },
+          {
+            "name": "اللوز العربي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Arabian Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "من شجيرات السفوح الجافة. جنس Amygdalus/Prunus من مكوّنات السهوب المفتوحة العراقية الأصلية"
+    },
+    {
+      "id": "ROS-PRU-ARG",
+      "scientific_name": "Prunus argentea (Lam.) Rehder",
+      "taxonomic_note": "Amygdalus argentea في بعض المراجع القديمة.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "لوز فضّي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "لوز بري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Silver Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq وفي مرافقي غابة البلوط الزاغروسية."
+    },
+    {
+      "id": "ROS-PRU-BCP",
+      "scientific_name": "Prunus brachypetala Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "لوز قصير البتلات",
+            "confidence": "منخفضة"
+          },
+          {
+            "name": "لوز بري",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Short-petaled Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. عنصر من scrub اللوز–الفستق في السفوح."
+    },
+    {
+      "id": "ROS-PRU-CRD",
+      "scientific_name": "Prunus carduchorum (Bornm.) Meikle",
+      "taxonomic_note": "اسم يشير إلى المنطقة الكردية (Carduchi). مدرج في Flora of Iraq (Wikipedia category).",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "لوز كردي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Kurdish Almond"
+        ],
+        "kurdish": [
+          {
+            "name": "بادەمی کوردی",
+            "confidence": "منخفضة"
+          }
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "نادر_محلياً",
+      "notes": "تاكسون مُدرَج في Wikipedia Flora of Iraq؛ انتشار جغرافي مرتبط بجبال كردستان."
+    },
+    {
+      "id": "ROS-PRU-COC",
+      "scientific_name": "Prunus cocomilia Ten.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الخوخ الإيطالي البري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Italian Plum"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في قائمة أشجار العراق لدى Restor"
+    },
+    {
+      "id": "ROS-PRU-MAH",
+      "scientific_name": "Prunus mahaleb L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "المَحلب",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Mahaleb Cherry",
+          "St. Lucie Cherry"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "بذوره هي 'المحلب' التوابلي المشهور في المطبخ العراقي والشامي"
+    },
+    {
+      "id": "ROS-PRU-MIC",
+      "scientific_name": "Prunus microcarpa C.A.Mey.",
+      "taxonomic_note": "يُكتب أيضاً Cerasus microcarpa. من لوزيات/كرز بري صغير الثمار في حزام زاغروس.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "كرز بري صغير الثمار",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "محلب جبلي",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Small-fruited Cherry",
+          "Wild Cherry"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مرافق لبلوط زاغروس (Wikipedia Zagros Mountains forest steppe) مع Prunus argentea وP. mahaleb."
+    },
+    {
+      "id": "ROS-PRU-ORI",
+      "scientific_name": "Prunus orientalis (Mill.) Koehne",
+      "taxonomic_note": "سابقاً Amygdalus orientalis Mill.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus",
+        "subgenus": "Amygdalus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللوز الشرقي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Oriental Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "STEPPE",
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": ""
+    },
+    {
+      "id": "ROS-PRU-SCO",
+      "scientific_name": "Prunus scoparia (Spach) C.K.Schneid.",
+      "taxonomic_note": "مرادف شائع: Amygdalus scoparia. لوز قضيبي سائد في scrub زاغروس الجاف.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "اللوز البري القضيبي",
+            "confidence": "عالية"
+          },
+          {
+            "name": "لوز السياج",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Mountain Almond",
+          "Wild Almond"
+        ]
+      },
+      "habit": "شجيرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مميّز لمجتمعات Pistacia–Amygdalus steppe scrub على سفوح زاغروس (مصادر إيران–العراق). مهم لإعادة التأهيل البيئي."
+    },
+    {
+      "id": "ROS-PYR-GLA",
+      "scientific_name": "Pyrus glabra Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Pyrus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "إجاص أملس",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "كمثرى برية",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Smooth Pear",
+          "Wild Pear"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مذكور في الطرف الجنوبي لزاغروس مع Pyrus syriaca ضمن غابات/سبوب مفتوحة حتى ارتفاعات عالية."
+    },
+    {
+      "id": "ROS-PYR-SYR",
+      "scientific_name": "Pyrus syriaca Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Pyrus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الإجاص البري",
+            "confidence": "عالية"
+          },
+          {
+            "name": "الكمثرى السورية",
+            "confidence": "عالية"
+          },
+          {
+            "name": "العنجاص البري",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Syrian Pear",
+          "Wild Pear"
+        ]
+      },
+      "habit": "شجرة",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "متراجع",
+      "notes": "مذكور في Britannica ضمن أشجار السفوح الجبلية الدنيا في العراق ('wild pears'). أصل وراثي مهم لأصناف الإجاص المزروع"
+    },
+    {
+      "id": "ROS-ROS-BOI",
+      "scientific_name": "Rosa boissieri Crép.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "ورد بواسيه",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الورد البري",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Boissier's Rose"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq ضمن نباتات العراق."
+    },
+    {
+      "id": "ROS-ROS-CAN",
+      "scientific_name": "Rosa canina L.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الورد البري",
+            "confidence": "عالية"
+          },
+          {
+            "name": "النِسرين",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "ورد الكلب",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Dog Rose"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "ثماره (الورد الوردي/hips) غنية بفيتامين C وتُستعمل شعبياً"
+    },
+    {
+      "id": "ROS-ROS-PHO",
+      "scientific_name": "Rosa phoenicia Boiss.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "ورد فينيقي",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "الورد البري",
+            "confidence": "عالية"
+          }
+        ],
+        "english": [
+          "Phoenician Rose"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "STEPPE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "مُدرج في Wikipedia Category:Flora of Iraq. يوسّع تغطية الورد البري بعد Rosa canina."
+    },
+    {
+      "id": "ROS-RUB-SAN",
+      "scientific_name": "Rubus sanctus Schreb.",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rubus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "العُلَّيق",
+            "confidence": "عالية"
+          },
+          {
+            "name": "التوت الشوكي",
+            "confidence": "متوسطة"
+          }
+        ],
+        "english": [
+          "Holy Bramble"
+        ]
+      },
+      "habit": "شجيرة_شوكية",
+      "zones": [
+        "MOUNTAIN_FOREST",
+        "RIVERINE"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": null,
+        "verified_in_session": false
+      },
+      "iraq_local_status": "مستقر_نسبياً",
+      "notes": "شجيرة الأودية والمجاري المائية في كردستان. ثماره صالحة للأكل"
+    },
+    {
+      "id": "ROS-SOR-GRA",
+      "scientific_name": "Sorbus graeca (Spach) Lodd. ex Schauer",
+      "classification": {
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Sorbus"
+      },
+      "names": {
+        "arabic": [
+          {
+            "name": "الغُبَيراء",
+            "confidence": "متوسطة"
+          },
+          {
+            "name": "السوربوس اليوناني",
+            "confidence": "منخفضة"
+          }
+        ],
+        "english": [
+          "Greek Whitebeam"
+        ]
+      },
+      "habit": "شجرة_صغيرة",
+      "zones": [
+        "MOUNTAIN_FOREST"
+      ],
+      "native_to_iraq": true,
+      "presence_in_iraq": "موجود",
+      "iucn": {
+        "category": "LC",
+        "verified_in_session": true
+      },
+      "iraq_local_status": "غير_معروف",
+      "notes": "ثماره صالحة للأكل. مُدرج في قائمة أشجار العراق لدى Restor"
+    }
+  ]
+}
