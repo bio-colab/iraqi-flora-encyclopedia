@@ -20,6 +20,7 @@ from typing import Any, Callable, Iterable
 from .config import ARCHIVE_DIR, MASTER_PATH, PROJECT_ROOT
 from .errors import DuplicateError, NotFoundError, ValidationError
 from .rebuild import load_master, rebuild_all, sort_taxa
+from .search import SchemaAwareSearch, SearchQuery, summarize_taxon
 from .validate import deep_merge, normalize_taxon, suggest_id
 
 
@@ -64,51 +65,106 @@ class FloraManager:
 
     def search(
         self,
-        query: str,
+        query: str = "",
         *,
         habit: str | None = None,
         family: str | None = None,
         native: bool | None = None,
+        genus: str | None = None,
+        zone: str | None = None,
+        presence: str | None = None,
+        local_status: str | None = None,
+        taxon_id: str | None = None,
+        category_group: str | None = None,
+        iucn: str | None = None,
         limit: int = 50,
+        offset: int = 0,
+        **extra: Any,
     ) -> list[dict]:
-        q = (query or "").strip().casefold()
-        results: list[dict] = []
-        for t in self.taxa:
-            if habit and t.get("habit") != habit:
-                continue
-            if family:
-                fam = (t.get("classification") or {}).get("family") or ""
-                if fam.casefold() != family.casefold():
-                    continue
-            if native is not None and bool(t.get("native_to_iraq")) != native:
-                continue
-            if q and not self._matches(t, q):
-                continue
-            results.append(deepcopy(t))
-            if len(results) >= limit:
-                break
-        return results
+        """Schema-aware free-text + field filters. Returns matching taxa list."""
+        result = self.search_detailed(
+            query,
+            habit=habit,
+            family=family,
+            native=native,
+            genus=genus,
+            zone=zone,
+            presence=presence,
+            local_status=local_status,
+            taxon_id=taxon_id,
+            category_group=category_group,
+            iucn=iucn,
+            limit=limit,
+            offset=offset,
+            **extra,
+        )
+        return result["results"]
 
-    @staticmethod
-    def _matches(t: dict, q: str) -> bool:
-        hay = [
-            t.get("id") or "",
-            t.get("scientific_name") or "",
-            t.get("notes") or "",
-            t.get("habit") or "",
-            (t.get("classification") or {}).get("family") or "",
-            (t.get("classification") or {}).get("genus") or "",
-        ]
-        for ar in (t.get("names") or {}).get("arabic") or []:
-            if isinstance(ar, dict):
-                hay.append(ar.get("name") or "")
-        for en in (t.get("names") or {}).get("english") or []:
-            hay.append(str(en))
-        for ku in (t.get("names") or {}).get("kurdish") or []:
-            if isinstance(ku, dict):
-                hay.append(ku.get("name") or "")
-        blob = " ".join(hay).casefold()
-        return q in blob
+    def search_detailed(
+        self,
+        query: str = "",
+        *,
+        habit: str | None = None,
+        family: str | None = None,
+        native: bool | None = None,
+        genus: str | None = None,
+        zone: str | None = None,
+        presence: str | None = None,
+        local_status: str | None = None,
+        taxon_id: str | None = None,
+        category_group: str | None = None,
+        iucn: str | None = None,
+        limit: int = 50,
+        offset: int = 0,
+        sort_by: str = "family",
+        sort_desc: bool = False,
+        **extra: Any,
+    ) -> dict[str, Any]:
+        """
+        Full schema-aware search with pagination metadata.
+
+        Filters map to plant_taxon schema fields (id, habit, family, zones, …).
+        """
+        params: dict[str, Any] = {
+            "q": query or "",
+            "habit": habit,
+            "family": family,
+            "native": native,
+            "genus": genus,
+            "zone": zone,
+            "presence": presence,
+            "local_status": local_status,
+            "id": taxon_id,
+            "category": category_group,
+            "iucn": iucn,
+            "limit": limit,
+            "offset": offset,
+            "sort_by": sort_by,
+            "sort_desc": sort_desc,
+        }
+        params.update(extra)
+        # drop Nones so from_params stays clean
+        clean = {k: v for k, v in params.items() if v is not None}
+        engine = SchemaAwareSearch(self.taxa)
+        return engine.search(SearchQuery.from_params(clean))
+
+    def list_summaries(
+        self,
+        *,
+        habit: str | None = None,
+        family: str | None = None,
+        native: bool | None = None,
+        **filters: Any,
+    ) -> list[dict]:
+        hits = self.search(
+            "",
+            habit=habit,
+            family=family,
+            native=native,
+            limit=100_000,
+            **filters,
+        )
+        return [summarize_taxon(t) for t in hits]
 
     def stats(self) -> dict[str, Any]:
         taxa = self.taxa
@@ -133,37 +189,6 @@ class FloraManager:
 
     def list_ids(self) -> list[str]:
         return [t["id"] for t in sort_taxa(self.taxa)]
-
-    def list_summaries(
-        self,
-        *,
-        habit: str | None = None,
-        family: str | None = None,
-        native: bool | None = None,
-    ) -> list[dict]:
-        rows = []
-        for t in sort_taxa(self.taxa):
-            if habit and t.get("habit") != habit:
-                continue
-            if family:
-                fam = (t.get("classification") or {}).get("family") or ""
-                if fam.casefold() != family.casefold():
-                    continue
-            if native is not None and bool(t.get("native_to_iraq")) != native:
-                continue
-            ar_names = (t.get("names") or {}).get("arabic") or []
-            ar0 = ar_names[0]["name"] if ar_names and isinstance(ar_names[0], dict) else ""
-            rows.append(
-                {
-                    "id": t.get("id"),
-                    "scientific_name": t.get("scientific_name"),
-                    "arabic": ar0,
-                    "habit": t.get("habit"),
-                    "family": (t.get("classification") or {}).get("family"),
-                    "native_to_iraq": t.get("native_to_iraq"),
-                }
-            )
-        return rows
 
     # ------------------------------------------------------------------ mutate
     def add(self, raw: dict, *, strict: bool = True) -> dict:

@@ -46,7 +46,9 @@ This is a **volunteer project by Elias Sharar**, published under the **[bio-cola
 .
 ├── README.md
 ├── CHANGELOG.md
+├── file.bat                       # تشغيل الواجهة (Windows)
 ├── iraq_woody_flora.json          # نسخة رئيسية مريحة في الجذر (مرآة)
+├── frontend/                      # واجهة ويب تفاعلية (CRUD + بحث)
 ├── data/
 │   ├── master/woody_flora.json    # المصدر المعتمد (source of truth)
 │   ├── index.json                 # فهرس سريع + إحصاءات
@@ -62,7 +64,8 @@ This is a **volunteer project by Elias Sharar**, published under the **[bio-cola
 │   └── field_catalog.json
 ├── tools/
 │   ├── manage_flora.py            # واجهة سطر الأوامر
-│   ├── flora_lib/                 # مكتبة الإدارة
+│   ├── web_server.py              # خادم الواجهة + REST API
+│   ├── flora_lib/                 # مكتبة الإدارة + محرك البحث
 │   └── examples/                  # قوالب وإضافات جماعية
 └── archive/                       # نسخ خام / احتياطية
 ```
@@ -118,6 +121,26 @@ This is a **volunteer project by Elias Sharar**, published under the **[bio-cola
 
 ---
 
+## الواجهة الرسومية / Web UI
+
+واجهة عربية (RTL) للبحث وعرض وإدارة الأصناف (إنشاء / قراءة / تعديل / حذف)، مع أوضاع عرض **جدول / بطاقات / شبكة** وتصفية حسب حقول المخطط.
+
+### التشغيل السريع (Windows)
+
+انقر نقراً مزدوجاً على **`file.bat`** — يفتح المتصفح على `http://127.0.0.1:8765/`.
+
+أو من الطرفية:
+
+```bash
+python tools/web_server.py
+# أو بدون فتح المتصفح:
+python tools/web_server.py --no-browser --port 8765
+```
+
+يتطلب **Python 3.10+** فقط (بدون Flask أو حزم خارجية). التعديلات تُحفظ عبر `FloraManager` مع إعادة بناء كل الملفات المشتقة تلقائياً.
+
+---
+
 ## إدارة البيانات / Data management
 
 يتطلب **Python 3.10+** (مكتبة قياسية فقط — بدون تبعيات خارجية).
@@ -131,6 +154,8 @@ python tools/manage_flora.py stats
 # قائمة / بحث / عرض
 python tools/manage_flora.py list --habit شجرة
 python tools/manage_flora.py search بلوط
+python tools/manage_flora.py search --family Fagaceae --zone MOUNTAIN_FOREST
+python tools/manage_flora.py search --category trees --native true --json --meta
 python tools/manage_flora.py get FAG-QUE-AEG
 
 # إضافة صنف من ملف JSON
@@ -261,3 +286,4 @@ bio-colab. https://github.com/bio-colab/<repo-name>
 - سجل العمليات الآلي: [`data/changelog.jsonl`](data/changelog.jsonl)
 - المخطط: [`schema/`](schema/)
 - الأداة: [`tools/manage_flora.py`](tools/manage_flora.py)
+- الواجهة: [`file.bat`](file.bat) / [`tools/web_server.py`](tools/web_server.py) / [`frontend/`](frontend/)

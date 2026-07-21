@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="موسوعة الفلورا العراقية — واجهة إدارة وبحث الأصناف النباتية" />
+  <title>موسوعة الفلورا العراقية | Iraqi Flora Encyclopedia</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">🌿</div>
+        <div class="brand-text">
+          <h1>موسوعة الفلورا العراقية</h1>
+          <p>Iraqi Flora Encyclopedia — بحث وإدارة CRUD</p>
+        </div>
+      </div>
+      <div class="header-stats" aria-live="polite">
+        <span class="stat-chip">أصناف<strong id="statTotal">—</strong></span>
+        <span class="stat-chip">أصيل<strong id="statNative">—</strong></span>
+        <span class="stat-chip">عائلات<strong id="statFamilies">—</strong></span>
+      </div>
+    </header>
+
+    <div class="loading-bar" id="loadingBar"></div>
+
+    <div class="app-body">
+      <aside class="sidebar" aria-label="مرشحات البحث">
+        <h2>تصفية حسب الحقول</h2>
+        <form id="filterForm" onsubmit="return false;">
+          <div class="field">
+            <label for="filterCategory">المجموعة الهيكلية</label>
+            <select id="filterCategory">
+              <option value="">— الكل —</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filterHabit">شكل النمو (habit)</label>
+            <select id="filterHabit">
+              <option value="">— الكل —</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filterFamily">العائلة</label>
+            <select id="filterFamily">
+              <option value="">— الكل —</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filterGenus">الجنس</label>
+            <input id="filterGenus" type="text" placeholder="مثلاً Quercus" dir="ltr" />
+          </div>
+          <div class="field">
+            <label for="filterZone">المنطقة النباتية</label>
+            <select id="filterZone">
+              <option value="">— الكل —</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filterNative">الأصالة</label>
+            <select id="filterNative">
+              <option value="">— الكل —</option>
+              <option value="true">أصيل</option>
+              <option value="false">غير أصيل</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filterPresence">الحضور في العراق</label>
+            <select id="filterPresence">
+              <option value="">— الكل —</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filterLocalStatus">الحالة المحلية</label>
+            <select id="filterLocalStatus">
+              <option value="">— الكل —</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="filterIucn">IUCN</label>
+            <select id="filterIucn">
+              <option value="">— الكل —</option>
+            </select>
+          </div>
+          <div class="sidebar-actions">
+            <button type="button" class="btn btn-primary" id="btnApplyFilters">تطبيق</button>
+            <button type="button" class="btn" id="btnResetFilters">مسح المرشحات</button>
+          </div>
+        </form>
+      </aside>
+
+      <main class="main">
+        <div class="toolbar">
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="بحث: اسم علمي، عربي، كردي، معرّف، عائلة، ملاحظات…"
+              autocomplete="off"
+            />
+          </div>
+          <span class="toolbar-meta" id="resultCount">—</span>
+          <div class="view-toggle" role="group" aria-label="طريقة العرض">
+            <button type="button" data-view="table" class="active">جدول</button>
+            <button type="button" data-view="cards">بطاقات</button>
+            <button type="button" data-view="grid">شبكة</button>
+          </div>
+          <button type="button" class="btn btn-primary" id="btnAdd">＋ إضافة صنف</button>
+        </div>
+
+        <div class="results-area" id="resultsArea">
+          <div class="empty-state">
+            <span class="emoji">🌿</span>
+            <p>جاري التحميل…</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalTitle">—</h2>
+          <p class="sub" id="modalSub"></p>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm" id="modalClose" aria-label="إغلاق">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer" id="modalFooter"></div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

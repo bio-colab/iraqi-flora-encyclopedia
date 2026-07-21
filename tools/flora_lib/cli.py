@@ -114,15 +114,23 @@ def cmd_get(args: argparse.Namespace) -> int:
 
 def cmd_search(args: argparse.Namespace) -> int:
     m = FloraManager(auto_backup=False)
-    hits = m.search(
-        args.query,
+    detail = m.search_detailed(
+        args.query or "",
         habit=args.habit,
         family=args.family,
         native=args.native,
+        genus=args.genus,
+        zone=args.zone,
+        presence=args.presence,
+        local_status=args.local_status,
+        taxon_id=args.id,
+        category_group=args.category,
         limit=args.limit,
+        offset=args.offset,
     )
+    hits = detail["results"]
     if args.json:
-        _print_json(hits)
+        _print_json(detail if args.meta else hits)
         return 0
     for t in hits:
         ar = ""
@@ -130,7 +138,7 @@ def cmd_search(args: argparse.Namespace) -> int:
         if ars and isinstance(ars[0], dict):
             ar = ars[0].get("name", "")
         print(f"{t['id']:<14} {t.get('habit'):<16} {t.get('scientific_name')} — {ar}")
-    print(f"\nالنتائج: {len(hits)}")
+    print(f"\nالنتائج: {detail['count']} / {detail['total']}")
     return 0
 
 
@@ -326,17 +334,31 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("id")
     s.set_defaults(func=cmd_get)
 
-    s = sub.add_parser("search", help="بحث نصي (عربي/إنجليزي/علمي/id)")
-    s.add_argument("query")
+    s = sub.add_parser(
+        "search",
+        help="بحث متوافق مع المخطط (نصي + تصفية بالحقول)",
+    )
+    s.add_argument("query", nargs="?", default="", help="نص حر (اختياري مع المرشحات)")
     s.add_argument("--habit", choices=ALLOWED_HABIT)
     s.add_argument("--family")
+    s.add_argument("--genus")
+    s.add_argument("--zone", choices=ALLOWED_ZONES)
+    s.add_argument("--presence", choices=ALLOWED_PRESENCE)
+    s.add_argument("--local-status", dest="local_status", choices=ALLOWED_LOCAL_STATUS)
+    s.add_argument("--id", help="معرّف أو جزء منه")
+    s.add_argument(
+        "--category",
+        help="مجموعة تصنيفية: trees, shrubs, subshrubs, woody_climbers, herbs, grasses, aquatic",
+    )
     s.add_argument(
         "--native",
         type=lambda x: {"true": True, "false": False, "1": True, "0": False}[x.lower()],
         default=None,
     )
     s.add_argument("--limit", type=int, default=50)
+    s.add_argument("--offset", type=int, default=0)
     s.add_argument("--json", action="store_true")
+    s.add_argument("--meta", action="store_true", help="مع --json: إرجاع total/offset/results")
     s.set_defaults(func=cmd_search)
 
     s = sub.add_parser("add", help="إضافة صنف جديد")

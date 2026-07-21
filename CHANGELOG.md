@@ -15,7 +15,34 @@ Automated operation logs (add / update / delete) are also appended to `data/chan
 - Deeper reconciliation against *Flora of Iraq* volumes
 - Expansion of herbaceous and grass coverage beyond seed records
 - Optional CSV/Excel import-export
-- Arabic-first web browse UI (future)
+
+---
+
+## [0.3.0] — 2026-07-21
+
+### Added
+- **Schema-aware search engine** (`tools/flora_lib/search.py`):
+  - Free-text over schema paths (id, scientific name, Arabic/Kurdish/English names, notes, classification, zones, IUCN, …)
+  - Structured filters: habit, family, genus, order, zone, native, endemic, presence, local status, IUCN, category group, flagship
+  - Pagination metadata (`total` / `offset` / `limit`) and sort options
+- **Local web frontend** (`frontend/`):
+  - Full **CRUD** UI (create / read / update / delete) writing through `FloraManager` with validation and fan-out rebuild
+  - Dynamic view modes: **Table / Cards / Grid**
+  - Sidebar filters aligned with dataset structure (category group, habit, family, zone, nativity, …)
+  - Arabic RTL interface with taxon detail modal and form editor
+- **HTTP API + static server** (`tools/web_server.py`, stdlib only):
+  - `GET /api/taxa`, `GET /api/taxa/{id}`, `POST /api/taxa`, `PUT|PATCH /api/taxa/{id}`, `DELETE /api/taxa/{id}`
+  - `GET /api/stats`, `/api/enums`, `/api/meta`, `/api/health`
+  - `POST /api/suggest-id`, `POST /api/search`
+- **Launcher:** `file.bat` — double-click to start the frontend on `http://127.0.0.1:8765/`
+
+### Changed
+- `FloraManager.search` / new `search_detailed` use the schema-aware engine
+- CLI `search` accepts optional query plus filters (`--genus`, `--zone`, `--presence`, `--local-status`, `--id`, `--category`, `--offset`, `--meta`)
+- `flora_lib` package version **1.0.0 → 1.1.0**
+
+### Tooling
+- No third-party web dependencies (Python standard library `ThreadingHTTPServer` only)
 
 ---
 
@@ -122,6 +149,7 @@ Automated operation logs (add / update / delete) are also appended to `data/chan
 
 ---
 
-[Unreleased]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/bio-colab/iraqi-flora-encyclopedia/releases/tag/v0.1.0
