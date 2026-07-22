@@ -1,11 +1,13 @@
 /**
  * API client for Iraqi Flora Encyclopedia local server.
+ * Includes auth (Google session cookie) + flora CRUD + change requests.
  */
 const API = (() => {
   const BASE = "";
 
   async function request(path, options = {}) {
     const opts = {
+      credentials: "same-origin",
       headers: { Accept: "application/json", ...(options.headers || {}) },
       ...options,
     };
@@ -40,14 +42,14 @@ const API = (() => {
   }
 
   return {
+    // flora
     health: () => request("/api/health"),
     stats: () => request("/api/stats"),
     enums: () => request("/api/enums"),
     meta: () => request("/api/meta"),
     listTaxa: (params = {}) => request(`/api/taxa${qs(params)}`),
     getTaxon: (id) => request(`/api/taxa/${encodeURIComponent(id)}`),
-    createTaxon: (body) =>
-      request("/api/taxa", { method: "POST", body }),
+    createTaxon: (body) => request("/api/taxa", { method: "POST", body }),
     updateTaxon: (id, body, replace = false) =>
       request(`/api/taxa/${encodeURIComponent(id)}`, {
         method: replace ? "PUT" : "PATCH",
@@ -59,6 +61,56 @@ const API = (() => {
       request("/api/suggest-id", {
         method: "POST",
         body: { family, genus, scientific_name },
+      }),
+
+    // auth
+    authConfig: () => request("/api/auth/config"),
+    me: () => request("/api/auth/me"),
+    logout: () => request("/api/auth/logout", { method: "POST", body: {} }),
+    googleStartUrl: () => "/api/auth/google/start",
+    googleStartJson: () =>
+      request("/api/auth/google/start?format=json", {
+        headers: { Accept: "application/json" },
+      }),
+    devLogin: (email, name = "") =>
+      request("/api/auth/dev-login", {
+        method: "POST",
+        body: { email, name },
+      }),
+    redeemCode: (code) =>
+      request("/api/auth/redeem-code", { method: "POST", body: { code } }),
+
+    // owner admin tools
+    listUsers: () => request("/api/auth/admin/users"),
+    listCodes: () => request("/api/auth/admin/codes"),
+    generateCode: (note = "") =>
+      request("/api/auth/admin/codes", { method: "POST", body: { note } }),
+    revokeCode: (id) =>
+      request(`/api/auth/admin/codes/${encodeURIComponent(id)}`, {
+        method: "DELETE",
+      }),
+    demoteAdmin: (email) =>
+      request(
+        `/api/auth/admin/users/${encodeURIComponent(email)}/admin`,
+        { method: "DELETE" }
+      ),
+    activity: (limit = 100) =>
+      request(`/api/auth/activity${qs({ limit })}`),
+
+    // change requests
+    listRequests: (params = {}) => request(`/api/requests${qs(params)}`),
+    getRequest: (id) => request(`/api/requests/${encodeURIComponent(id)}`),
+    createRequest: (body) =>
+      request("/api/requests", { method: "POST", body }),
+    approveRequest: (id, note = "") =>
+      request(`/api/requests/${encodeURIComponent(id)}/approve`, {
+        method: "POST",
+        body: { note },
+      }),
+    rejectRequest: (id, note = "") =>
+      request(`/api/requests/${encodeURIComponent(id)}/reject`, {
+        method: "POST",
+        body: { note },
       }),
   };
 })();

@@ -14,13 +14,16 @@
         <div class="brand-mark" aria-hidden="true">🌿</div>
         <div class="brand-text">
           <h1>موسوعة الفلورا العراقية</h1>
-          <p>Iraqi Flora Encyclopedia — بحث وإدارة CRUD</p>
+          <p>Iraqi Flora Encyclopedia — بحث وإدارة</p>
         </div>
       </div>
       <div class="header-stats" aria-live="polite">
         <span class="stat-chip">أصناف<strong id="statTotal">—</strong></span>
         <span class="stat-chip">أصيل<strong id="statNative">—</strong></span>
         <span class="stat-chip">عائلات<strong id="statFamilies">—</strong></span>
+      </div>
+      <div class="header-auth" id="headerAuth">
+        <button type="button" class="btn btn-primary btn-sm" id="btnLogin">دخول بحساب Google</button>
       </div>
     </header>
 
@@ -108,8 +111,12 @@
             <button type="button" data-view="cards">بطاقات</button>
             <button type="button" data-view="grid">شبكة</button>
           </div>
-          <button type="button" class="btn btn-primary" id="btnAdd">＋ إضافة صنف</button>
+          <button type="button" class="btn btn-primary hidden" id="btnAdd">＋ إضافة صنف</button>
+          <button type="button" class="btn hidden" id="btnMyRequests">طلباتي</button>
+          <button type="button" class="btn hidden" id="btnPanel">لوحة الإدارة</button>
         </div>
+
+        <div class="role-banner" id="roleBanner"></div>
 
         <div class="results-area" id="resultsArea">
           <div class="empty-state">
@@ -123,7 +130,7 @@
 
   <!-- Modal -->
   <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal">
+    <div class="modal" id="modalShell">
       <div class="modal-header">
         <div>
           <h2 id="modalTitle">—</h2>

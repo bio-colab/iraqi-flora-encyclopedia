@@ -1,0 +1,93 @@
+{
+  "users": {
+    "user@test.com": {
+      "email": "user@test.com",
+      "name": "Test User",
+      "picture": "",
+      "google_sub": "dev:user@test.com",
+      "role": "user",
+      "created_at": "2026-07-22T07:30:22+03:00",
+      "last_login_at": "2026-07-22T07:30:22+03:00",
+      "promoted_at": null,
+      "promoted_by": null
+    },
+    "aliasbio95@gmail.com": {
+      "email": "aliasbio95@gmail.com",
+      "name": "Elias Sharar",
+      "picture": "",
+      "google_sub": "dev:aliasbio95@gmail.com",
+      "role": "owner",
+      "created_at": "2026-07-22T07:30:22+03:00",
+      "last_login_at": "2026-07-22T07:33:05+03:00",
+      "promoted_at": null,
+      "promoted_by": null
+    },
+    "admin.cand@test.com": {
+      "email": "admin.cand@test.com",
+      "name": "Admin Cand",
+      "picture": "",
+      "google_sub": "dev:admin.cand@test.com",
+      "role": "admin",
+      "created_at": "2026-07-22T07:30:22+03:00",
+      "last_login_at": "2026-07-22T07:30:22+03:00",
+      "promoted_at": "2026-07-22T07:30:22+03:00",
+      "promoted_by": "aliasbio95@gmail.com"
+    },
+    "req.user@test.com": {
+      "email": "req.user@test.com",
+      "name": "RU",
+      "picture": "",
+      "google_sub": "dev:req.user@test.com",
+      "role": "user",
+      "created_at": "2026-07-22T07:30:36+03:00",
+      "last_login_at": "2026-07-22T07:30:43+03:00",
+      "promoted_at": null,
+      "promoted_by": null
+    },
+    "smoke.admin@test.com": {
+      "email": "smoke.admin@test.com",
+      "name": "SA",
+      "picture": "",
+      "google_sub": "dev:smoke.admin@test.com",
+      "role": "admin",
+      "created_at": "2026-07-22T07:30:36+03:00",
+      "last_login_at": "2026-07-22T07:30:43+03:00",
+      "promoted_at": "2026-07-22T07:30:36+03:00",
+      "promoted_by": "aliasbio95@gmail.com"
+    },
+    "flow.user@test.com": {
+      "email": "flow.user@test.com",
+      "name": "FU",
+      "picture": "",
+      "google_sub": "dev:flow.user@test.com",
+      "role": "user",
+      "created_at": "2026-07-22T07:31:18+03:00",
+      "last_login_at": "2026-07-22T07:31:18+03:00",
+      "promoted_at": null,
+      "promoted_by": null
+    },
+    "flow.admin@test.com": {
+      "email": "flow.admin@test.com",
+      "name": "FA",
+      "picture": "",
+      "google_sub": "dev:flow.admin@test.com",
+      "role": "user",
+      "created_at": "2026-07-22T07:31:18+03:00",
+      "last_login_at": "2026-07-22T07:31:18+03:00",
+      "promoted_at": null,
+      "promoted_by": null
+    },
+    "aliasbio80@gmail.com": {
+      "email": "aliasbio80@gmail.com",
+      "name": "hasan",
+      "picture": "",
+      "google_sub": "dev:aliasbio80@gmail.com",
+      "role": "admin",
+      "created_at": "2026-07-22T07:34:08+03:00",
+      "last_login_at": "2026-07-22T07:34:08+03:00",
+      "promoted_at": "2026-07-22T07:34:19+03:00",
+      "promoted_by": "aliasbio95@gmail.com"
+    }
+  },
+  "updated_at": "2026-07-22T07:34:19+03:00"
+}

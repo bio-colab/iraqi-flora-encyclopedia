@@ -21,3 +21,11 @@ Desktop.ini
 
 # Optional: keep last backups in git? ignore rolling backups by default
 archive/woody_flora.backup_*.json
+
+# Auth secrets & local session state
+auth_config.json
+data/auth/secret.key
+data/auth/sessions.json
+data/auth/config.json
+.env
+.env.*

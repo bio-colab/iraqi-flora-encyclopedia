@@ -8,7 +8,7 @@
     "subset": "family:Papaveraceae",
     "taxa_count": 1,
     "parent_dataset": "data/master/woody_flora.json",
-    "updated_on": "2026-07-21",
+    "updated_on": "2026-07-22",
     "language_convention": "التنوين يُرسم على الحرف الأخير دائماً (حقاً لا حقًا)",
     "schema_ref": "schema/plant_taxon.schema.json",
     "family": "Papaveraceae"

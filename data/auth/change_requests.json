@@ -1,0 +1,137 @@
+{
+  "requests": [
+    {
+      "id": "req_f81b6608203f175c",
+      "type": "add",
+      "status": "approved",
+      "requester_email": "flow.user@test.com",
+      "requester_name": "FU",
+      "taxon_id": null,
+      "payload": {
+        "id": "FLO-TES-001",
+        "scientific_name": "Flora testus L.",
+        "classification": {
+          "order": "Rosales",
+          "family": "Rosaceae",
+          "genus": "Flora"
+        },
+        "names": {
+          "arabic": [
+            {
+              "name": "اختبار تدفق",
+              "confidence": "عالية"
+            }
+          ],
+          "english": [
+            "Flow test"
+          ]
+        },
+        "habit": "شجرة",
+        "zones": [
+          "STEPPE"
+        ],
+        "native_to_iraq": true,
+        "presence_in_iraq": "موجود",
+        "iucn": {
+          "category": null,
+          "verified_in_session": false
+        },
+        "iraq_local_status": "غير_معروف",
+        "notes": "طلب اختبار تدفق كامل"
+      },
+      "note": "auto",
+      "created_at": "2026-07-22T07:31:18+03:00",
+      "resolved_at": "2026-07-22T07:31:18+03:00",
+      "resolved_by": "flow.admin@test.com",
+      "resolution_note": "ok"
+    },
+    {
+      "id": "req_80ad87bd875e5625",
+      "type": "add",
+      "status": "approved",
+      "requester_email": "req.user@test.com",
+      "requester_name": "RU",
+      "taxon_id": null,
+      "payload": {
+        "id": "SMO-KE-001",
+        "scientific_name": "Smoke testus L.",
+        "classification": {
+          "order": "Rosales",
+          "family": "Rosaceae",
+          "genus": "Smoke"
+        },
+        "names": {
+          "arabic": [
+            {
+              "name": "اختبار دخان",
+              "confidence": "عالية"
+            }
+          ],
+          "english": [
+            "Smoke test"
+          ]
+        },
+        "habit": "شجرة",
+        "zones": [
+          "STEPPE"
+        ],
+        "native_to_iraq": true,
+        "presence_in_iraq": "موجود",
+        "iucn": {
+          "category": null,
+          "verified_in_session": false
+        },
+        "iraq_local_status": "غير_معروف",
+        "notes": "طلب اختبار آلي"
+      },
+      "note": "auto",
+      "created_at": "2026-07-22T07:30:36+03:00",
+      "resolved_at": "2026-07-22T07:30:36+03:00",
+      "resolved_by": "smoke.admin@test.com",
+      "resolution_note": "ok"
+    },
+    {
+      "id": "req_0049d0db2bbdf081",
+      "type": "add",
+      "status": "approved",
+      "requester_email": "user@test.com",
+      "requester_name": "Test User",
+      "taxon_id": null,
+      "payload": {
+        "iucn": {
+          "category": null
+        },
+        "id": "TES-TES-001",
+        "habit": "????",
+        "presence_in_iraq": "?????",
+        "classification": {
+          "genus": "Testus",
+          "family": "Testaceae",
+          "order": "Testales"
+        },
+        "notes": "test note",
+        "scientific_name": "Testus testus",
+        "native_to_iraq": true,
+        "zones": [
+          "DESERT"
+        ],
+        "names": {
+          "english": [],
+          "arabic": [
+            {
+              "name": "??????",
+              "confidence": "?????"
+            }
+          ]
+        },
+        "iraq_local_status": "???_?????"
+      },
+      "note": "please",
+      "created_at": "2026-07-22T07:30:22+03:00",
+      "resolved_at": "2026-07-22T07:30:22+03:00",
+      "resolved_by": "admin.cand@test.com",
+      "resolution_note": "ok"
+    }
+  ],
+  "updated_at": "2026-07-22T07:31:18+03:00"
+}

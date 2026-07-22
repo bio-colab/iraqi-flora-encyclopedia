@@ -1,0 +1,7 @@
+{
+  "google_client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+  "google_client_secret": "YOUR_CLIENT_SECRET",
+  "owner_email": "aliasbio95@gmail.com",
+  "redirect_uri": "http://127.0.0.1:8765/api/auth/google/callback",
+  "allow_dev_login": false
+}

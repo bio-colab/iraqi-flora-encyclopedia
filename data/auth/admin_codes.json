@@ -1,0 +1,53 @@
+{
+  "codes": [
+    {
+      "id": "34464343b8fa7590",
+      "code_hash": "fb660001ca8e9c2ee1cf4c63c22d8ad6345432a68fd785dba324663fdc3bb064",
+      "code_hint": "9907-****-**",
+      "created_at": "2026-07-22T07:33:26+03:00",
+      "created_by": "aliasbio95@gmail.com",
+      "expires_at": 1784867606.9813223,
+      "used_at": "2026-07-22T07:34:19+03:00",
+      "used_by": "aliasbio80@gmail.com",
+      "note": "",
+      "revoked": false
+    },
+    {
+      "id": "2645efee9bba54a9",
+      "code_hash": "f50b1e05a9943a69b64cfc140742e3edfc245335d4bd02021221d875bcf22001",
+      "code_hint": "27DB-****-**",
+      "created_at": "2026-07-22T07:31:18+03:00",
+      "created_by": "aliasbio95@gmail.com",
+      "expires_at": 1784867478.722689,
+      "used_at": "2026-07-22T07:31:18+03:00",
+      "used_by": "flow.admin@test.com",
+      "note": "flow",
+      "revoked": false
+    },
+    {
+      "id": "7e14231f61a8d4f3",
+      "code_hash": "ec69060b3e84c86b737362480a7b63ba154ed17ab564eea95669fb2119667d42",
+      "code_hint": "C749-****-**",
+      "created_at": "2026-07-22T07:30:36+03:00",
+      "created_by": "aliasbio95@gmail.com",
+      "expires_at": 1784867436.6372457,
+      "used_at": "2026-07-22T07:30:36+03:00",
+      "used_by": "smoke.admin@test.com",
+      "note": "smoke",
+      "revoked": false
+    },
+    {
+      "id": "043e4be794e85edc",
+      "code_hash": "157f32235e778cc09a6a7acb2987518aa18b6fa19f31b294de1cc72aa5944a39",
+      "code_hint": "2997-****-**",
+      "created_at": "2026-07-22T07:30:22+03:00",
+      "created_by": "aliasbio95@gmail.com",
+      "expires_at": 1784867422.3511941,
+      "used_at": "2026-07-22T07:30:22+03:00",
+      "used_by": "admin.cand@test.com",
+      "note": "for tester",
+      "revoked": false
+    }
+  ],
+  "updated_at": "2026-07-22T07:34:19+03:00"
+}

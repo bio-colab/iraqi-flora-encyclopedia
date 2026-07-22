@@ -4,6 +4,7 @@ Local HTTP API + static frontend for the Iraqi Flora Encyclopedia.
 
 Stdlib only (no Flask/Django). Serves:
   - REST API under /api/*
+  - Google OAuth + role-based access (owner / admin / user / guest)
   - Frontend assets from frontend/
 
 Usage:
@@ -20,6 +21,7 @@ import sys
 import threading
 import traceback
 import webbrowser
+from http.cookies import SimpleCookie
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
@@ -36,6 +38,17 @@ from flora_lib import (  # noqa: E402
     FloraManager,
     NotFoundError,
     ValidationError,
+)
+from flora_lib.auth import (  # noqa: E402
+    ROLE_ADMIN,
+    ROLE_OWNER,
+    ROLE_USER,
+    SESSION_COOKIE,
+    AuthError,
+    auth_store,
+    public_user,
+    require_role,
+    role_at_least,
 )
 from flora_lib.config import (  # noqa: E402
     ALLOWED_CONFIDENCE,
@@ -95,10 +108,45 @@ def _first(qs: dict[str, list[str]], key: str) -> str | None:
 
 
 class FloraAPIHandler(BaseHTTPRequestHandler):
-    server_version = "IraqiFloraAPI/1.0"
+    server_version = "IraqiFloraAPI/1.1"
 
     def log_message(self, fmt: str, *args: Any) -> None:
         sys.stderr.write("%s - %s\n" % (self.address_string(), fmt % args))
+
+    # ------------------------------------------------------------------ cookies / user
+    def _cookies(self) -> SimpleCookie:
+        c = SimpleCookie()
+        raw = self.headers.get("Cookie")
+        if raw:
+            try:
+                c.load(raw)
+            except Exception:  # noqa: BLE001
+                pass
+        return c
+
+    def _session_id(self) -> str | None:
+        c = self._cookies()
+        if SESSION_COOKIE in c:
+            return c[SESSION_COOKIE].value
+        return None
+
+    def _current_user(self) -> dict | None:
+        return auth_store.resolve_session(self._session_id())
+
+    def _base_url(self) -> str:
+        host = self.headers.get("Host") or f"{DEFAULT_HOST}:{DEFAULT_PORT}"
+        # Prefer http for local stdlib server
+        return f"http://{host}"
+
+    def _set_session_cookie_headers(self, sid: str | None, max_age: int | None = None) -> list[str]:
+        if sid is None:
+            return [
+                f"{SESSION_COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0"
+            ]
+        age = max_age if max_age is not None else 14 * 86400
+        return [
+            f"{SESSION_COOKIE}={sid}; Path=/; HttpOnly; SameSite=Lax; Max-Age={age}"
+        ]
 
     # ------------------------------------------------------------------ routing
     def do_OPTIONS(self) -> None:  # noqa: N802
@@ -109,10 +157,27 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:  # noqa: N802
         parsed = urlparse(self.path)
         path = unquote(parsed.path)
+        qs = parse_qs(parsed.query)
 
         if path.startswith("/api/"):
-            status, body, ctype = self._handle_api_get(path, parse_qs(parsed.query))
-            self._send(status, body, ctype)
+            try:
+                if path.rstrip("/") == "/api/auth/google/start":
+                    self._handle_google_start(qs)
+                    return
+                if path.rstrip("/") == "/api/auth/google/callback":
+                    self._handle_google_callback(qs)
+                    return
+
+                result = self._handle_api_get(path, qs)
+                if len(result) == 4:
+                    status, body, ctype, set_cookies = result
+                    self._send(status, body, ctype, set_cookies=set_cookies)
+                else:
+                    self._send(*result)
+            except AuthError as e:
+                self._send(*_error(str(e), e.status))
+            except Exception as e:  # noqa: BLE001
+                self._send(*_error(str(e), 500, trace=traceback.format_exc()))
             return
 
         self._serve_static(path)
@@ -128,8 +193,21 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
         except json.JSONDecodeError as e:
             self._send(*_error(f"JSON غير صالح: {e}", 400))
             return
-        status, body, ctype = self._handle_api_post(path, payload, parse_qs(parsed.query))
-        self._send(status, body, ctype)
+        try:
+            result = self._handle_api_post(path, payload, parse_qs(parsed.query))
+            if len(result) == 4:
+                status, body, ctype, set_cookies = result
+                self._send(status, body, ctype, set_cookies=set_cookies)
+            else:
+                self._send(*result)
+        except AuthError as e:
+            self._send(*_error(str(e), e.status))
+        except (ValidationError, DuplicateError) as e:
+            self._send(*_error(str(e), 422))
+        except FloraError as e:
+            self._send(*_error(str(e), 400))
+        except Exception as e:  # noqa: BLE001
+            self._send(*_error(str(e), 500, trace=traceback.format_exc()))
 
     def do_PUT(self) -> None:  # noqa: N802
         self._mutate("put")
@@ -140,6 +218,33 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
     def do_DELETE(self) -> None:  # noqa: N802
         parsed = urlparse(self.path)
         path = unquote(parsed.path)
+
+        # demote admin
+        if path.startswith("/api/auth/admin/users/") and path.endswith("/admin"):
+            try:
+                user = require_role(self._current_user(), ROLE_OWNER)
+                mid = path[len("/api/auth/admin/users/") : -len("/admin")].strip("/")
+                email = unquote(mid)
+                updated = auth_store.demote_admin(email, actor_email=user["email"])
+                self._send(*_ok(public_user(updated), message=f"أُزيلت صلاحية المدير عن {email}"))
+            except AuthError as e:
+                self._send(*_error(str(e), e.status))
+            except Exception as e:  # noqa: BLE001
+                self._send(*_error(str(e), 500, trace=traceback.format_exc()))
+            return
+
+        if path.startswith("/api/auth/admin/codes/"):
+            try:
+                user = require_role(self._current_user(), ROLE_OWNER)
+                code_id = path[len("/api/auth/admin/codes/") :].strip("/")
+                auth_store.revoke_admin_code(code_id, owner_email=user["email"])
+                self._send(*_ok(message="أُلغي الكود"))
+            except AuthError as e:
+                self._send(*_error(str(e), e.status))
+            except Exception as e:  # noqa: BLE001
+                self._send(*_error(str(e), 500, trace=traceback.format_exc()))
+            return
+
         if not path.startswith("/api/taxa/"):
             self._send(*_error("Not found", 404))
             return
@@ -148,9 +253,19 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
             self._send(*_error("معرّف غير صالح", 400))
             return
         try:
+            user = require_role(self._current_user(), ROLE_ADMIN)
             m = FloraManager(auto_backup=True)
             removed = m.delete(tid)
+            auth_store.log_activity(
+                actor_email=user["email"],
+                actor_role=user["role"],
+                action="taxon.delete",
+                target=tid,
+                detail={"scientific_name": removed.get("scientific_name")},
+            )
             self._send(*_ok(removed, message=f"حُذف {removed['id']}"))
+        except AuthError as e:
+            self._send(*_error(str(e), e.status))
         except NotFoundError as e:
             self._send(*_error(str(e), 404))
         except FloraError as e:
@@ -177,10 +292,20 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
             self._send(*_error("الجسم يجب أن يكون كائن JSON", 400))
             return
         try:
+            user = require_role(self._current_user(), ROLE_ADMIN)
             m = FloraManager(auto_backup=True)
             replace = method == "put" or bool(payload.pop("_replace", False))
             updated = m.update(tid, payload, replace=replace)
+            auth_store.log_activity(
+                actor_email=user["email"],
+                actor_role=user["role"],
+                action="taxon.update",
+                target=updated["id"],
+                detail={"scientific_name": updated.get("scientific_name"), "replace": replace},
+            )
             self._send(*_ok(updated, message=f"عُدّل {updated['id']}"))
+        except AuthError as e:
+            self._send(*_error(str(e), e.status))
         except NotFoundError as e:
             self._send(*_error(str(e), 404))
         except (ValidationError, DuplicateError) as e:
@@ -193,13 +318,67 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
     # ------------------------------------------------------------------ API GET
     def _handle_api_get(
         self, path: str, qs: dict[str, list[str]]
-    ) -> tuple[int, bytes, str]:
+    ) -> tuple[int, bytes, str] | tuple[int, bytes, str, list[str]]:
+        # ---- auth routes
+        if path in ("/api/auth/config", "/api/auth/config/"):
+            return _ok(auth_store.public_config(base_url=self._base_url()))
+
+        if path in ("/api/auth/me", "/api/auth/me/"):
+            user = self._current_user()
+            return _ok(
+                {
+                    "user": user,
+                    "authenticated": user is not None,
+                    "permissions": self._permissions(user),
+                }
+            )
+
+        if path in ("/api/auth/admin/users", "/api/auth/admin/users/"):
+            require_role(self._current_user(), ROLE_OWNER)
+            return _ok(auth_store.list_users())
+
+        if path in ("/api/auth/admin/codes", "/api/auth/admin/codes/"):
+            require_role(self._current_user(), ROLE_OWNER)
+            return _ok(auth_store.list_admin_codes())
+
+        if path in ("/api/auth/activity", "/api/auth/activity/"):
+            require_role(self._current_user(), ROLE_ADMIN)
+            limit = int(_first(qs, "limit") or 100)
+            return _ok(auth_store.list_activity(limit=limit))
+
+        if path in ("/api/requests", "/api/requests/"):
+            user = require_role(self._current_user(), ROLE_USER)
+            status = _first(qs, "status")
+            mine = (_first(qs, "mine") or "").casefold() in ("1", "true", "yes")
+            # non-admins always mine-only
+            if not role_at_least(user, ROLE_ADMIN):
+                mine = True
+            return _ok(
+                auth_store.list_change_requests(
+                    viewer=user, status=status, mine_only=mine
+                )
+            )
+
+        if path.startswith("/api/requests/"):
+            user = require_role(self._current_user(), ROLE_USER)
+            rid = path[len("/api/requests/") :].strip("/")
+            rec = auth_store.get_change_request(rid)
+            if not rec:
+                return _error("الطلب غير موجود", 404)
+            if not role_at_least(user, ROLE_ADMIN) and rec.get(
+                "requester_email"
+            ) != user.get("email"):
+                return _error("ليست لديك صلاحية عرض هذا الطلب", 403)
+            return _ok(rec)
+
+        # ---- public flora API
         try:
             if path in ("/api", "/api/"):
                 return _ok(
                     {
                         "name": "Iraqi Flora Encyclopedia API",
                         "schema_version": SCHEMA_VERSION,
+                        "auth": True,
                         "endpoints": [
                             "GET /api/health",
                             "GET /api/stats",
@@ -207,18 +386,33 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
                             "GET /api/meta",
                             "GET /api/taxa",
                             "GET /api/taxa/{id}",
-                            "POST /api/taxa",
-                            "PUT|PATCH /api/taxa/{id}",
-                            "DELETE /api/taxa/{id}",
+                            "POST /api/taxa  (admin+)",
+                            "PUT|PATCH /api/taxa/{id}  (admin+)",
+                            "DELETE /api/taxa/{id}  (admin+)",
                             "POST /api/suggest-id",
                             "POST /api/search",
+                            "GET /api/auth/me",
+                            "GET /api/auth/google/start",
+                            "POST /api/auth/logout",
+                            "POST /api/auth/redeem-code",
+                            "GET|POST /api/auth/admin/codes  (owner)",
+                            "GET /api/auth/admin/users  (owner)",
+                            "GET /api/auth/activity  (admin+)",
+                            "GET|POST /api/requests",
+                            "POST /api/requests/{id}/approve|reject  (admin+)",
                         ],
                     }
                 )
 
             if path == "/api/health":
                 m = FloraManager(auto_backup=False)
-                return _ok({"status": "ok", "taxa": m.count()})
+                return _ok(
+                    {
+                        "status": "ok",
+                        "taxa": m.count(),
+                        "oauth_configured": auth_store.is_oauth_configured(),
+                    }
+                )
 
             if path == "/api/stats":
                 m = FloraManager(auto_backup=False)
@@ -248,55 +442,282 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
         except Exception as e:  # noqa: BLE001
             return _error(str(e), 500, trace=traceback.format_exc())
 
+    def _handle_google_start(self, qs: dict[str, list[str]]) -> None:
+        cfg = auth_store.load_config()
+        redirect_uri = (cfg.get("redirect_uri") or "").strip() or (
+            f"{self._base_url()}/api/auth/google/callback"
+        )
+        data = auth_store.begin_google_oauth(redirect_uri=redirect_uri)
+        want_json = "application/json" in (self.headers.get("Accept") or "")
+        if want_json or _first(qs, "format") == "json":
+            self._send(*_ok(data))
+            return
+        self.send_response(302)
+        self.send_header("Location", data["auth_url"])
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+
+    def _handle_google_callback(self, qs: dict[str, list[str]]) -> None:
+        err = _first(qs, "error")
+        if err:
+            msg = _first(qs, "error_description") or err
+            loc = f"/?auth_error={urllib_quote(msg)}"
+            self.send_response(302)
+            self.send_header("Location", loc)
+            self.end_headers()
+            return
+
+        code = _first(qs, "code")
+        state = _first(qs, "state")
+        if not code or not state:
+            loc = "/?auth_error=" + urllib_quote("استجابة Google ناقصة")
+            self.send_response(302)
+            self.send_header("Location", loc)
+            self.end_headers()
+            return
+
+        try:
+            user = auth_store.finish_google_oauth(code=code, state=state)
+            sid = auth_store.create_session(user)
+            self.send_response(302)
+            self.send_header("Location", "/?auth=ok")
+            for ch in self._set_session_cookie_headers(sid):
+                self.send_header("Set-Cookie", ch)
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+        except AuthError as e:
+            loc = "/?auth_error=" + urllib_quote(str(e))
+            self.send_response(302)
+            self.send_header("Location", loc)
+            self.end_headers()
+
     def _handle_api_post(
         self,
         path: str,
         payload: Any,
         qs: dict[str, list[str]],
-    ) -> tuple[int, bytes, str]:
+    ) -> tuple[int, bytes, str] | tuple[int, bytes, str, list[str]]:
+        # ---- auth
+        if path in ("/api/auth/logout", "/api/auth/logout/"):
+            user = self._current_user()
+            if user:
+                auth_store.log_activity(
+                    actor_email=user.get("email"),
+                    actor_role=user.get("role"),
+                    action="auth.logout",
+                    target=user.get("email") or "",
+                    detail={},
+                )
+            auth_store.destroy_session(self._session_id())
+            status, body, ctype = _ok(message="تم تسجيل الخروج")
+            return status, body, ctype, self._set_session_cookie_headers(None)
+
+        if path in ("/api/auth/dev-login", "/api/auth/dev-login/"):
+            if not isinstance(payload, dict):
+                return _error("جسم JSON مطلوب", 400)
+            user = auth_store.dev_login(
+                str(payload.get("email") or ""),
+                name=str(payload.get("name") or ""),
+            )
+            sid = auth_store.create_session(user)
+            status, body, ctype = _ok(
+                {
+                    "user": public_user(user),
+                    "permissions": self._permissions(public_user(user)),
+                },
+                message="تم الدخول (وضع التطوير)",
+            )
+            return status, body, ctype, self._set_session_cookie_headers(sid)
+
+        if path in ("/api/auth/redeem-code", "/api/auth/redeem-code/"):
+            user = require_role(self._current_user(), ROLE_USER)
+            if not isinstance(payload, dict):
+                return _error("جسم JSON مطلوب", 400)
+            updated = auth_store.redeem_admin_code(
+                str(payload.get("code") or ""),
+                user_email=user["email"],
+            )
+            return _ok(updated, message="أصبحت مديراً")
+
+        if path in ("/api/auth/admin/codes", "/api/auth/admin/codes/"):
+            user = require_role(self._current_user(), ROLE_OWNER)
+            note = ""
+            if isinstance(payload, dict):
+                note = str(payload.get("note") or "")
+            generated = auth_store.generate_admin_code(
+                owner_email=user["email"], note=note
+            )
+            return _ok(generated, message="تم توليد كود ترقية لمرة واحدة")
+
+        if path in ("/api/requests", "/api/requests/"):
+            user = require_role(self._current_user(), ROLE_USER)
+            if not isinstance(payload, dict):
+                return _error("جسم JSON مطلوب", 400)
+            rec = auth_store.create_change_request(
+                requester=user,
+                req_type=str(payload.get("type") or ""),
+                payload=payload.get("payload") if isinstance(payload.get("payload"), dict) else None,
+                taxon_id=payload.get("taxon_id"),
+                note=str(payload.get("note") or ""),
+            )
+            return _ok(rec, message="أُرسل الطلب للمراجعة")
+
+        if path.startswith("/api/requests/") and path.endswith("/approve"):
+            user = require_role(self._current_user(), ROLE_ADMIN)
+            rid = path[len("/api/requests/") : -len("/approve")].strip("/")
+            note = ""
+            if isinstance(payload, dict):
+                note = str(payload.get("note") or payload.get("resolution_note") or "")
+            # Load pending request, apply first, then mark approved
+            # (avoids approved-but-not-applied if validation fails)
+            pending = auth_store.get_change_request(rid)
+            if not pending:
+                return _error("الطلب غير موجود", 404)
+            if pending.get("status") != "pending":
+                return _error("الطلب مُعالَج مسبقاً", 400)
+            applied = self._apply_approved_request(pending, actor=user)
+            rec = auth_store.resolve_change_request(
+                rid, resolver=user, approve=True, resolution_note=note
+            )
+            return _ok({"request": rec, "applied": applied}, message="وُوفق على الطلب وطُبّق")
+
+        if path.startswith("/api/requests/") and path.endswith("/reject"):
+            user = require_role(self._current_user(), ROLE_ADMIN)
+            rid = path[len("/api/requests/") : -len("/reject")].strip("/")
+            note = ""
+            if isinstance(payload, dict):
+                note = str(payload.get("note") or payload.get("resolution_note") or "")
+            rec = auth_store.resolve_change_request(
+                rid, resolver=user, approve=False, resolution_note=note
+            )
+            return _ok(rec, message="رُفض الطلب")
+
+        # ---- flora
+        if path == "/api/search":
+            if not isinstance(payload, dict):
+                payload = {}
+            for k, vals in qs.items():
+                if vals and k not in payload:
+                    payload[k] = vals[0]
+            return self._search_from_params(payload)
+
+        if path == "/api/suggest-id":
+            if not isinstance(payload, dict):
+                return _error("الجسم يجب أن يكون كائن JSON", 400)
+            family = str(payload.get("family") or "")
+            genus = str(payload.get("genus") or "")
+            sci = str(
+                payload.get("scientific_name") or payload.get("scientificName") or ""
+            )
+            if not (family and genus and sci):
+                return _error("يلزم family و genus و scientific_name", 400)
+            return _ok({"id": suggest_id(family, genus, sci)})
+
+        if path in ("/api/taxa", "/api/taxa/"):
+            user = require_role(self._current_user(), ROLE_ADMIN)
+            if not isinstance(payload, dict):
+                return _error("الجسم يجب أن يكون كائن JSON لصنف واحد", 400)
+            if not payload.get("id") and payload.get("_suggest_id"):
+                cls = payload.get("classification") or {}
+                payload["id"] = suggest_id(
+                    cls.get("family") or "",
+                    cls.get("genus") or "",
+                    payload.get("scientific_name") or "",
+                )
+            payload.pop("_suggest_id", None)
+            m = FloraManager(auto_backup=True)
+            taxon = m.add(payload)
+            auth_store.log_activity(
+                actor_email=user["email"],
+                actor_role=user["role"],
+                action="taxon.add",
+                target=taxon["id"],
+                detail={"scientific_name": taxon.get("scientific_name")},
+            )
+            return _ok(taxon, message=f"أُضيف {taxon['id']}")
+
+        return _error("Not found", 404)
+
+    def _apply_approved_request(self, rec: dict, *, actor: dict) -> dict | None:
+        """Execute flora mutation for an approved change request."""
+        m = FloraManager(auto_backup=True)
+        rtype = rec.get("type")
         try:
-            if path == "/api/search":
-                if not isinstance(payload, dict):
-                    payload = {}
-                # merge query string over body for convenience
-                for k, vals in qs.items():
-                    if vals and k not in payload:
-                        payload[k] = vals[0]
-                return self._search_from_params(payload)
-
-            if path == "/api/suggest-id":
-                if not isinstance(payload, dict):
-                    return _error("الجسم يجب أن يكون كائن JSON", 400)
-                family = str(payload.get("family") or "")
-                genus = str(payload.get("genus") or "")
-                sci = str(payload.get("scientific_name") or payload.get("scientificName") or "")
-                if not (family and genus and sci):
-                    return _error("يلزم family و genus و scientific_name", 400)
-                return _ok({"id": suggest_id(family, genus, sci)})
-
-            if path in ("/api/taxa", "/api/taxa/"):
-                if not isinstance(payload, dict):
-                    return _error("الجسم يجب أن يكون كائن JSON لصنف واحد", 400)
-                # optional auto id
-                if not payload.get("id") and payload.get("_suggest_id"):
-                    cls = payload.get("classification") or {}
-                    payload["id"] = suggest_id(
+            if rtype == "add":
+                body = dict(rec.get("payload") or {})
+                if not body.get("id"):
+                    cls = body.get("classification") or {}
+                    body["id"] = suggest_id(
                         cls.get("family") or "",
                         cls.get("genus") or "",
-                        payload.get("scientific_name") or "",
+                        body.get("scientific_name") or "",
                     )
-                payload.pop("_suggest_id", None)
-                m = FloraManager(auto_backup=True)
-                taxon = m.add(payload)
-                return _ok(taxon, message=f"أُضيف {taxon['id']}")
-
-            return _error("Not found", 404)
-        except (ValidationError, DuplicateError) as e:
-            return _error(str(e), 422)
-        except FloraError as e:
-            return _error(str(e), 400)
+                taxon = m.add(body)
+                auth_store.log_activity(
+                    actor_email=actor["email"],
+                    actor_role=actor["role"],
+                    action="taxon.add",
+                    target=taxon["id"],
+                    detail={
+                        "via_request": rec.get("id"),
+                        "requester": rec.get("requester_email"),
+                    },
+                )
+                return taxon
+            if rtype == "update":
+                tid = rec.get("taxon_id") or ""
+                body = dict(rec.get("payload") or {})
+                updated = m.update(tid, body, replace=True)
+                auth_store.log_activity(
+                    actor_email=actor["email"],
+                    actor_role=actor["role"],
+                    action="taxon.update",
+                    target=updated["id"],
+                    detail={
+                        "via_request": rec.get("id"),
+                        "requester": rec.get("requester_email"),
+                    },
+                )
+                return updated
+            if rtype == "delete":
+                tid = rec.get("taxon_id") or ""
+                removed = m.delete(tid)
+                auth_store.log_activity(
+                    actor_email=actor["email"],
+                    actor_role=actor["role"],
+                    action="taxon.delete",
+                    target=tid,
+                    detail={
+                        "via_request": rec.get("id"),
+                        "requester": rec.get("requester_email"),
+                    },
+                )
+                return removed
         except Exception as e:  # noqa: BLE001
-            return _error(str(e), 500, trace=traceback.format_exc())
+            auth_store.log_activity(
+                actor_email=actor["email"],
+                actor_role=actor["role"],
+                action="request.apply_failed",
+                target=rec.get("id") or "",
+                detail={"error": str(e)},
+            )
+            raise FloraError(f"وُوفق على الطلب لكن فشل التطبيق: {e}") from e
+        return None
+
+    def _permissions(self, user: dict | None) -> dict[str, bool]:
+        return {
+            "can_view": True,
+            "can_request_changes": role_at_least(user, ROLE_USER)
+            and not role_at_least(user, ROLE_ADMIN),
+            "can_edit": role_at_least(user, ROLE_ADMIN),
+            "can_manage_requests": role_at_least(user, ROLE_ADMIN),
+            "can_view_activity": role_at_least(user, ROLE_ADMIN),
+            "can_manage_admins": role_at_least(user, ROLE_OWNER),
+            "can_generate_codes": role_at_least(user, ROLE_OWNER),
+            "is_owner": role_at_least(user, ROLE_OWNER),
+            "is_admin": role_at_least(user, ROLE_ADMIN),
+            "is_authenticated": user is not None,
+        }
 
     def _list_taxa(self, qs: dict[str, list[str]]) -> tuple[int, bytes, str]:
         params: dict[str, Any] = {}
@@ -338,7 +759,6 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
         self, params: dict[str, Any], *, summary: bool = True
     ) -> tuple[int, bytes, str]:
         m = FloraManager(auto_backup=False)
-        # normalize common aliases
         if "native" not in params and "native_to_iraq" in params:
             params["native"] = params["native_to_iraq"]
         result = m.search_detailed(
@@ -352,13 +772,21 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
             taxon_id=params.get("id"),
             category_group=params.get("category") or params.get("category_group"),
             iucn=params.get("iucn"),
-            native=_parse_bool(str(params["native"])) if params.get("native") is not None else None,
+            native=_parse_bool(str(params["native"]))
+            if params.get("native") is not None
+            else None,
             limit=int(params.get("limit") or 200),
             offset=int(params.get("offset") or 0),
             sort_by=str(params.get("sort_by") or "family"),
-            sort_desc=bool(_parse_bool(str(params.get("sort_desc")))) if params.get("sort_desc") is not None else False,
-            endemic=_parse_bool(str(params["endemic"])) if params.get("endemic") is not None else None,
-            flagship=_parse_bool(str(params["flagship"])) if params.get("flagship") is not None else None,
+            sort_desc=bool(_parse_bool(str(params.get("sort_desc"))))
+            if params.get("sort_desc") is not None
+            else False,
+            endemic=_parse_bool(str(params["endemic"]))
+            if params.get("endemic") is not None
+            else None,
+            flagship=_parse_bool(str(params["flagship"]))
+            if params.get("flagship") is not None
+            else None,
             scientific_name=params.get("scientific_name"),
             order=params.get("order"),
         )
@@ -443,7 +871,6 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
             file_path = file_path / "index.html"
 
         if not file_path.is_file():
-            # SPA fallback
             index = FRONTEND_DIR / "index.html"
             if index.is_file() and not rel.startswith("api"):
                 file_path = index
@@ -470,30 +897,60 @@ class FloraAPIHandler(BaseHTTPRequestHandler):
         return json.loads(raw.decode("utf-8"))
 
     def _cors_headers(self) -> None:
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.send_header("Access-Control-Allow-Origin", self.headers.get("Origin") or "*")
+        self.send_header(
+            "Access-Control-Allow-Methods",
+            "GET, POST, PUT, PATCH, DELETE, OPTIONS",
+        )
+        self.send_header(
+            "Access-Control-Allow-Headers", "Content-Type, Accept, Cookie"
+        )
+        self.send_header("Access-Control-Allow-Credentials", "true")
 
-    def _send(self, status: int, body: bytes, content_type: str) -> None:
+    def _send(
+        self,
+        status: int,
+        body: bytes,
+        content_type: str,
+        set_cookies: list[str] | None = None,
+    ) -> None:
         self.send_response(status)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
         self._cors_headers()
         self.send_header("Cache-Control", "no-store")
+        if set_cookies:
+            for c in set_cookies:
+                self.send_header("Set-Cookie", c)
         self.end_headers()
-        self.wfile.write(body)
+        if body:
+            self.wfile.write(body)
 
 
-def run_server(host: str = DEFAULT_HOST, port: int = DEFAULT_PORT, open_browser: bool = True) -> None:
+def urllib_quote(s: str) -> str:
+    from urllib.parse import quote
+
+    return quote(s, safe="")
+
+
+def run_server(
+    host: str = DEFAULT_HOST, port: int = DEFAULT_PORT, open_browser: bool = True
+) -> None:
     if not FRONTEND_DIR.is_dir():
         print(f"تحذير: مجلد الواجهة غير موجود: {FRONTEND_DIR}", file=sys.stderr)
 
+    # ensure auth dir exists
+    auth_store.load_config()
+
     httpd = ThreadingHTTPServer((host, port), FloraAPIHandler)
     url = f"http://{host}:{port}/"
+    oauth_ok = auth_store.is_oauth_configured()
     print("=" * 60)
     print("  موسوعة الفلورا العراقية — Iraqi Flora Encyclopedia")
     print(f"  Frontend + API: {url}")
     print(f"  API docs:       {url}api/")
+    print(f"  Google OAuth:   {'مُفعّل' if oauth_ok else 'غير مُعدّ (انظر auth_config.example.json)'}")
+    print(f"  المالك:         {auth_store.owner_email()}")
     print("  اضغط Ctrl+C للإيقاف")
     print("=" * 60)
 

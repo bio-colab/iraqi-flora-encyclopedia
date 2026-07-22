@@ -8,3 +8,5 @@
 {"ts": "2026-07-21T21:23:40", "action": "add", "taxon_id": "DEM-TST-UI1", "taxa_count": 153}
 {"ts": "2026-07-21T21:23:40", "action": "update", "taxon_id": "DEM-TST-UI1->DEM-TST-UI1", "taxa_count": 153}
 {"ts": "2026-07-21T21:23:40", "action": "delete", "taxon_id": "DEM-TST-UI1", "taxa_count": 152}
+{"ts": "2026-07-22T07:31:18", "action": "add", "taxon_id": "FLO-TES-001", "taxa_count": 153}
+{"ts": "2026-07-22T07:31:19", "action": "delete", "taxon_id": "FLO-TES-001", "taxa_count": 152}

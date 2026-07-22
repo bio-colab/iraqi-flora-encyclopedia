@@ -139,6 +139,32 @@ python tools/web_server.py --no-browser --port 8765
 
 يتطلب **Python 3.10+** فقط (بدون Flask أو حزم خارجية). التعديلات تُحفظ عبر `FloraManager` مع إعادة بناء كل الملفات المشتقة تلقائياً.
 
+### تسجيل الدخول والصلاحيات
+
+| الدور | من هم | الصلاحيات |
+|--------|--------|-----------|
+| **ضيف** | بلا حساب | عرض وبحث فقط |
+| **مستخدم** | دخول عبر Google | طلب إضافة / تعديل / حذف (مراجعة مدير) |
+| **مدير** | ترقية بكود من المالك | CRUD مباشر + مراجعة الطلبات + سجل النشاط |
+| **المالك** | `aliasbio95@gmail.com` فقط | كل صلاحيات المدير + توليد/إلغاء أكواد الترقية + إزالة المدراء |
+
+**تفعيل Google OAuth**
+
+1. أنشئ OAuth Client (Web) في [Google Cloud Console](https://console.cloud.google.com/apis/credentials).
+2. أضف Redirect URI: `http://127.0.0.1:8765/api/auth/google/callback`
+3. انسخ [`auth_config.example.json`](auth_config.example.json) → `auth_config.json` واملأ:
+   - `google_client_id`
+   - `google_client_secret`
+4. أعد تشغيل `python tools/web_server.py`
+
+يمكن أيضاً استخدام متغيرات البيئة `GOOGLE_CLIENT_ID` و `GOOGLE_CLIENT_SECRET`.
+
+للتجربة المحلية بدون Google: في `data/auth/config.json` اضبط `"allow_dev_login": true` (مفعّل افتراضياً للتطوير؛ عطّله في الإنتاج).
+
+**مسار الترقية إلى مدير:** المالك → لوحة الإدارة → «أكواد الترقية» → توليد كود لمرة واحدة (صالح 48 ساعة) → يرسله للمستخدم → المستخدم يدخل الكود من «كود ترقية».
+
+بيانات الجلسات والمستخدمين تُحفظ تحت `data/auth/` (لا ترفع `secret.key` أو `auth_config.json` إلى Git).
+
 ---
 
 ## إدارة البيانات / Data management
