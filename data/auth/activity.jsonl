@@ -30,3 +30,4 @@
 {"ts": "2026-07-22T07:33:26+03:00", "actor_email": "aliasbio95@gmail.com", "actor_role": "owner", "action": "admin.code_generate", "target": "34464343b8fa7590", "detail": {"hint": "9907-****-**", "note": ""}}
 {"ts": "2026-07-22T07:34:08+03:00", "actor_email": "aliasbio80@gmail.com", "actor_role": "user", "action": "auth.login", "target": "aliasbio80@gmail.com", "detail": {"provider": "dev"}}
 {"ts": "2026-07-22T07:34:19+03:00", "actor_email": "aliasbio80@gmail.com", "actor_role": "admin", "action": "admin.promote", "target": "aliasbio80@gmail.com", "detail": {"code_id": "34464343b8fa7590"}}
+{"ts": "2026-07-23T02:27:45+03:00", "actor_email": "tester@example.com", "actor_role": "user", "action": "auth.login", "target": "tester@example.com", "detail": {"provider": "dev"}}

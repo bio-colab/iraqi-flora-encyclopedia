@@ -139,6 +139,22 @@ python tools/web_server.py --no-browser --port 8765
 
 يتطلب **Python 3.10+** فقط (بدون Flask أو حزم خارجية). التعديلات تُحفظ عبر `FloraManager` مع إعادة بناء كل الملفات المشتقة تلقائياً.
 
+### جاهزية البيتا الأكاديمية والاستضافة
+
+الواجهة وواجهة REST جاهزتان لمراجعة المختصين **محلياً** أو على أي بيئة تشغّل Python 3.10+ (مثلاً VPS).
+
+| البيئة | الحالة |
+|--------|--------|
+| محلي / VPS (Python) | ✅ المسار الحالي — `tools/web_server.py` |
+| Hostinger Premium **Shared** (PHP فقط) | ⏸️ غير مدعوم مباشرة؛ ترحيل PHP مؤجّل (انظر `plan.md`) |
+
+**قبل الإنتاج / مشاركة رابط عام:**
+1. عطّل الدخول التجريبي: في `data/auth/config.json` اضبط `"allow_dev_login": false`.
+2. اضبط Google OAuth مع Redirect URI الحقيقي للدومين (وليس فقط `127.0.0.1`).
+3. لا ترفع `data/auth/secret.key` ولا `auth_config.json` إلى Git.
+
+تفاصيل خطة الإطلاق والأخطاء المصلحة: [`plan.md`](plan.md) · السجل: [`CHANGELOG.md`](CHANGELOG.md) (**v0.3.1**).
+
 ### تسجيل الدخول والصلاحيات
 
 | الدور | من هم | الصلاحيات |
@@ -309,6 +325,7 @@ bio-colab. https://github.com/bio-colab/<repo-name>
 
 - الفهرس: [`data/index.json`](data/index.json)
 - السجل النصي: [`CHANGELOG.md`](CHANGELOG.md)
+- خطة الإطلاق / البيتا: [`plan.md`](plan.md)
 - سجل العمليات الآلي: [`data/changelog.jsonl`](data/changelog.jsonl)
 - المخطط: [`schema/`](schema/)
 - الأداة: [`tools/manage_flora.py`](tools/manage_flora.py)

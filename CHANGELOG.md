@@ -15,6 +15,27 @@ Automated operation logs (add / update / delete) are also appended to `data/chan
 - Deeper reconciliation against *Flora of Iraq* volumes
 - Expansion of herbaceous and grass coverage beyond seed records
 - Optional CSV/Excel import-export
+- Optional PHP/MySQL backend for Hostinger Premium shared hosting (deferred; Python retained)
+
+---
+
+## [0.3.1] — 2026-07-23
+
+### Fixed
+- **Frontend plan phase 1 (UI polish / bug audit)** against `plan.md`:
+  - Modal open state confirmed unified on `.open` (JS + CSS)
+  - Toast styles: richer success/error backgrounds; added **`.toast.info`**
+  - Header stats (`#statTotal`, `#statNative`, `#statFamilies`) null-safe updates
+  - Table/cards use consistent badge classes (`data-table`, `id-badge`, `family-tag`, `zone-pill`, native/habit/status)
+  - Add/edit form already includes zones, presence, local status, IUCN, notes; default presence remains **`موجود`**
+- Smoke-tested local API: `/api/health`, `/api/stats`, `/api/taxa` respond OK under `web_server.py`
+
+### Changed
+- `plan.md` marked **Phase 1 complete**; **PHP migration deferred** — keep Python CLI + `web_server.py` for academic beta (local or VPS)
+- README deployment notes: Hostinger shared vs Python/VPS path clarified
+
+### Tooling
+- No backend stack change (stdlib Python only)
 
 ---
 
@@ -149,7 +170,8 @@ Automated operation logs (add / update / delete) are also appended to `data/chan
 
 ---
 
-[Unreleased]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/bio-colab/iraqi-flora-encyclopedia/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/bio-colab/iraqi-flora-encyclopedia/releases/tag/v0.1.0

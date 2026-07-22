@@ -721,6 +721,48 @@ table.data-table .actions {
   color: #e0c07a;
 }
 
+/* Zone / ID pills used in detail & table views */
+.zone-pill,
+.badge-zone {
+  background: rgba(74, 159, 212, 0.1);
+  border-color: transparent;
+  color: #7ec0e8;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+}
+
+.id-badge,
+.badge-id {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  background: rgba(74, 159, 212, 0.1);
+  border-color: transparent;
+  color: var(--info);
+}
+
+.family-tag,
+.badge-family {
+  background: rgba(154, 175, 158, 0.12);
+  border-color: transparent;
+  color: var(--text-muted);
+}
+
+/* Compatibility aliases if older markup uses these class names */
+.nat-badge.native,
+.nat-badge[data-native="true"] {
+  background: var(--accent-soft);
+  border-color: transparent;
+  color: var(--accent-hover);
+}
+
+.nat-badge.alien,
+.nat-badge[data-native="false"] {
+  background: rgba(196, 122, 58, 0.18);
+  border-color: transparent;
+  color: #e0a86a;
+}
+
 /* ---------- Modal ---------- */
 .modal-backdrop {
   position: fixed;
@@ -926,10 +968,17 @@ table.data-table .actions {
 
 .toast.success {
   border-color: var(--accent);
+  background: rgba(61, 154, 95, 0.12);
 }
 
 .toast.error {
   border-color: var(--danger);
+  background: rgba(212, 84, 74, 0.12);
+}
+
+.toast.info {
+  border-color: var(--info);
+  background: rgba(74, 159, 212, 0.12);
 }
 
 @keyframes slideIn {

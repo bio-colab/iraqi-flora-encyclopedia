@@ -452,9 +452,13 @@
   function updateHeaderStats() {
     const s = state.stats;
     if (!s) return;
-    $("#statTotal").textContent = s.total ?? "—";
-    $("#statNative").textContent = s.native ?? "—";
-    $("#statFamilies").textContent = s.families ?? "—";
+    const set = (id, val) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = val ?? "—";
+    };
+    set("statTotal", s.total);
+    set("statNative", s.native);
+    set("statFamilies", s.families);
   }
 
   // ---------- data ----------
@@ -559,10 +563,10 @@
       .map(
         (t) => `
       <tr data-id="${esc(t.id)}">
-        <td class="mono">${esc(t.id)}</td>
+        <td><span class="badge id-badge">${esc(t.id)}</span></td>
         <td class="sci">${esc(t.scientific_name || "")}</td>
         <td>${esc(t.arabic || "—")}</td>
-        <td>${esc(t.family || "—")}</td>
+        <td><span class="badge family-tag">${esc(t.family || "—")}</span></td>
         <td><span class="badge badge-habit">${esc(habitLabel(t.habit))}</span></td>
         <td>${nativeBadge(t.native_to_iraq)}</td>
         <td class="actions" onclick="event.stopPropagation()">
@@ -594,12 +598,12 @@
   function renderCard(t, compact) {
     return `
       <article class="taxon-card" data-id="${esc(t.id)}">
-        <div class="card-id">${esc(t.id)}</div>
+        <div class="card-id"><span class="badge id-badge">${esc(t.id)}</span></div>
         <div class="card-sci">${esc(t.scientific_name || "")}</div>
         ${!compact ? `<div class="card-ar">${esc(t.arabic || "—")}</div>` : ""}
         <div class="card-meta">
           <span class="badge badge-habit">${esc(habitLabel(t.habit))}</span>
-          ${t.family ? `<span class="badge">${esc(t.family)}</span>` : ""}
+          ${t.family ? `<span class="badge family-tag">${esc(t.family)}</span>` : ""}
           ${nativeBadge(t.native_to_iraq)}
           ${t.iraq_local_status ? `<span class="badge badge-status">${esc(t.iraq_local_status)}</span>` : ""}
         </div>
@@ -690,13 +694,13 @@
       .join("");
     const en = (t.names?.english || []).map((n) => `<li>${esc(n)}</li>`).join("");
     const zones = (t.zones || [])
-      .map((z) => `<span class="badge">${esc(z)}</span>`)
+      .map((z) => `<span class="badge zone-pill">${esc(z)}</span>`)
       .join(" ");
 
     return `
       <div class="kv-grid">
-        <div class="kv"><span class="k">المعرّف</span><div class="v mono">${esc(t.id)}</div></div>
-        <div class="kv"><span class="k">العائلة</span><div class="v">${esc(t.classification?.family || "—")}</div></div>
+        <div class="kv"><span class="k">المعرّف</span><div class="v"><span class="badge id-badge">${esc(t.id)}</span></div></div>
+        <div class="kv"><span class="k">العائلة</span><div class="v"><span class="badge family-tag">${esc(t.classification?.family || "—")}</span></div></div>
         <div class="kv"><span class="k">الجنس</span><div class="v">${esc(t.classification?.genus || "—")}</div></div>
         <div class="kv"><span class="k">الرتبة</span><div class="v">${esc(t.classification?.order || "—")}</div></div>
         <div class="kv"><span class="k">شكل النمو</span><div class="v">${esc(habitLabel(t.habit))}</div></div>

@@ -87,7 +87,18 @@
       "last_login_at": "2026-07-22T07:34:08+03:00",
       "promoted_at": "2026-07-22T07:34:19+03:00",
       "promoted_by": "aliasbio95@gmail.com"
+    },
+    "tester@example.com": {
+      "email": "tester@example.com",
+      "name": "Smoke Tester",
+      "picture": "",
+      "google_sub": "dev:tester@example.com",
+      "role": "user",
+      "created_at": "2026-07-23T02:27:45+03:00",
+      "last_login_at": "2026-07-23T02:27:45+03:00",
+      "promoted_at": null,
+      "promoted_by": null
     }
   },
-  "updated_at": "2026-07-22T07:34:19+03:00"
+  "updated_at": "2026-07-23T02:27:45+03:00"
 }
