@@ -6,32 +6,26 @@ cd /d "%~dp0"
 echo.
 echo  ============================================
 echo   موسوعة الفلورا العراقية
-echo   Iraqi Flora Encyclopedia — Frontend
+echo   Iraqi Flora Encyclopedia — PHP/Hostinger Runtime
 echo  ============================================
 echo.
 
-where python >nul 2>&1
+where php >nul 2>&1
 if errorlevel 1 (
-  where py >nul 2>&1
-  if errorlevel 1 (
-    echo [خطأ] Python غير موجود في PATH.
-    echo ثبّت Python 3.10+ من https://www.python.org/
-    pause
-    exit /b 1
-  )
-  set "PY=py -3"
-) else (
-  set "PY=python"
+  echo [خطأ] PHP غير موجود في PATH.
+  echo ثبّت PHP 8.1+ أو شغّل المشروع على Hostinger/Apache.
+  pause
+  exit /b 1
 )
 
 echo تشغيل الواجهة على http://127.0.0.1:8765/
 echo اضغط Ctrl+C لإيقاف الخادم.
 echo.
 
-%PY% tools\web_server.py --host 127.0.0.1 --port 8765
+php -S 127.0.0.1:8765 router.php
 if errorlevel 1 (
   echo.
-  echo فشل تشغيل الخادم.
+  echo فشل تشغيل خادم PHP.
   pause
   exit /b 1
 )
