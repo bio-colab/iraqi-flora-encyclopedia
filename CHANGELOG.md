@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.4.0 — PHP/Hostinger runtime conversion
+
+- حُوّل مسار التشغيل الرئيسي من Python المحلي إلى Backend كامل بـ PHP عبر `api/index.php`.
+- أضيف توجيه Apache/Hostinger عبر `.htaccess` لمسارات `/api/*`.
+- أضيف `router.php` للتطوير المحلي باستخدام `php -S 127.0.0.1:8765 router.php`.
+- أضيفت إعادة تنفيذ PHP لوظائف البيانات الأساسية: health, stats, enums, meta, search, list/get taxa, CRUD للأصناف، suggest-id، الصلاحيات، الجلسات، أكواد المدراء، طلبات التغيير، وسجل النشاط.
+- أضيفت إعادة بناء ملفات JSON المشتقة من PHP: master mirror, by_habit, by_category, by_family, by_nativity, reference, index.
+- أضيف `tools/php_smoke_test.php` لاختبار توافق REST API الجديد مع الواجهة ومسارات Hostinger.
+- حُدّث README لتوثيق أن التشغيل الإنتاجي أصبح PHP ومتوافقاً مع Hostinger، وأن ملفات Python المتبقية أدوات مساندة/أرشيفية فقط.
+
+
 All notable changes to the **Iraqi Flora Encyclopedia** (موسوعة الفلورا العراقية) are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),  
